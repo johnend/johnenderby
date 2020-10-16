@@ -12,7 +12,7 @@ module.exports = {
       resolve: "@mkitio/gatsby-theme-password-protect",
       options: {
         password: "Op3n_S3sam3",
-        pagePaths: ["/FanDuel"],
+        pagePaths: ["/FanDuel", "/FanDuel/"],
       },
     },
   ],
