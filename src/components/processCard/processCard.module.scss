@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.cardContainer {
+  min-height: 231px;
+  width: 330px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: $cardShadow;
+  padding: 16px;
+  position: relative;
+  h4 {
+    padding-bottom: 8px;
+  }
+}
+
+.processIcon {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 8px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleHighlight {
+  width: 1px;
+  height: 19px;
+  position: absolute;
+  left: 0;
+  top: 56;
+}
+
+.salmon {
+  background-color: $salmon;
+}
+.fuchsia {
+  background-color: $fuchsia;
+}
+.lilac {
+  background-color: $lilac;
+}
+.purple {
+  background-color: $purple;
+}
+.blue {
+  background-color: $blue;
+}
+.bloo {
+  background-color: $bloo;
+}

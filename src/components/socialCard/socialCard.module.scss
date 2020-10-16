@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+
+.cardContainer {
+  background: #ffffff;
+  box-shadow: $cardShadow;
+  border-radius: 4px;
+  display: flex;
+  max-width: 504px;
+  text-decoration: none;
+  color: $textDefault;
+}
+
+.socialIcon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.socialCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+  .socialHeader {
+    display: flex;
+    align-items: center;
+    h5 {
+      line-height: 21px;
+      margin-right: 16px;
+    }
+    .sharingInfo {
+      opacity: 50%;
+    }
+  }
+}
+
+.Twitter:hover {
+  box-shadow: 0 0 5px -2px rgba(60, 175, 234, 0.2),
+    0 0 10px 1px rgba(60, 175, 234, 0.14), 0 0 16px 1px rgba(60, 175, 234, 0.5);
+}
+
+.Dribbble:hover {
+  box-shadow: 0 0 5px -2px rgba(230, 91, 139, 0.2),
+    0 0 10px 1px rgba(230, 91, 139, 0.14), 0 0 16px 1px rgba(230, 91, 139, 0.5);
+}
+.Spotify:hover {
+  box-shadow: 0 0 5px -2px rgba(30, 215, 96, 0.2),
+    0 0 10px 1px rgba(30, 215, 96, 0.14), 0 0 16px 1px rgba(30, 215, 96, 0.5);
+}
+.GitHub:hover {
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.2), 0 0 10px 1px rgba(0, 0, 0, 0.14),
+    0 0 16px 1px rgba(0, 0, 0, 0.33);
+}
+
+.PokemonGo,
+.PSN {
+  box-shadow: none;
+}

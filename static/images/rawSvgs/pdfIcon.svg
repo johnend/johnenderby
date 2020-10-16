@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="105" viewBox="0 0 82 105">
+  <defs>
+    <rect id="pdficon-a" width="82" height="105" rx="4"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="pdficon-b" fill="#fff">
+      <use xlink:href="#pdficon-a"/>
+    </mask>
+    <use fill="#FFF" xlink:href="#pdficon-a"/>
+    <rect width="66" height="6" x="8" y="8" fill="#F0F3F7" mask="url(#pdficon-b)" rx="3"/>
+    <rect width="62" height="6" x="8" y="22" fill="#F0F3F7" mask="url(#pdficon-b)" rx="3"/>
+    <rect width="57" height="6" x="8" y="36" fill="#F0F3F7" mask="url(#pdficon-b)" rx="3"/>
+    <rect width="62" height="6" x="8" y="50" fill="#F0F3F7" mask="url(#pdficon-b)" rx="3"/>
+    <rect width="62" height="6" x="8" y="64" fill="#F0F3F7" mask="url(#pdficon-b)" rx="3"/>
+    <rect width="82" height="27" y="78" fill="#E65B8B" mask="url(#pdficon-b)"/>
+    <text fill="#FFF" font-family="SFUIText-Heavy, SF UI Text" font-size="16" font-weight="600" letter-spacing="-.08" mask="url(#pdficon-b)">
+      <tspan x="25" y="97">PDF</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,111 @@
+@import "variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: $textDefault;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 67px;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 53px;
+  letter-spacing: -0.2px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 800;
+}
+
+p {
+  line-height: 30px;
+}
+
+p.cardText {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+p.small {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  color: $subText;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+span[role="img"]::selection {
+  color: #fff;
+  background: $textDefault;
+  text-shadow: 1px 2px $salmon;
+}
+
+p::selection,
+span[aria-label="role"]::selection {
+  color: #fff;
+  background: $textDefault;
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 1.2s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+  color: rgba(0, 0, 0, 0);
+  width: 100%;
+  background-color: $salmon;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.specialThanks {
+  background: linear-gradient(
+    131deg,
+    rgba(246, 79, 89, 1) 0%,
+    rgba(196, 113, 237, 1) 37%,
+    rgba(18, 194, 233, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -70px;
+  margin-bottom: 40px;
+  text-align: right;
+  span {
+    -webkit-text-fill-color: black;
+  }
+}

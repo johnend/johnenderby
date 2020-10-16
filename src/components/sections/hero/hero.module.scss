@@ -1,0 +1,19 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 140px;
+  margin-bottom: 98px;
+  div {
+    margin-top: 128px;
+    p {
+      margin-bottom: 13px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+  img {
+    width: 455px;
+    height: 516px;
+  }
+}

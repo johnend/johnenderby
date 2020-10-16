@@ -1,0 +1,67 @@
+@import "../../../styles/variables.scss";
+.fdHero {
+  padding: 40px 0 80px 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  h2 {
+    color: $FanDuel;
+    margin-bottom: 17px;
+  }
+  h3 {
+    width: 496px;
+    margin-bottom: 23px;
+  }
+}
+.contentWrapper {
+  padding-right: 8px;
+  width: 512px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  p {
+    display: block;
+    width: 496px;
+    margin-bottom: 8px;
+  }
+  p.small {
+    margin-bottom: 0;
+  }
+}
+
+.fdLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  svg {
+    width: 240px;
+    height: 236px;
+  }
+}
+
+// .fdSites {
+//   width: 504px;
+//   overflow: visible;
+//   position: absolute;
+//   top: calc(50vh - 300px);
+//   left: 520px;
+//   img {
+//     width: 776px;
+//   }
+//   .fdWeb,
+//   .spbkWeb {
+//     position: absolute;
+//     display: block;
+//   }
+//   .fdWeb {
+//     left: 180px;
+//     z-index: 10;
+//     top: 120px;
+//   }
+// }

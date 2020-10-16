@@ -1,0 +1,40 @@
+.sectionWrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.white {
+  background-color: white;
+}
+
+.grey {
+  background-color: #f0f3f7;
+}
+
+.contentWrapper {
+  width: 1024px;
+}
+
+.skewHome {
+  transform: rotate(-6deg);
+  position: relative;
+  z-index: 100;
+  width: 110%;
+  margin-top: -850px;
+  margin-bottom: 100px;
+}
+
+.skewFanDuel {
+  transform: rotate(-6deg);
+  position: relative;
+  z-index: 100;
+  width: 120%;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.skewBack {
+  transform: rotate(6deg);
+}

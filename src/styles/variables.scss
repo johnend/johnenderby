@@ -1,0 +1,42 @@
+/* Colours */
+$textDefault: #101e26;
+$subText: #697b85;
+$textDarkMode: #fff;
+$altBackgroundLight: #f0f3f7;
+$salmon: #e65b8b;
+$fuchsia: #d268c6;
+$lilac: #b677ec;
+$purple: #8e8aec;
+$blue: #649cea;
+$bloo: #3cafea;
+$FanDuel: #1493ff;
+
+/* Shadows and glows */
+$workShadow: 0 11px 15px -7px rgba(0, 0, 0, 0.1),
+  0 24px 38px 3px rgba(0, 0, 0, 0.07), 0 9px 46px 8px rgba(0, 0, 0, 0.06);
+$cardShadow: 0 4px 5px -2px rgba(0, 0, 0, 0.1),
+  0 7px 10px 1px rgba(0, 0, 0, 0.07), 0 2px 16px 1px rgba(0, 0, 0, 0.06);
+$salmonGlow: 0 0 5px -2px rgba(230, 91, 139, 0.2),
+  0 0 10px 1px rgba(230, 91, 139, 0.14), 0 0 16px 1px rgba(230, 91, 139, 0.5);
+$fuchsiaGlow: 0 0 5px -2px rgba(210, 104, 198, 0.2),
+  0 0 10px 1px rgba(210, 104, 198, 0.14), 0 0 16px 1px rgba(210, 104, 198, 0.5);
+$lilacGlow: 0 0 5px -2px rgba(182, 119, 236, 0.2),
+  0 0 10px 1px rgba(182, 119, 236, 0.14), 0 0 16px 1px rgba(182, 119, 236, 0.5);
+$purpleGlow: 0 0 5px -2px rgba(142, 138, 236, 0.2),
+  0 0 10px 1px rgba(142, 138, 236, 0.14), 0 0 16px 1px rgba(142, 138, 236, 0.5);
+$blueGlow: 0 0 5px -2px rgba(100, 156, 234, 0.2),
+  0 0 10px 1px rgba(100, 156, 234, 0.14), 0 0 16px 1px rgba(100, 156, 234, 0.5);
+$blooGlow: 0 0 5px -2px rgba(60, 175, 234, 0.2),
+  0 0 10px 1px rgba(60, 175, 234, 0.14), 0 0 16px 1px rgba(60, 175, 234, 0.5);
+$twitterGlow: $blooGlow;
+$dribbbleGlow: $salmonGlow;
+$githubGlow: 0 0 5px -2px rgba(255, 255, 255, 0.2),
+  0 0 10px 1px rgba(255, 255, 255, 0.14), 0 0 16px 1px rgba(255, 255, 255, 0.5);
+$spotifyGlow: 0 0 5px -2px rgba(30, 215, 96, 0.2),
+  0 0 10px 1px rgba(30, 215, 96, 0.14), 0 0 16px 1px rgba(30, 215, 96, 0.5);
+$psnGlow: 0 0 5px -2px rgba(222, 0, 41, 0.2),
+  0 0 10px 1px rgba(222, 0, 41, 0.14), 0 0 16px 1px rgba(222, 0, 41, 0.5);
+$pokemonGoGlow: 0 0 5px -2px rgba(0, 201, 255, 0.2),
+  0 0 10px 1px rgba(0, 200, 255, 0.14), 0 0 16px 1px rgba(0, 200, 255, 0.5);
+$fanDuelGlow: 0 0 5px -2px rgba(20, 147, 255, 0.2),
+  0 0 10px 1px rgba(20, 147, 255, 0.14), 0 0 16px 1px rgba(20, 147, 255, 0.5);

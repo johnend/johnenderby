@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+nav {
+  background-color: $textDefault;
+  padding: 5px 18px;
+  color: #fff;
+  font-size: 16px;
+  max-width: 632px;
+  border-radius: 32px;
+  position: relative;
+  height: 29px;
+  min-width: 632px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+  li {
+    display: block;
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: $salmon;
+      }
+      &:visited {
+        color: white;
+        &:hover {
+          color: $salmon;
+        }
+      }
+    }
+  }
+}
+
+.linkIndicator {
+  position: absolute;
+  height: 22px;
+  width: 77px;
+  background-color: #fff;
+  top: 2px;
+  left: 2px;
+  border-radius: 22px;
+}

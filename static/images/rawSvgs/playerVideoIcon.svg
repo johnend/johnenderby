@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WIP/Iconography/Video/Default</title>
+    <g id="Player-Card---Player-Video" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="✅-iOS---Recent-Video---Old-News" transform="translate(-129.000000, -123.000000)">
+            <g id="Player-and-tabs" transform="translate(0.000000, 64.000000)">
+                <g id="Player-slots/Components/Indicators/One" transform="translate(72.000000, 59.000000)">
+                    <g id="WIP/Iconography/Video/Default" transform="translate(57.000000, 0.000000)">
+                        <g id="video-v4">
+                            <rect id="Rectangle" fill="#F99F4A" x="0" y="0" width="17" height="16" rx="1"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" x="9" y="11.2941176" width="3" height="2.82352941" rx="1.41176471"></rect>
+                            <path d="M6.3178712,3.78653025 L10.8785359,5.9327254 C10.9870351,5.98378385 11.0310131,6.10795702 10.9767635,6.21007392 C10.95551,6.25008056 10.9210429,6.28252011 10.8785359,6.30252343 L6.3178712,8.44871858 C6.20937198,8.49977704 6.077438,8.45838598 6.02318839,8.35626907 C6.00793904,8.32756441 6,8.29591236 6,8.26381957 L6,3.97142927 C6,3.85725909 6.09833779,3.76470588 6.2196436,3.76470588 C6.25374219,3.76470588 6.28737249,3.77217792 6.3178712,3.78653025 Z" id="Path" fill="#FFFFFF"></path>
+                        </g>
+                        <rect id="Rectangle" fill="#FFFFFF" x="0" y="12.2352941" width="17" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

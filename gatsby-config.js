@@ -6,5 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: "@mkitio/gatsby-theme-password-protect",
+      options: {
+        password: "Op3n_S3sam3",
+        pagePaths: ["/FanDuel"],
+      },
+    },
+  ],
 }
