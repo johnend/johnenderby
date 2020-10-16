@@ -27,12 +27,19 @@ export default function Hero() {
         </p>
         <p>
           Through research we gauged appetite for tour videos and I did a lot of
-          exploratory 🗺️ designs. We then tested 🧪 prototypes with users, and
-          after some tweaks, released the feature to a subset of the user base
-          to gauge impact. After a short while we had gathered enough data to
-          confidently release to the entire daily fantasy app user base. You'll
-          find this feature in the FanDuel fantasy app now, look for the little
-          recent video news icon{" "}
+          exploratory{" "}
+          <span role="img" alt="World map emoji">
+            🗺️
+          </span>{" "}
+          designs. We then tested{" "}
+          <span role="img" alt="Test tube emoji">
+            🧪
+          </span>{" "}
+          prototypes with users, and after some tweaks, released the feature to
+          a subset of the user base to gauge impact. After a short while we had
+          gathered enough data to confidently release to the entire daily
+          fantasy app user base. You'll find this feature in the FanDuel fantasy
+          app now, look for the little recent video news icon{" "}
           <span
             role="img"
             alt="FanDuel daily fantasy sports player video icon"

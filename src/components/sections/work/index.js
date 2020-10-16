@@ -15,8 +15,8 @@ export default function Work() {
       <h2>Work</h2>
       <h3>
         Some tasty samples to snack{" "}
-        <span role="img" alt="Burrito emoji">
-          🌯
+        <span role="img" alt="Donut emoji">
+          🍩
         </span>{" "}
         on*
       </h3>

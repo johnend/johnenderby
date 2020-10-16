@@ -13,28 +13,45 @@ export default function F2P() {
   return (
     <section id="work" className={styles.work}>
       <h2>Free to play self service</h2>
-      <h3>A big chunk of cheese 🧀...work with upsides</h3>
+      <h3>
+        A big chunk of cheese{" "}
+        <span role="img" alt="Cheese emoji">
+          🧀
+        </span>
+        ...work with upsides
+      </h3>
       <div className={styles.content}>
         <p>
           FanDuel spends a lot of money on third party engineering teams, and as
           part of the focus in 2020 the company wanted to bring as much of that
           expertise in house as possible. One of the areas where we relied
-          heavily on third parties was our free to play games 🎲. When the new
-          vertical was spun up I jumped at the chance to work on a project like
-          this. Having designed big systems before (ACE360) I wanted to get
-          stuck into solving complex problems again and building our own
-          internal free to play game generation platform is certainly something
-          to get your teeth 🦷 stuck into.
+          heavily on third parties was our free to play games{" "}
+          <span role="img" alt="Dice emoji">
+            🎲
+          </span>
+          . When the new vertical was spun up I jumped at the chance to work on
+          a project like this. Having designed big systems before (ACE360) I
+          wanted to get stuck into solving complex problems again and building
+          our own internal free to play game generation platform is certainly
+          something to get your teeth{" "}
+          <span role="img" alt="Tooth emoji">
+            🦷
+          </span>{" "}
+          stuck into.
         </p>
         <p>
           With a number of complexities to build into the system (games that run
           as one offs, across multiple days, or with different interaction
-          types) there is a lot to account for, and a lot to do 🏗️. We're
-          building our MVP right now, so I can't go into too much detail here.
-          Suffice to say the MVP will be a big change for free to play games at
-          FanDuel, shortening the time to develop new games and ideas, and
-          giving company some space to reinvest the money we spend on third
-          parties 💸.
+          types) there is a lot to account for, and a lot to do{" "}
+          <span role="Crane emoji">🏗️</span>. We're building our MVP right now,
+          so I can't go into too much detail here. Suffice to say the MVP will
+          be a big change for free to play games at FanDuel, shortening the time
+          to develop new games and ideas, and giving company some space to
+          reinvest the money we spend on third parties{" "}
+          <span role="img" alt="Money with wings emoji">
+            💸
+          </span>
+          .
         </p>
       </div>
       <div className={styles.workExamples}>

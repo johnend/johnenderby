@@ -33,13 +33,20 @@ export default function NumberFire() {
           numberFire on the other hand was a company acquired by FanDuel that
           focused on helping players pick their lineups, and make better
           decisions. So it seemed to me that it would be a good idea to combine
-          these two apps! numberFire SCOUT was born 🍼, well as an idea if
-          nothing else! <br /> After presenting the idea to the company at the
-          end of the hackathon it turned out I wasn't the only one thinking that
-          same way 🤔. The very same head of content from the player videos
-          project spoke to me soon after the hackathon to get the idea onto the
-          numberFire roadmap, and while my exact designs might not be used, they
-          certainly got the ball rolling.
+          these two apps! numberFire SCOUT was born{" "}
+          <span role="img" alt="Baby's bottle emoji">
+            🍼
+          </span>
+          , well as an idea if nothing else! <br /> After presenting the idea to
+          the company at the end of the hackathon it turned out I wasn't the
+          only one thinking that same way{" "}
+          <span role="img" alt="Thinking face emoji">
+            🤔
+          </span>
+          . The very same head of content from the player videos project spoke
+          to me soon after the hackathon to get the idea onto the numberFire
+          roadmap, and while my exact designs might not be used, they certainly
+          got the ball rolling.
         </p>
       </div>
       <div className={styles.numberFireSCOUTImages}>
