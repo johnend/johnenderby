@@ -4,7 +4,7 @@ import Hero from "../components/sections/hero"
 import Process from "../components/sections/process"
 import Work from "../components/sections/work"
 import About from "../components/sections/about"
-import Resume from "../components/sections/resume"
+import ResumeCV from "../components/sections/resume"
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
         <About />
       </DefaultLayout>
       <DefaultLayout>
-        <Resume />
+        <ResumeCV />
       </DefaultLayout>
     </div>
   )
