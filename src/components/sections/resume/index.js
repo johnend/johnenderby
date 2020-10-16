@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./resume.module.scss"
 import PdfIcon from "../../../../static/images/svgComponents/pdfIcon"
-import Résumé from "../../../../static/images/pdfs/John Enderby Résumé.pdf"
+import Resume from "../../../../static/images/pdfs/John Enderby Resume.pdf"
 import CV from "../../../../static/images/pdfs/John Enderby CV.pdf"
 
 export default function Resume() {
