@@ -4,7 +4,7 @@ import HomeButton from "../components/homeButton"
 import Hero from "../components/fanDuelSections/Hero"
 import PlayerVideos from "../components/fanDuelSections/PlayerVideos"
 import NumberFire from "../components/fanDuelSections/NumberFire"
-import F2P from "../components/fanDuelSections/F2P"
+import F2P from "../components/fanDuelSections/f2p"
 
 export default function FanDuelPage() {
   return (
