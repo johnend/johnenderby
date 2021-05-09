@@ -2,10 +2,10 @@
 
 .cardContainer {
   min-height: 231px;
-  width: 330px;
+  max-width: 330px;
+  min-width: 200px;
   background-color: #fff;
   border-radius: 16px;
-  box-shadow: $cardShadow;
   padding: 16px;
   position: relative;
   h4 {

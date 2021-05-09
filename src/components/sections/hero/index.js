@@ -20,10 +20,10 @@ export default function Hero() {
           <ReactRotatingText
             items={[
               "product designer 🖍️",
-              "front end developer 💻",
-              "chef 🧑‍🍳",
-              "golfer 🏌️‍♂️",
               "husband 👫",
+              "weightlifter 🏋️‍♂️",
+              "golfer 🏌️‍♂️",
+              "chef 🧑‍🍳",
               "dog dad 🐶",
             ]}
           />{" "}

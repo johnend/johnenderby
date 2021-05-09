@@ -1,19 +1,20 @@
 .hero {
   display: flex;
   justify-content: space-between;
-  padding-top: 140px;
-  margin-bottom: 98px;
+  align-items: center;
+  height: 754px;
+  min-width: 100%;
   div {
-    margin-top: 128px;
+    padding: 0 0 72px;
     p {
-      margin-bottom: 13px;
+      margin-bottom: 8px;
     }
     h1 {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
   }
   img {
-    width: 455px;
-    height: 516px;
+    max-width: 455px;
+    max-height: 516px;
   }
 }

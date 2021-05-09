@@ -72,13 +72,15 @@ export default function Work() {
           className={cx(styles.workExample, styles.narrow, styles.fanDuel)}
           title="Where I am now. Hiding things because some projects aren't shipped yet 😄"
         >
-          <FanDuel className={styles.fDLogo} />
-          <p className={styles.fDTitle}>FanDuel</p>
+          <div className={styles.fDSplash}>
+              <FanDuel className={styles.fDLogo} />
+              <p className={styles.fDTitle}>FanDuel</p>
+          </div>
           <div className={styles.passwordProtected}>
             <span role="img" alt="padlock">
-              <Padlock stroke={"#101e26"} />
+              <Padlock stroke={"#FFFFFF"} />
             </span>
-            <p className="small">Password protected</p>
+            <p className="password">Password protected</p>
           </div>
         </a>
         <img

@@ -20,7 +20,7 @@ export const cardData = [
     icon: "RoundFlask",
     title: "Test & Refine",
     text:
-      "Designs and prototypes are all well and good, but are the solutions useful? Or are they all glitter and sparkle✨ with no substance? Some research will help us find out, then we can move forward.",
+      "Designs and prototypes are all well and good, but are the solutions useful? Or are they all glitter and sparkle with no substance? Some research will help us find out, then we can move forward.",
   },
   {
     color: "purple",

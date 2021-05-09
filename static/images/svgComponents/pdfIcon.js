@@ -59,7 +59,7 @@ export default function PdfIcon(props) {
         <path fill="#E65B8B" mask="url(#b)" d="M0 78H82V105H0z" />
         <text
           fill="#FFF"
-          fontFamily="SFUIText-Heavy, SF UI Text"
+          fontFamily="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;"
           fontSize={16}
           fontWeight={600}
           letterSpacing={-0.08}
