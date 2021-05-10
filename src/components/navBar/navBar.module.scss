@@ -2,14 +2,15 @@
 
 nav {
   background-color: $textDefault;
-  padding: 5px 18px;
+  padding: 2px;
   color: #fff;
   font-size: 16px;
-  max-width: 632px;
   border-radius: 32px;
   position: relative;
   height: 29px;
-  min-width: 632px;
+  display: flex;
+  justify-content: space-between;
+  width: 612px;
 }
 
 ul {
@@ -17,30 +18,26 @@ ul {
   justify-content: space-between;
   position: relative;
   z-index: 100;
+  width: 100%;
   li {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3px 16px;
+    height: 25px;
+    border-radius: 50px;
     a {
       color: white;
       text-decoration: none;
       &:hover {
-        color: $salmon;
+        color: $fuchsia;
       }
       &:visited {
         color: white;
         &:hover {
-          color: $salmon;
+          color: $bloo;
         }
       }
     }
   }
-}
-
-.linkIndicator {
-  position: absolute;
-  height: 22px;
-  width: 77px;
-  background-color: #fff;
-  top: 2px;
-  left: 2px;
-  border-radius: 22px;
 }

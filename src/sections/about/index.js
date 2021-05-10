@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./about.module.scss"
-import { socialData } from "../../../../static/content"
-import SocialCard from "../../socialCard"
+import { socialData } from "../../../static/content"
+import SocialCard from "../../components/socialCard"
 
 let socialBoxes = socialData.map(function (i, index) {
   return (

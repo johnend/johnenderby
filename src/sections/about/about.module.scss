@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+
+.about {
+  padding: 120px 0 80px 0;
+  h2 {
+    color: $purple;
+    margin-bottom: 16px;
+  }
+  h3 {
+    width: 496px;
+    margin-bottom: 24px;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  p {
+    order: 1;
+    align-self: stretch;
+    flex: 1 50%;
+    &:first-child {
+      margin-right: 12px;
+    }
+    &:last-child {
+      margin-left: 12px;
+    }
+  }
+}
+
+br {
+  display: block;
+  margin: 20px;
+  content: " ";
+}
+
+.socialBoxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 725px) {
+  .content {
+    flex-direction: column;
+    p {
+      &:first-child {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .socialBoxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px;
+  }
+}

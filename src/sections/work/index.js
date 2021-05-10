@@ -1,13 +1,13 @@
 import React from "react"
 import styles from "./work.module.scss"
 import cx from "classnames"
-import FanDuel from "../../../../static/images/svgComponents/fanDuelLogo"
-import Padlock from "../../../../static/images/svgComponents/padlock"
-import ace360 from "../../../../static/images/ace360.png"
-import lifeQuay from "../../../../static/images/lifeQuay.png"
-import aG from "../../../../static/images/assessorsGuild.png"
-import menziesCargo from "../../../../static/images/menziesCargo.png"
-import stAndrews from "../../../../static/images/stAndrews.png"
+import FanDuel from "../../../static/images/svgComponents/fanDuelLogo"
+import Padlock from "../../../static/images/svgComponents/padlock"
+import ace360 from "../../../static/images/ace360.png"
+import lifeQuay from "../../../static/images/lifeQuay.png"
+import aG from "../../../static/images/assessorsGuild.png"
+import menziesCargo from "../../../static/images/menziesCargo.png"
+import stAndrews from "../../../static/images/stAndrews.png"
 
 export default function Work() {
   return (
@@ -73,8 +73,8 @@ export default function Work() {
           title="Where I am now. Hiding things because some projects aren't shipped yet 😄"
         >
           <div className={styles.fDSplash}>
-              <FanDuel className={styles.fDLogo} />
-              <p className={styles.fDTitle}>FanDuel</p>
+            <FanDuel className={styles.fDLogo} />
+            <p className={styles.fDTitle}>FanDuel</p>
           </div>
           <div className={styles.passwordProtected}>
             <span role="img" alt="padlock">

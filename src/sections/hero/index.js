@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./hero.module.scss"
-import JohnAvatar from "../../../../static/images/svgComponents/john"
+import JohnAvatar from "../../../static/images/svgComponents/john"
 import ReactRotatingText from "react-rotating-text"
 
 export default function Hero() {

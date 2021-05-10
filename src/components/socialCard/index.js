@@ -5,8 +5,7 @@ import Dribbble from "../../../static/images/svgComponents/dribbble"
 import GitHub from "../../../static/images/svgComponents/github"
 import Twitter from "../../../static/images/svgComponents/twitter"
 import Spotify from "../../../static/images/svgComponents/spotify"
-import PSN from "../../../static/images/svgComponents/psn"
-import PokemonGo from "../../../static/images/svgComponents/pokemonGo"
+import LinkedIn from "../../../static/images/svgComponents/linkedIn"
 
 function Icon(x) {
   switch (x) {
@@ -18,10 +17,8 @@ function Icon(x) {
       return <Dribbble />
     case "Spotify":
       return <Spotify />
-    case "PSN":
-      return <PSN />
-    case "PokemonGo":
-      return <PokemonGo />
+    case "LinkedIn":
+      return <LinkedIn />
     default:
       return null
   }

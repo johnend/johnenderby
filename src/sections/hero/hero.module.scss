@@ -13,8 +13,30 @@
       margin-bottom: 16px;
     }
   }
-  img {
+  svg {
     max-width: 455px;
     max-height: 516px;
+  }
+}
+
+@media (max-width: 725px) {
+  .hero {
+    flex-direction: column;
+    padding: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    div {
+      padding: 0 0 80px;
+      p {
+        margin: 0;
+      }
+      h1 {
+        font-size: 40px;
+        margin: 0;
+      }
+    }
   }
 }

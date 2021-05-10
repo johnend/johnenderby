@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <nav>
       <ul>{navLinks}</ul>
-      {/* <div className={styles.linkIndicator}></div> */}
+      <div className={styles.linkIndicator}></div>
     </nav>
   )
 }
