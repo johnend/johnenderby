@@ -1,0 +1,99 @@
+@import "../../styles/variables.scss";
+
+.workExamples {
+  position: relative;
+  left: -50px;
+  top: -160px;
+  display: grid;
+  grid-template-columns: 250px 250px 214px 250px;
+  grid-template-rows: 100px 358px 100px 68px 150px 403px;
+  gap: 40px;
+  a {
+    text-decoration: none;
+    text-shadow: $captionShadow;
+    color: white;
+  }
+  .workExample {
+    color: white;
+  }
+  .narrow {
+    width: 250px;
+  }
+  .wide {
+    width: 504px;
+  }
+  .fanDuel {
+    grid-area: 3 / 2 / 4 / 2;
+    height: 242px;
+    background-color: #1f375b;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../static/images/fDBackground.png");
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 40px 0 24px 0;
+    .fDSplash {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .fDLogo {
+        margin-bottom: 8px;
+      }
+      .fDTitle {
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 40px;
+        text-shadow: $captionShadow;
+      }
+    }
+
+    .passwordProtected {
+      display: flex;
+      margin-top: auto;
+      align-items: center;
+      span {
+        margin-right: 8px;
+      }
+      p.password {
+        color: white;
+        text-shadow: $captionShadow;
+      }
+    }
+  }
+  .stAndrews {
+    grid-area: 1 / 4 / 2 / 4;
+  }
+  .lifeQuay {
+    grid-area: 2 / 1 / 3 / 1;
+  }
+  .ace360 {
+    grid-area: 2 / 2 / 2 / 3;
+  }
+  .aG {
+    grid-area: 4 / 1 / 6 / 1;
+  }
+  .menziesCargo {
+    grid-area: 3 / 3 / 4 / 5;
+  }
+}
+
+@media (max-width: 1120px) {
+  .workExamples {
+    transform: scale(0.9);
+    top: -200px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .workExamples {
+    display: none;
+  }
+}

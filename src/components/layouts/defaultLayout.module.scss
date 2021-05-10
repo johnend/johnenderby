@@ -19,6 +19,7 @@
   align-items: center;
   padding: 0 16px;
   width: 1024px;
+  overflow: auto;
 }
 
 .skewHome {
@@ -44,4 +45,16 @@
 
 .skewBack {
   transform: rotate(6deg);
+}
+
+@media (max-width: 1023px) {
+  .skewHome {
+    margin-top: 0;
+  }
+  .sectionWrapper {
+    justify-content: unset;
+  }
+  // .contentWrapper {
+  //   overflow: hidden;
+  // }
 }

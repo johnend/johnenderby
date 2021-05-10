@@ -7,7 +7,7 @@
     margin-bottom: 16px;
   }
   h3 {
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 24px;
   }
 }
@@ -54,5 +54,10 @@
 @media (max-width: 650px) {
   .processBoxes {
     grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  }
+}
+@media (max-width: 450px) {
+  .processBoxes {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
 }
