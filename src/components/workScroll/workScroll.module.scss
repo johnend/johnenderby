@@ -6,6 +6,15 @@
   overflow-x: scroll;
   overflow-y: hidden;
   max-width: min-content;
+  box-shadow: inset 4px 0px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f3f7;
+  border-radius: 8px;
+  padding: 8px 0;
+  &::after,
+  &::before {
+    content: "";
+    min-width: 8px;
+  }
   a {
     display: flex;
     flex-direction: column;
@@ -18,6 +27,9 @@
     margin-right: 16px;
     overflow-y: clip;
     padding: 0 8px;
+    &:last-child {
+      margin: 0;
+    }
     h3 {
       margin: 8px 0;
       text-align: center;
