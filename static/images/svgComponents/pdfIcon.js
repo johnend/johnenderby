@@ -56,7 +56,7 @@ export default function PdfIcon(props) {
           mask="url(#b)"
           rx={3}
         />
-        <path fill="#E65B8B" mask="url(#b)" d="M0 78H82V105H0z" />
+        <path fill="#1f1f1f" mask="url(#b)" d="M0 78H82V105H0z" />
         <text
           fill="#FFF"
           fontFamily="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;"
@@ -65,8 +65,8 @@ export default function PdfIcon(props) {
           letterSpacing={-0.08}
           mask="url(#b)"
         >
-          <tspan x={25} y={97}>
-            {"PDF"}
+          <tspan x={10} y={97}>
+            {"Résumé"}
           </tspan>
         </text>
       </g>

@@ -9,46 +9,55 @@ import aG from "../../../static/images/assessorsGuild.png"
 import menziesCargo from "../../../static/images/menziesCargo.png"
 import stAndrews from "../../../static/images/stAndrews.png"
 
-export default function WorkGrid() {
+export default function WorkGrid(props) {
   return (
     <div className={styles.workExamples}>
       <a
-        href="https://www.lifequay.com/"
-        title="LifeQuay: hassle free management of your important documents and processes"
+        href="#"
+        title="Hassle free management of your important documents and processes 🗄"
         className={styles.lifeQuay}
+        role="button"
+        onClick={props.handleClick}
       >
         <img
           className={cx(styles.workExample, styles.narrow)}
           src={lifeQuay}
           alt="LifeQuay dashboard image on mobile"
+          id="LifeQuay"
         />
       </a>
       <a
-        href="https://ace360.org/features/"
-        title="ACE360's features and benefits"
+        href="#"
+        title="Apprenticeship and advanced qualification management system 🎓"
         className={styles.ace360}
+        role="button"
+        onClick={props.handleClick}
       >
         <img
           className={cx(styles.workExample, styles.wide)}
           src={ace360}
           alt="ACE360 apprentice record on desktop"
+          id="ACE360"
         />
       </a>
       <a
-        href="https://www.standrews.com/play/before-your-round/st-andrews-links-app"
-        title="The home of the app, on the home of golf's website"
+        href="#"
+        title="A companion app for the home of golf ⛳"
         className={styles.stAndrews}
+        role="button"
+        onClick={props.handleClick}
       >
         <img
           className={cx(styles.workExample, styles.narrow)}
           src={stAndrews}
           alt="St Andrews links trust app homepage on mobile"
+          id="StAndrews"
         />
       </a>
       <a
         href="/FanDuel"
         className={cx(styles.workExample, styles.narrow, styles.fanDuel)}
-        title="Where I am now. Hiding things because some projects aren't shipped yet 😄"
+        title="Sports betting and Daily Fantasy. Password protected 🔒"
       >
         <div className={styles.fDSplash}>
           <FanDuel className={styles.fDLogo} />
@@ -61,21 +70,32 @@ export default function WorkGrid() {
           <p className="password">Password protected</p>
         </div>
       </a>
-      <img
-        className={cx(styles.workExample, styles.wide, styles.menziesCargo)}
-        src={menziesCargo}
-        alt="Menzies cargo dashboard on desktop"
-        title="Ask me about this one, no public link available 😄"
-      />
       <a
-        href="https://assessorsguild.co.uk/"
-        title="Professional memberships for apprenticeship assessments from the Assessors Guild"
+        href="#"
+        title="An air freight management platform for really busy airports ✈️"
+        className={styles.menziesCargo}
+        role="button"
+        onClick={props.handleClick}
+      >
+        <img
+          className={cx(styles.workExample, styles.wide, styles.menziesCargo)}
+          src={menziesCargo}
+          alt="Menzies cargo dashboard on desktop"
+          id="Menzies"
+        />
+      </a>
+      <a
+        href="#"
+        title="Professional memberships for apprenticeship assessments from the Assessors Guild 💼"
         className={styles.aG}
+        role="button"
+        onClick={props.handleClick}
       >
         <img
           className={cx(styles.workExample, styles.narrow, styles.aG)}
           src={aG}
           alt="An example of an Assessors Guild membership level"
+          id="AG"
         />
       </a>
     </div>

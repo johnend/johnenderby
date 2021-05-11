@@ -27,7 +27,7 @@
   position: relative;
   z-index: 100;
   width: 100%;
-  margin-top: -1065px;
+  margin-top: -825px;
   margin-bottom: 120px;
   padding: 0 200%;
 }
@@ -55,5 +55,11 @@
   }
   .contentWrapper {
     overflow: auto;
+  }
+}
+
+@media (max-width: 534px) {
+  .skewHome {
+    margin-bottom: 80px;
   }
 }

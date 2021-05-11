@@ -84,7 +84,7 @@ export const socialData = [
   // },
 ]
 
-export const navItems = [
+export const mainNavLinks = [
   {
     title: "Home",
     id: "#home",
@@ -104,5 +104,64 @@ export const navItems = [
   {
     title: "Résumé",
     id: "#resume",
+  },
+]
+
+export const caseStudies = [
+  {
+    lifeQuay: {
+      meta: {
+        projectName: "LifeQuay",
+        website: "https://www.lifequay.com/",
+        role: "Lead Designer",
+        productTLDR:
+          "LifeQuay allows you to manage your daily home & life administration plus those big one-off transactions from a single place while also keeping all of your important documents safe and accessible.",
+      },
+    },
+  },
+  {
+    ace360: {
+      meta: {
+        projectName: "ACE360",
+        website: "https://ace360.org/",
+        role: "Lead Designer, Product Owner (Phase 2)",
+        productTLDR:
+          "ACE360 is an online apprentice management system born from need to develop a bespoke system after the government deregulation of the industry in 2017. Having been the sole provider of this kind of system previously the Federation of Industry Sector Skills & Standards (FISSS) sought capitalise on their position in the market.",
+      },
+    },
+  },
+  {
+    stAndrews: {
+      meta: {
+        projectName: "St Andrews Links",
+        website:
+          "https://www.standrews.com/play/before-your-round/st-andrews-links-app",
+        role: "Lead Designer",
+        productTLDR:
+          "An overhaul of an existing, outdated app that was suffering badly from poor user experience and a visual design that was not on brand. The mobile app was a way for the Links Trust to provide a personalised experience to visiting golfers and members alike.",
+      },
+    },
+  },
+  {
+    menzies: {
+      meta: {
+        projectName: "Menzies Cargo",
+        website: "#",
+        role: "Lead Designer",
+        productTLDR:
+          "Menzies is an airport cargo, fuelling, and ground services company operating in over 200 locations globally. With cargo processing happening almost entirely manually our challenge was to modernise their error prone and slow workflow.",
+      },
+    },
+  },
+  {
+    AG: {
+      meta: {
+        projectName: "The Assessors Guild",
+        website: "#",
+        role: "Lead Designer (Phase 2)",
+        productTLDR:
+          "As part of their work to capitalise on the market with ACE360 FISSS sought to own the accreditation of assessors within the educational space. After one of my design team left to pursue another opportunity I stepped in to finalise the application procedure for assessors that were new to the guild.",
+      },
+    },
   },
 ]

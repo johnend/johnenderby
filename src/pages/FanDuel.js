@@ -1,6 +1,6 @@
 import React from "react"
 import DefaultLayout from "../components/layouts/defaultLayout"
-import HomeButton from "../components/homeButton"
+import CustomButton from "../components/customButton"
 import Hero from "../components/fanDuelSections/Hero"
 import PlayerVideos from "../components/fanDuelSections/PlayerVideos"
 import NumberFire from "../components/fanDuelSections/NumberFire"
@@ -17,7 +17,7 @@ export default function FanDuelPage() {
         alignItems: "center",
       }}
     >
-      <HomeButton />
+      <CustomButton buttonText="Home" buttonIcon="←" />
       <DefaultLayout variant="white">
         <Hero />
       </DefaultLayout>

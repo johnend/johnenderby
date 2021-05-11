@@ -19,9 +19,6 @@
   height: 105px;
   width: 82px;
   border-radius: 4px;
-  &:hover {
-    box-shadow: $salmonGlow;
-  }
 }
 
 .resumeDownloadLinks {
@@ -38,7 +35,45 @@
   a:visited {
     color: $salmon;
   }
-  a[title="John Enderby Résumé"] {
+  a[title="John Enderby Résumé - Notion version"] {
     margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .resume {
+    h3 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: 613px) {
+  .resume {
+    h3 {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+}
+
+@media (max-width: 534px) {
+  .resume {
+    flex-direction: column;
+    .content {
+      margin-bottom: 16px;
+    }
+    .pdfIconContainer {
+      margin-left: 0;
+      width: 40px;
+      height: 52px;
+      svg {
+        width: 40px;
+        height: 52px;
+      }
+    }
+    h3 {
+      display: none;
+    }
   }
 }
