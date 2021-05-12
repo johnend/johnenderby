@@ -1,13 +1,13 @@
 @import "../../styles/variables.scss";
 
-header {
+.headerContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: calc(100vw - 32px);
+  width: 1024px;
   padding: 0 16px;
   margin-top: 40px;
 }
@@ -25,15 +25,21 @@ header {
 //   );
 // }
 
+@media (max-width: 1023px) {
+  .headerContainer {
+    width: calc(100vw - 32px);
+  }
+}
+
 @media (max-width: 750px) {
-  header {
+  .headerContainer {
     justify-content: center;
     margin-top: 24px;
   }
 }
 
 @media (max-width: 522px) {
-  header {
+  .headerContainer {
     display: none;
   }
 }

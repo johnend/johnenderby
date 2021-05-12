@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-nav {
+.navContainer {
   background-color: $textDefault;
   padding: 2px;
   color: #fff;
@@ -10,7 +10,7 @@ nav {
   height: 29px;
   display: flex;
   justify-content: space-between;
-  width: 612px;
+  align-items: center;
 }
 
 ul {
@@ -35,7 +35,7 @@ ul {
       &:visited {
         color: white;
         &:hover {
-          color: $bloo;
+          color: $fuchsia;
         }
       }
     }
