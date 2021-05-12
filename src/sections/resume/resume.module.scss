@@ -15,10 +15,16 @@
 .pdfIconContainer {
   margin-right: 16px;
   margin-left: 16px;
-  box-shadow: $cardShadow;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   height: 105px;
   width: 82px;
   border-radius: 4px;
+  &:hover {
+    box-shadow: $cardShadow;
+  }
+  &:active {
+    box-shadow: none;
+  }
 }
 
 .resumeDownloadLinks {

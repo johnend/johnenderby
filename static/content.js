@@ -87,7 +87,7 @@ export const socialData = [
 export const mainNavLinks = [
   {
     title: "Home",
-    id: "#home",
+    id: "/",
   },
   {
     title: "My process",
@@ -104,6 +104,13 @@ export const mainNavLinks = [
   {
     title: "Résumé",
     id: "#resume",
+  },
+]
+
+export const homeNavLink = [
+  {
+    title: "Home",
+    id: "/",
   },
 ]
 
@@ -124,7 +131,7 @@ export const caseStudies = [
       meta: {
         projectName: "ACE360",
         website: "https://ace360.org/",
-        role: "Lead Designer, Product Owner (Phase 2)",
+        role: "Lead Designer & Product Owner (Phase 2)",
         productTLDR:
           "ACE360 is an online apprentice management system born from need to develop a bespoke system after the government deregulation of the industry in 2017. Having been the sole provider of this kind of system previously the Federation of Industry Sector Skills & Standards (FISSS) sought capitalise on their position in the market.",
       },
@@ -146,7 +153,7 @@ export const caseStudies = [
     menzies: {
       meta: {
         projectName: "Menzies Cargo",
-        website: "#",
+        website: null,
         role: "Lead Designer",
         productTLDR:
           "Menzies is an airport cargo, fuelling, and ground services company operating in over 200 locations globally. With cargo processing happening almost entirely manually our challenge was to modernise their error prone and slow workflow.",
@@ -157,7 +164,7 @@ export const caseStudies = [
     AG: {
       meta: {
         projectName: "The Assessors Guild",
-        website: "#",
+        website: null,
         role: "Lead Designer (Phase 2)",
         productTLDR:
           "As part of their work to capitalise on the market with ACE360 FISSS sought to own the accreditation of assessors within the educational space. After one of my design team left to pursue another opportunity I stepped in to finalise the application procedure for assessors that were new to the guild.",

@@ -15,6 +15,11 @@
   }
   .workExample {
     color: white;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.22));
+      transform: scale(1.05);
+    }
   }
   .narrow {
     width: 250px;
@@ -37,6 +42,9 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     padding: 40px 0 24px 0;
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+    }
     .fDSplash {
       display: flex;
       flex-direction: column;

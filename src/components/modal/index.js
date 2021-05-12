@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./modal.module.scss"
 import cx from "classnames"
 import ace360 from "../../../static/images/ace360.png"
@@ -12,27 +12,15 @@ export default function Modal(props) {
           e.stopPropagation()
         }}
       >
-        <div className={styles.left}>
-          <img src={ace360} alt="" />
-        </div>
-        <div className={styles.right}>
-          <button aria-label="Close modal" onClick={props.buttonClick}>
-            <span>╳</span>Close
-          </button>
-          <h3>Project Name</h3>
-          <h3>Website</h3>
-          <h3>Role</h3>
-          <p>
-            Tucker eased himself into clans with just a little cavity decorated.
-            Big-Boned says Waters says Waters scientists announced Thursday in a
-            South Africa. Dust human evolution two days and to keep an eye. Over
-            we want to travel for our early 1990s,. Humans summer the poles How
-            these are the sand storm that sperm. Half side is a lot of one
-            scientist in. Past African cave represents a trove of fossil record
-            is a tiny brain. Them as they use tools they were hoping to hunt.
-            Own until Wednesday although meteorologists at least seven countries
-            in recent.
-          </p>
+        <button aria-label="Close modal" onClick={props.buttonClick}>
+          <span>╳</span>Close
+        </button>
+        <div className={styles.content}>
+          <a href={props.website}>
+            <h1>{props.projectName}</h1>
+          </a>
+          <h3>{props.role}</h3>
+          <p>{props.tldr}</p>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styles from "./work.module.scss"
 import cx from "classnames"
 import WorkGrid from "../../components/workGrid"
@@ -8,6 +8,12 @@ import Modal from "../../components/modal"
 
 export default function Work() {
   const [showModal, setShowModal] = useState(false)
+
+  let [projectName, setProjectName] = useState("Project name")
+  let [website, setWebsite] = useState("https://example.com")
+  let [role, setRole] = useState("Lead designer, product owner")
+  let [tldr, settldr] = useState("Some text about the project")
+
   let modalData = null
 
   const openModal = e => {
@@ -15,21 +21,33 @@ export default function Work() {
 
     let clicked = e.target.id
 
+    let caseStudyDataSet = x => {
+      setProjectName(modalData.meta.projectName)
+      setWebsite(modalData.meta.website)
+      setRole(modalData.meta.role)
+      settldr(modalData.meta.tldr)
+    }
+
     switch (clicked) {
       case "LifeQuay":
         modalData = caseStudies[0].lifeQuay
+        caseStudyDataSet(modalData)
         break
       case "ACE360":
         modalData = caseStudies[1].ace360
+        caseStudyDataSet(modalData)
         break
       case "StAndrews":
         modalData = caseStudies[2].stAndrews
+        caseStudyDataSet(modalData)
         break
       case "Menzies":
         modalData = caseStudies[3].menzies
+        caseStudyDataSet(modalData)
         break
       case "AG":
         modalData = caseStudies[4].AG
+        caseStudyDataSet(modalData)
         break
       default:
         return null
@@ -37,8 +55,18 @@ export default function Work() {
     }
 
     setShowModal(prev => !prev)
-    console.log(modalData)
+
+    console.log(projectName)
+    console.log(website)
+    console.log(role)
+    console.log(tldr)
   }
+
+  useEffect(() => {
+    showModal
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset")
+  }, [showModal])
 
   return (
     <section id="work" className={styles.work}>
@@ -69,6 +97,10 @@ export default function Work() {
         <Modal
           backgroundClick={() => setShowModal(false)}
           buttonClick={() => setShowModal(prev => !prev)}
+          projectName={projectName}
+          website={website}
+          role={role}
+          tldr={tldr}
         />
       ) : null}
     </section>

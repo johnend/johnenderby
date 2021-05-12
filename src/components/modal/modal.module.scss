@@ -14,48 +14,58 @@
   .modalContainer {
     height: 75vh;
     width: 75vw;
+    max-width: 1024px;
     display: flex;
     color: $textDefault;
     border-radius: 8px;
-    overflow: clip;
-    .left {
-      background-color: $fuchsia;
-      width: 40%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 80%;
-        height: auto;
+    overflow: scroll;
+    background-color: white;
+    position: relative;
+    box-shadow: $cardShadow;
+    button {
+      border: 1px solid $salmon;
+      border-radius: 4px;
+      font-size: 16px;
+      padding: 8px 16px;
+      color: $salmon;
+      background: none;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      cursor: pointer;
+      &:hover {
+        span {
+          animation: spin 1.5s infinite;
+        }
+      }
+      span {
+        display: inline-block;
+        margin-right: 4px;
       }
     }
-    .right {
-      background-color: white;
-      width: 60%;
+    .content {
+      width: 100%;
       height: auto;
-      position: relative;
       padding: 48px 32px;
-      button {
-        border: 1px solid $salmon;
-        border-radius: 4px;
-        font-size: 16px;
-        padding: 16px 24px;
-        color: $salmon;
-        background: none;
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        cursor: pointer;
-        &:hover {
-          span {
-            animation: spin 1.5s infinite;
-          }
-        }
-        span {
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        h1 {
           display: inline-block;
-          margin-right: 4px;
         }
+      }
+      a[href^="http"] {
+        color: $fuchsia;
+        &::after {
+          content: "🔗";
+          margin-left: 8px;
+          font-size: 24px;
+        }
+      }
+      a:not([href]) {
+        color: $purple;
+        cursor: default;
       }
     }
   }
@@ -70,5 +80,20 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .modalOverlay {
+    .modalContainer {
+      width: 768px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .modalOverlay {
+    .modalContainer {
+      width: calc(100vw - 32px);
+    }
   }
 }

@@ -4,7 +4,19 @@
 import React, { useState } from "react"
 import { setSessionPassword } from "@mkitio/gatsby-theme-password-protect/src/utils/utils"
 import styles from "./passwordProtect.module.scss"
-import HomeButton from "../../../components/homeButton"
+import { Link } from "gatsby"
+import { homeNavLink } from "../../../../static/content"
+import Header from "../../../components/header"
+
+let navLinks = homeNavLink.map(function (i, index) {
+  return (
+    <li key={index}>
+      <Link to={i.id} id={i.id}>
+        {i.title}
+      </Link>
+    </li>
+  )
+})
 
 const PasswordProtect = () => {
   const [password, setPassword] = useState("")
@@ -17,7 +29,7 @@ const PasswordProtect = () => {
 
   return (
     <div className={styles.wrapper}>
-      <HomeButton />
+      <Header navItems={navLinks} />
       <div className={styles.formContainer}>
         <h3>Hold up ✋, this link is password protected</h3>
         <p>Please enter the password to continue</p>

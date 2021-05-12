@@ -5,18 +5,31 @@ import Hero from "../components/fanDuelSections/Hero"
 import PlayerVideos from "../components/fanDuelSections/PlayerVideos"
 import NumberFire from "../components/fanDuelSections/NumberFire"
 import F2P from "../components/fanDuelSections/f2p"
+import { Link } from "gatsby"
+import { homeNavLink } from "../../static/content"
+import Header from "../components/header"
+
+let navLinks = homeNavLink.map(function (i, index) {
+  return (
+    <li key={index}>
+      <Link to={i.id} id={i.id}>
+        {i.title}
+      </Link>
+    </li>
+  )
+})
 
 export default function FanDuelPage() {
   return (
     <div
       style={{
         width: "100vw",
-        overflow: "hidden",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
       }}
     >
+      <Header navItems={navLinks} />
       <CustomButton buttonText="Home" buttonIcon="←" />
       <DefaultLayout variant="white">
         <Hero />
