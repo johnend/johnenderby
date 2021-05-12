@@ -16,36 +16,42 @@
     width: 75vw;
     max-width: 1024px;
     display: flex;
+    flex-direction: column;
     color: $textDefault;
     border-radius: 8px;
     overflow: scroll;
     background-color: white;
     position: relative;
     box-shadow: $cardShadow;
-    button {
-      border: 1px solid $salmon;
-      border-radius: 4px;
-      font-size: 16px;
-      padding: 8px 16px;
-      color: $salmon;
-      background: none;
+    overflow-y: scroll;
+    .buttonWrapper {
+      display: flex;
       position: absolute;
       top: 16px;
-      right: 16px;
-      cursor: pointer;
-      &:hover {
-        span {
-          animation: spin 1.5s infinite;
+      right: 111px;
+      .closeButton {
+        border: 1px solid $salmon;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 8px 16px;
+        color: $salmon;
+        background: none;
+        position: fixed;
+        cursor: pointer;
+        &:hover {
+          span {
+            animation: spin 1.5s infinite;
+          }
         }
-      }
-      span {
-        display: inline-block;
-        margin-right: 4px;
+        span {
+          display: inline-block;
+          margin-right: 4px;
+        }
       }
     }
     .content {
       width: 100%;
-      height: auto;
+      height: 708px;
       padding: 48px 32px;
       a {
         text-decoration: none;
@@ -54,18 +60,6 @@
         h1 {
           display: inline-block;
         }
-      }
-      a[href^="http"] {
-        color: $fuchsia;
-        &::after {
-          content: "🔗";
-          margin-left: 8px;
-          font-size: 24px;
-        }
-      }
-      a:not([href]) {
-        color: $purple;
-        cursor: default;
       }
     }
   }

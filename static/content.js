@@ -76,12 +76,6 @@ export const socialData = [
     subtitle: "All business, some of the time 👔",
     link: "https://www.linkedin.com/in/johnenderby/",
   },
-  // {
-  //   network: "Pokémon Go",
-  //   iconName: "PokemonGo",
-  //   sharingInfo: "1601 4117 6529",
-  //   subtitle: "Nintendo love making this easy!",
-  // },
 ]
 
 export const mainNavLinks = [
@@ -119,10 +113,19 @@ export const caseStudies = [
     lifeQuay: {
       meta: {
         projectName: "LifeQuay",
+        projectColor: "#05547B",
         website: "https://www.lifequay.com/",
         role: "Lead Designer",
-        productTLDR:
-          "LifeQuay allows you to manage your daily home & life administration plus those big one-off transactions from a single place while also keeping all of your important documents safe and accessible.",
+        client: "LifeQuay Ltd.",
+        projectTLDR:
+          "Helping individuals work with professional service providers more efficiently while keeping all their important documents safe",
+        splashImage: "./images/bubbles.png",
+      },
+      intro: {
+        what:
+          "A product that helps alleviate the stress of important processes involving professional services e.g. buying a house, or writing a will. Providing clarity to the consumer at all stages, and allowing straight-forward management for professionals.",
+        why:
+          "The LifeQuay team understand that there is enough complexity in people's lives and so want to help alleviate frustration with some of the big administrative transactions and processes you might do in your life, as well as keeping all your important documents safe, but easily accessible by your professional service providers.",
       },
     },
   },
@@ -130,10 +133,19 @@ export const caseStudies = [
     ace360: {
       meta: {
         projectName: "ACE360",
+        projectColor: "#DC4404",
         website: "https://ace360.org/",
-        role: "Lead Designer & Product Owner (Phase 2)",
-        productTLDR:
-          "ACE360 is an online apprentice management system born from need to develop a bespoke system after the government deregulation of the industry in 2017. Having been the sole provider of this kind of system previously the Federation of Industry Sector Skills & Standards (FISSS) sought capitalise on their position in the market.",
+        role: "Lead Designer & Phase 2 Product Owner",
+        client: "Federation of Industry Sector Skills & Standards (FISSS)",
+        projectTLDR:
+          "Cost effective apprenticeship management that connects all the right stakeholders at the right time",
+        splashImage: "./images/handbooks.png",
+      },
+      intro: {
+        what:
+          "A full service, bespoke, apprenticeship management system capable of connecting educators with assessment organisations, as well as giving apprentices a view of their apprenticeship’s progress.",
+        why:
+          "FISSS had been the only provider in this space since their founding and as a result was able to operate with complete freedom under a government contract. That all came to an end in 2017 when the industry was deregulated and FISSS needed to quickly take advantage of the position, and relationships, they had established.",
       },
     },
   },
@@ -141,22 +153,40 @@ export const caseStudies = [
     stAndrews: {
       meta: {
         projectName: "St Andrews Links",
+        projectColor: "#A88D6D",
         website:
           "https://www.standrews.com/play/before-your-round/st-andrews-links-app",
         role: "Lead Designer",
-        productTLDR:
-          "An overhaul of an existing, outdated app that was suffering badly from poor user experience and a visual design that was not on brand. The mobile app was a way for the Links Trust to provide a personalised experience to visiting golfers and members alike.",
+        client: "St Andrews Links Trust Registered Charity",
+        projectTLDR:
+          "Giving visiting, and local golfers, a personalised companion app for the home of golf",
+        splashImage: "./images/golf-ball.png",
+      },
+      intro: {
+        what:
+          "A comprehensive digital solution improving the golfing experience for visitors and locals.",
+        why:
+          "With over 250,000 rounds of golf played each year across 7 courses, St Andrews is a busy place. The navigation of the courses and their key locations can be difficult for visitors as sometimes where you check in isn't close to where you tee off.",
       },
     },
   },
   {
     menzies: {
       meta: {
-        projectName: "Menzies Cargo",
+        projectName: "Cargo",
+        projectColor: "#28498b",
         website: null,
         role: "Lead Designer",
-        productTLDR:
-          "Menzies is an airport cargo, fuelling, and ground services company operating in over 200 locations globally. With cargo processing happening almost entirely manually our challenge was to modernise their error prone and slow workflow.",
+        client: "Menzies Aviation and John Menzies plc",
+        projectTLDR:
+          "Tracking air freight into, and out of, some of the world's busiest airports. All without paper",
+        splashImage: "./images/plane.png",
+      },
+      intro: {
+        what:
+          "An alternative digital solution to outdated and paper based air freight logistics systems",
+        why:
+          "Data reporting was slow and cumbersome with manual tracking and recording of air freight arrivals and departures. This often resulted in digital systems not being updated until much of the cargo had already been moved onto another flight making tracking complex and difficult.",
       },
     },
   },
@@ -164,10 +194,19 @@ export const caseStudies = [
     AG: {
       meta: {
         projectName: "The Assessors Guild",
+        projectColor: "#1f1f1f",
         website: null,
         role: "Lead Designer (Phase 2)",
-        productTLDR:
-          "As part of their work to capitalise on the market with ACE360 FISSS sought to own the accreditation of assessors within the educational space. After one of my design team left to pursue another opportunity I stepped in to finalise the application procedure for assessors that were new to the guild.",
+        client: "Federation of Industry Sector Skills & Standards (FISSS)",
+        projectTLDR:
+          "Ensuring those responsible for assessing apprenticeships are fully licensed to do so",
+        splashImage: "./images/wreath.png",
+      },
+      intro: {
+        what:
+          "A full application and payment procedure for assessors to become accredited with the guild.",
+        why:
+          "Prior to deregulation in 2017 FISSS were the only monitor of apprenticeships within England and Wales. After deregulation FISSS found themselves in a position to not only capitalise on their management of apprenticeships, but also the accreditation of assessors.",
       },
     },
   },

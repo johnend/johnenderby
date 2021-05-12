@@ -1,5 +1,5 @@
 import React from "react"
-import DefaultLayout from "../components/layouts/defaultLayout"
+import DefaultLayout from "../layouts/pageLayouts/defaultLayout"
 import CustomButton from "../components/customButton"
 import Hero from "../components/fanDuelSections/Hero"
 import PlayerVideos from "../components/fanDuelSections/PlayerVideos"

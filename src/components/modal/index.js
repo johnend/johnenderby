@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import styles from "./modal.module.scss"
 import cx from "classnames"
 import ace360 from "../../../static/images/ace360.png"
+import Splash from "../../layouts/modalLayouts/splash"
+import Intro from "../../layouts/modalLayouts/intro"
 
 export default function Modal(props) {
   return (
@@ -12,16 +14,29 @@ export default function Modal(props) {
           e.stopPropagation()
         }}
       >
-        <button aria-label="Close modal" onClick={props.buttonClick}>
-          <span>╳</span>Close
-        </button>
-        <div className={styles.content}>
-          <a href={props.website}>
-            <h1>{props.projectName}</h1>
-          </a>
-          <h3>{props.role}</h3>
-          <p>{props.tldr}</p>
+        <div className={styles.buttonWrapper}>
+          <button
+            aria-label="Close modal"
+            onClick={props.buttonClick}
+            className={styles.closeButton}
+          >
+            <span>╳</span>Close
+          </button>
         </div>
+        <Splash
+          projectName={props.projectName}
+          projectColor={props.projectColor}
+          website={props.website}
+          role={props.role}
+          client={props.client}
+          projectTLDR={props.projectTLDR}
+          splashBgImage={props.splashBgImage}
+        />
+        <Intro
+          projectColor={props.projectColor}
+          projectWhat={props.projectWhat}
+          projectWhy={props.projectWhy}
+        />
       </div>
     </div>
   )

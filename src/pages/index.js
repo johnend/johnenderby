@@ -1,5 +1,5 @@
 import React from "react"
-import DefaultLayout from "../components/layouts/defaultLayout"
+import DefaultLayout from "../layouts/pageLayouts/defaultLayout"
 import Hero from "../sections/hero"
 import Process from "../sections/process"
 import Work from "../sections/work"

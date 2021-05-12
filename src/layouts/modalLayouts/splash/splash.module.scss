@@ -1,0 +1,75 @@
+@import "../../../styles/variables.scss";
+
+.splashContainer {
+  display: flex;
+  min-height: 100%;
+  max-width: 100%;
+  background-color: white;
+  .splashImage {
+    min-width: 33%;
+    background-color: $textDefault;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 22%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    svg {
+      width: 250px;
+      height: auto;
+    }
+  }
+  .splashContent {
+    min-width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 160px 16px 16px 40px;
+    .introContent {
+      display: flex;
+      flex-direction: column;
+      &:first-child {
+        margin-bottom: 160px;
+      }
+    }
+    .projectName {
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      text-decoration: none;
+      &[href^="http"] {
+        &::after {
+          content: "🔗";
+          margin-left: 8px;
+          font-size: 16px;
+        }
+      }
+      &:not([href]) {
+        cursor: default;
+      }
+    }
+    .projectTLDR {
+      font-size: 24px;
+      line-height: 125%;
+      max-width: 512px;
+      font-weight: 300;
+    }
+    strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 16px;
+    }
+    .role {
+      margin-right: 4px;
+    }
+    .role,
+    .projectRole {
+      display: inline-block;
+    }
+  }
+}

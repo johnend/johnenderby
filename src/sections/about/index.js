@@ -77,7 +77,7 @@ export default function About() {
           <span role="img" alt="Baseball emoji">
             ⚾
           </span>{" "}
-          .
+          . In reality that's not always possible though.
           <br />
           Outside of my day to day I have a pretty healthy appetite for hobbies
           and activities. I enjoy lifting heavy things in the gym{" "}

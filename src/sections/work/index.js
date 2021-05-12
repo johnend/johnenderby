@@ -9,45 +9,63 @@ import Modal from "../../components/modal"
 export default function Work() {
   const [showModal, setShowModal] = useState(false)
 
+  // Data object
+  let modalData = null
+
+  // Meta data getters and setters
   let [projectName, setProjectName] = useState("Project name")
+  let [projectColor, setProjectColor] = useState("#bada55")
   let [website, setWebsite] = useState("https://example.com")
   let [role, setRole] = useState("Lead designer, product owner")
-  let [tldr, settldr] = useState("Some text about the project")
+  let [client, setClient] = useState("Client name")
+  let [projectTLDR, setProjectTLDR] = useState("Some text about the project")
+  let [splashBgImage, setsplashBgImage] = useState("")
 
-  let modalData = null
+  //Intro data getters and setters
+  let [projectWhat, setProjectWhat] = useState("What are we doing?")
+  let [projectWhy, setProjectWhy] = useState("Why are we doing it?")
 
   const openModal = e => {
     e.preventDefault()
 
     let clicked = e.target.id
 
-    let caseStudyDataSet = x => {
+    // Data setting
+    let caseStudyMetaData = x => {
+      //Meta data
       setProjectName(modalData.meta.projectName)
+      setProjectColor(modalData.meta.projectColor)
       setWebsite(modalData.meta.website)
       setRole(modalData.meta.role)
-      settldr(modalData.meta.tldr)
+      setClient(modalData.meta.client)
+      setProjectTLDR(modalData.meta.projectTLDR)
+      setsplashBgImage(modalData.meta.splashImage)
+
+      //IntroData
+      setProjectWhat(modalData.intro.what)
+      setProjectWhy(modalData.intro.why)
     }
 
     switch (clicked) {
       case "LifeQuay":
         modalData = caseStudies[0].lifeQuay
-        caseStudyDataSet(modalData)
+        caseStudyMetaData(modalData)
         break
       case "ACE360":
         modalData = caseStudies[1].ace360
-        caseStudyDataSet(modalData)
+        caseStudyMetaData(modalData)
         break
       case "StAndrews":
         modalData = caseStudies[2].stAndrews
-        caseStudyDataSet(modalData)
+        caseStudyMetaData(modalData)
         break
       case "Menzies":
         modalData = caseStudies[3].menzies
-        caseStudyDataSet(modalData)
+        caseStudyMetaData(modalData)
         break
       case "AG":
         modalData = caseStudies[4].AG
-        caseStudyDataSet(modalData)
+        caseStudyMetaData(modalData)
         break
       default:
         return null
@@ -55,17 +73,12 @@ export default function Work() {
     }
 
     setShowModal(prev => !prev)
-
-    console.log(projectName)
-    console.log(website)
-    console.log(role)
-    console.log(tldr)
   }
 
   useEffect(() => {
     showModal
       ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "unset")
+      : (document.body.style.overflowY = "scroll")
   }, [showModal])
 
   return (
@@ -97,10 +110,17 @@ export default function Work() {
         <Modal
           backgroundClick={() => setShowModal(false)}
           buttonClick={() => setShowModal(prev => !prev)}
+          //Meta data
           projectName={projectName}
+          projectColor={projectColor}
           website={website}
           role={role}
-          tldr={tldr}
+          client={client}
+          projectTLDR={projectTLDR}
+          splashBgImage={splashBgImage}
+          // Intro
+          projectWhat={projectWhat}
+          projectWhy={projectWhy}
         />
       ) : null}
     </section>
