@@ -80,3 +80,44 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .splashContainer {
+    .splashImage {
+      svg {
+        max-width: 200px;
+        margin: 0 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 774px) {
+  .splashContainer {
+    flex-direction: column;
+    max-height: 100%;
+    min-height: 600px;
+    .splashImage {
+      max-height: 120px;
+      padding: 16px 0;
+      background-size: 0%;
+      svg {
+        max-width: 200px;
+        margin: 0 16px;
+      }
+    }
+    .splashContent {
+      justify-content: center;
+      align-items: flex-start;
+      padding: 80px 40px;
+      .introContent {
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+      .disclaimer {
+        margin-top: 40px;
+      }
+    }
+  }
+}

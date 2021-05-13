@@ -92,3 +92,24 @@
     }
   }
 }
+@media (max-width: 774px) {
+  .modalOverlay {
+    .modalContainer {
+      .buttonWrapper {
+        .closeButton {
+          color: white;
+          background-color: $salmon;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .modalOverlay {
+    .modalContainer {
+      height: calc(100vh - 32px);
+    }
+  }
+}

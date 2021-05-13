@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import styles from "./modal.module.scss"
 import cx from "classnames"
 import ace360 from "../../../static/images/ace360.png"
@@ -6,10 +6,10 @@ import Splash from "../../layouts/modalLayouts/splash"
 import Intro from "../../layouts/modalLayouts/intro"
 import Process from "../../layouts/modalLayouts/process"
 
-export default function Modal(props) {
-  // Meta data getters and setters
-  // let [projectName, setProjectName] = useState("Project name")
+import { caseStudies } from "../../../static/content"
+import Outro from "../../layouts/modalLayouts/outro"
 
+export default function Modal(props) {
   return (
     <div className={styles.modalOverlay} onClick={props.backgroundClick}>
       <div
@@ -42,10 +42,62 @@ export default function Modal(props) {
           projectWhat={props.projectWhat}
           projectWhy={props.projectWhy}
         />
+        {/* Define section */}
         <Process
           processIcon={"Door"}
           color="salmon"
-          figmaLink="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3f8uwvMAEDEMc0DAbHn0j6%2Fjohnenderby.com%3Fnode-id%3D13%253A39"
+          embedLink={props.discoverVisuals}
+          embedCaption={props.discoverCaption}
+          //Data
+          firstTitle={props.defineFirstTitle}
+          firstPara={props.defineFirstPara}
+          secondTitle={props.defineSecondTitle}
+          secondPara={props.defineSecondPara}
+        />
+        {/* Ideate section */}
+        <Process
+          reverse="reverse"
+          processIcon={"Lightbulb"}
+          color="fuchsia"
+          embedLink={props.ideateVisuals}
+          embedCaption={props.ideateCaption}
+          //Data
+          firstTitle={props.ideateFirstTitle}
+          firstPara={props.ideateFirstPara}
+          secondTitle={props.ideateSecondTitle}
+          secondPara={props.ideateSecondPara}
+        />
+        {/* Test section */}
+        <Process
+          processIcon={"RoundFlask"}
+          color="lilac"
+          embedLink={props.testVisuals}
+          embedCaption={props.testCaption}
+          //Data
+          firstTitle={props.testFirstTitle}
+          firstPara={props.testFirstPara}
+          secondTitle={props.testSecondTitle}
+          secondPara={props.testSecondPara}
+        />
+        {/* Deliver section */}
+        <Process
+          reverse="reverse"
+          processIcon={"Tag"}
+          color="purple"
+          embedLink={props.deliverVisuals}
+          embedCaption={props.deliverCaption}
+          //Data
+          firstTitle={props.deliverFirstTitle}
+          firstPara={props.deliverFirstPara}
+          secondTitle={props.deliverSecondTitle}
+          secondPara={props.deliverSecondPara}
+        />
+        <Outro
+          projectColor={props.projectColor}
+          outroTitle={props.outroTitle}
+          outroPara={props.outroPara}
+          thankYou={props.thankYou}
+          furtherInfo={props.furtherInfo}
         />
       </div>
     </div>
