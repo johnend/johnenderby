@@ -20,6 +20,7 @@ export default function Work() {
   let [client, setClient] = useState("Client name")
   let [projectTLDR, setProjectTLDR] = useState("Some text about the project")
   let [splashBgImage, setsplashBgImage] = useState("")
+  let [splashDisclaimer, setsplashDisclaimer] = useState("")
 
   //Intro data getters and setters
   let [projectWhat, setProjectWhat] = useState("What are we doing?")
@@ -40,6 +41,7 @@ export default function Work() {
       setClient(modalData.meta.client)
       setProjectTLDR(modalData.meta.projectTLDR)
       setsplashBgImage(modalData.meta.splashImage)
+      setsplashDisclaimer(modalData.meta.disclaimer)
 
       //IntroData
       setProjectWhat(modalData.intro.what)
@@ -118,6 +120,7 @@ export default function Work() {
           client={client}
           projectTLDR={projectTLDR}
           splashBgImage={splashBgImage}
+          disclaimer={splashDisclaimer}
           // Intro
           projectWhat={projectWhat}
           projectWhy={projectWhy}

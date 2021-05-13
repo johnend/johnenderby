@@ -71,5 +71,12 @@
     .projectRole {
       display: inline-block;
     }
+    .disclaimer {
+      font-size: 14px;
+      line-height: 150%;
+      color: $subText;
+      margin-top: 80px;
+      max-width: 400px;
+    }
   }
 }

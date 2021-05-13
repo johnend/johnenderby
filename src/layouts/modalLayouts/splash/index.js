@@ -52,6 +52,7 @@ export default function Splash(props) {
           <div>
             <p className={styles.role}>Role:</p>
             <p className={styles.projectRole}>{props.role}</p>
+            <p className={styles.disclaimer}>{props.disclaimer}</p>
           </div>
         </div>
       </div>

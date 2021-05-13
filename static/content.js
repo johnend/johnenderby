@@ -120,6 +120,8 @@ export const caseStudies = [
         projectTLDR:
           "Helping individuals work with professional service providers more efficiently while keeping all their important documents safe",
         splashImage: "./images/bubbles.png",
+        disclaimer:
+          "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
       },
       intro: {
         what:
@@ -140,12 +142,23 @@ export const caseStudies = [
         projectTLDR:
           "Cost effective apprenticeship management that connects all the right stakeholders at the right time",
         splashImage: "./images/handbooks.png",
+        disclaimer:
+          "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
       },
       intro: {
         what:
           "A full service, bespoke, apprenticeship management system capable of connecting educators with assessment organisations, as well as giving apprentices a view of their apprenticeship’s progress.",
         why:
           "FISSS had been the only provider in this space since their founding and as a result was able to operate with complete freedom under a government contract. That all came to an end in 2017 when the industry was deregulated and FISSS needed to quickly take advantage of the position, and relationships, they had established.",
+      },
+      define: {
+        figmaLink:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWNjT3kfQ8jTj7SAyTyXYNK%2FACE360-Early-stages%3Fnode-id%3D0%253A185",
+        first:
+          "ACE360 was a large project requiring a lot of investigation into specifics of: constraints, workflows, permissions, and much more. For example, there are at least 3 different organisation types needing access to the system, and between them 14 different user levels with different access permissions.",
+        secondTitle: "Extracting the detail through collaboration",
+        second:
+          "As a result of the complexities I worked with FISSS to run a number of workshops to get a better understanding of the information architecture, and workflows, within ACE360. The output of these sessions was a number of large scale journey maps and flow diagrams (something not previously done at xDesign prior to my working there) that helped me and the team understand this incredibly complex space, as well as breakdowns of epics and tickets for working with engineering (part of phase 2 product ownership).",
       },
     },
   },
@@ -161,6 +174,8 @@ export const caseStudies = [
         projectTLDR:
           "Giving visiting, and local golfers, a personalised companion app for the home of golf",
         splashImage: "./images/golf-ball.png",
+        disclaimer:
+          "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
       },
       intro: {
         what:
@@ -181,6 +196,8 @@ export const caseStudies = [
         projectTLDR:
           "Tracking air freight into, and out of, some of the world's busiest airports. All without paper",
         splashImage: "./images/plane.png",
+        disclaimer:
+          "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
       },
       intro: {
         what:
@@ -201,6 +218,8 @@ export const caseStudies = [
         projectTLDR:
           "Ensuring those responsible for assessing apprenticeships are fully licensed to do so",
         splashImage: "./images/wreath.png",
+        disclaimer:
+          "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
       },
       intro: {
         what:

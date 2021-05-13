@@ -1,0 +1,96 @@
+@import "../../../styles/variables.scss";
+
+.processContainer {
+  display: flex;
+  min-height: 100%;
+  max-width: 100%;
+  background-color: white;
+  .processIcon {
+    height: 32px;
+    width: 32px;
+    margin-bottom: 8px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iframeContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 25%;
+    background-color: $altBackgroundLight;
+    caption {
+      max-width: 80%;
+      font-size: 14px;
+      line-height: 150%;
+      color: $subText;
+      margin-top: 16px;
+    }
+  }
+  .processContent {
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px 16px 40px;
+    .firstSection {
+      margin-bottom: 40px;
+    }
+    h3 {
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 8px;
+    }
+    div {
+      .salmonbg {
+        background-color: $salmon;
+      }
+      .fuchsiabg {
+        background-color: $fuchsia;
+      }
+      .lilacbg {
+        background-color: $lilac;
+      }
+      .purplebg {
+        background-color: $purple;
+      }
+      .bluebg {
+        background-color: $blue;
+      }
+      .bloobg {
+        background-color: $bloo;
+      }
+      .salmontext {
+        color: $salmon;
+      }
+      .fuchsiatext {
+        color: $fuchsia;
+      }
+      .lilactext {
+        color: $lilac;
+      }
+      .purpletext {
+        color: $purple;
+      }
+      .bluetext {
+        color: $blue;
+      }
+      .blootext {
+        color: $bloo;
+      }
+    }
+  }
+  .processVisuals {
+    width: 45.5%;
+    height: auto;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}

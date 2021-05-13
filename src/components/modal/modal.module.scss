@@ -29,6 +29,7 @@
       position: absolute;
       top: 16px;
       right: 111px;
+      z-index: 1000;
       .closeButton {
         border: 1px solid $salmon;
         border-radius: 4px;
