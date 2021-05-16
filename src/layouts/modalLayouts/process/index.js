@@ -33,14 +33,16 @@ export default function Process({ reverse, color, ...props }) {
     <div className={cx(styles.processContainer, styles[reverse])}>
       <div className={styles.processContent}>
         <div className={styles.firstSection}>
-          <div className={cx(styles.processIcon, styles[color + "bg"])}>
+          {/* <div className={cx(styles.processIcon, styles[color + "bg"])}>
             {Icon(props.processIcon)}
-          </div>
-          <h3 className={cx(styles[color + "text"])}>{props.firstTitle}</h3>
+          </div> */}
+          <h3 style={{ color: `${props.projectColor}` }}>{props.firstTitle}</h3>
           <p>{props.firstPara}</p>
         </div>
         <div className={styles.secondSection}>
-          <h3 className={cx(styles[color + "text"])}>{props.secondTitle}</h3>
+          <h3 style={{ color: `${props.projectColor}` }}>
+            {props.secondTitle}
+          </h3>
           <p>{props.secondPara}</p>
         </div>
       </div>

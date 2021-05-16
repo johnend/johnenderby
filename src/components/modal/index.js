@@ -32,6 +32,8 @@ export default function Modal(props) {
           projectColor={props.projectColor}
           website={props.website}
           role={props.role}
+          tools={props.tools}
+          did={props.did}
           client={props.client}
           projectTLDR={props.projectTLDR}
           splashBgImage={props.splashBgImage}
@@ -44,6 +46,7 @@ export default function Modal(props) {
         />
         {/* Define section */}
         <Process
+          projectColor={props.projectColor}
           processIcon={"Door"}
           color="salmon"
           embedLink={props.discoverVisuals}
@@ -56,6 +59,7 @@ export default function Modal(props) {
         />
         {/* Ideate section */}
         <Process
+          projectColor={props.projectColor}
           reverse="reverse"
           processIcon={"Lightbulb"}
           color="fuchsia"
@@ -68,30 +72,36 @@ export default function Modal(props) {
           secondPara={props.ideateSecondPara}
         />
         {/* Test section */}
-        <Process
-          processIcon={"RoundFlask"}
-          color="lilac"
-          embedLink={props.testVisuals}
-          embedCaption={props.testCaption}
-          //Data
-          firstTitle={props.testFirstTitle}
-          firstPara={props.testFirstPara}
-          secondTitle={props.testSecondTitle}
-          secondPara={props.testSecondPara}
-        />
+        {props.testVisuals ? (
+          <Process
+            projectColor={props.projectColor}
+            processIcon={"RoundFlask"}
+            color="lilac"
+            embedLink={props.testVisuals}
+            embedCaption={props.testCaption}
+            //Data
+            firstTitle={props.testFirstTitle}
+            firstPara={props.testFirstPara}
+            secondTitle={props.testSecondTitle}
+            secondPara={props.testSecondPara}
+          />
+        ) : null}
         {/* Deliver section */}
-        <Process
-          reverse="reverse"
-          processIcon={"Tag"}
-          color="purple"
-          embedLink={props.deliverVisuals}
-          embedCaption={props.deliverCaption}
-          //Data
-          firstTitle={props.deliverFirstTitle}
-          firstPara={props.deliverFirstPara}
-          secondTitle={props.deliverSecondTitle}
-          secondPara={props.deliverSecondPara}
-        />
+        {props.deliverVisuals ? (
+          <Process
+            projectColor={props.projectColor}
+            reverse="reverse"
+            processIcon={"Tag"}
+            color="purple"
+            embedLink={props.deliverVisuals}
+            embedCaption={props.deliverCaption}
+            //Data
+            firstTitle={props.deliverFirstTitle}
+            firstPara={props.deliverFirstPara}
+            secondTitle={props.deliverSecondTitle}
+            secondPara={props.deliverSecondPara}
+          />
+        ) : null}
         <Outro
           projectColor={props.projectColor}
           outroTitle={props.outroTitle}

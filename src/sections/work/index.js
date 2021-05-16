@@ -16,7 +16,9 @@ export default function Work() {
   let [projectName, setProjectName] = useState("Project name")
   let [projectColor, setProjectColor] = useState("#bada55")
   let [website, setWebsite] = useState("https://example.com")
-  let [role, setRole] = useState("Lead designer, product owner")
+  let [role, setRole] = useState("")
+  let [tools, setTools] = useState("")
+  let [did, setDid] = useState("")
   let [client, setClient] = useState("Client name")
   let [projectTLDR, setProjectTLDR] = useState("Some text about the project")
   let [splashBgImage, setsplashBgImage] = useState("")
@@ -76,6 +78,8 @@ export default function Work() {
       setProjectColor(modalData.meta.projectColor)
       setWebsite(modalData.meta.website)
       setRole(modalData.meta.role)
+      setTools(modalData.meta.tools)
+      setDid(modalData.meta.did)
       setClient(modalData.meta.client)
       setProjectTLDR(modalData.meta.projectTLDR)
       setsplashBgImage(modalData.meta.splashImage)
@@ -197,6 +201,8 @@ export default function Work() {
           projectColor={projectColor}
           website={website}
           role={role}
+          tools={tools}
+          did={did}
           client={client}
           projectTLDR={projectTLDR}
           splashBgImage={splashBgImage}

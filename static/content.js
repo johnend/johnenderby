@@ -1,4 +1,3 @@
-// TODO: update card data to include icons for cards
 import React from "react"
 
 const figmaCaption =
@@ -121,7 +120,10 @@ export const caseStudies = [
         projectName: "LifeQuay",
         projectColor: "#05547B",
         website: "https://www.lifequay.com/",
-        role: "Lead Designer",
+        role: "Lead Product Designer",
+        tools: "Sketch, Sympli, whiteboard and pens",
+        did:
+          "Researched, and designed the end to end app experience for both native and web",
         client: "LifeQuay Ltd.",
         projectTLDR:
           "Helping individuals work with professional service providers more efficiently while keeping all their important documents safe",
@@ -136,34 +138,44 @@ export const caseStudies = [
           "The LifeQuay team understand that there is enough complexity in people's lives and so want to help alleviate frustration with some of the big administrative transactions and processes you might do in your life, as well as keeping all your important documents safe, but easily accessible by your professional service providers.",
       },
       define: {
-        firstTitle: "",
-        firstPara: "",
-        secondTitle: "",
-        secondPara: "",
+        firstTitle: "Stressful one offs...",
+        firstPara:
+          "At some point in their lives, most people will buy a house, write a will, or do something else that requires the services of a trained professional (either a lawyer or accountant or similar). The LifeQuay team felt there wasn't enough clarity in these processes for the customers of law firms and accountants. One of a the co-founders, a managing partner at a law firm in Edinburgh, even said that mosts of the calls their firm receives for a house purchase tend to be clients wanting status updates.",
+        secondTitle: "...and day to day admin",
+        secondPara:
+          "They also wanted to ensure it wasn't just the big things that LifeQuay could help you manage. They wanted to give individuals the ability to see, and manage everyday items like insurance policies, subscriptions, and recurring bills all in one place.",
       },
       ideate: {
-        firstTitle: "Ideate & Prototype",
-        firstPara: "",
-        secondTitle: "Adding the visual layers",
-        secondPara: "",
+        firstTitle: "A chance to prove my worth",
+        firstPara:
+          "One of my early projects at xDesign, LifeQuay was an opportunity to set design foundations and organise our workflow. Working with our head of product we mapped out the early phases we needed in discovery, and I created a variety of workshop formats that could be swapped in and out depending on the project and the client.",
+        secondTitle: "Working on workshops",
+        secondPara:
+          "Early phase workshops were about understanding the product idea, requirements gathering, and information architecture diagrams. Subsequent workshops focused on wireframes, user journeys and testing ideas with the client and their customers. Finally we would show visual treatments and prototypes for features prior to development work.",
       },
       test: {
-        firstTitle: "Test & Refine",
-        firstPara: "",
-        secondTitle: "",
-        secondPara: "",
+        firstTitle: "Shining a light on legal processes",
+        firstPara:
+          'A key component of the LifeQuay product were "Transactions": big, one off legal processes, such as buying a house, or writing a will. Often progress on these transactions is hidden from users, but through the workshops and ideation sessions I worked with the client to bring clarity to the process. I designed a progress tracker showing the key milestones of a specific transaction, as well as a messaging feature will allowed for correspondence between the customer and their lawyer (and secure file transfer) specific to individual transactions.',
+        secondTitle: "Data shows progress",
+        secondPara:
+          "In order to get the information we needed into LifeQuay we needed to work directly with the law firms and their software provider, LawPro. This integration gave us the data we needed for transaction milestones as well as a method for law firms to send and receive secure communications around client transactions.",
       },
       deliver: {
-        firstTitle: "Deliver",
-        firstPara: "",
-        secondTitle: "Working with engineers",
-        secondPara: "",
+        firstTitle: "Bridging the designer/engineer gap",
+        firstPara:
+          "Throughout the early stages of the LifeQuay project and discovery we spoke a lot about what we would do for the client, but I also saw a huge opportunity to improve our design to engineering handoff process. Previously engineers would receive exports of assets directly from designers, and specs were taken from the design view of Sketch (this was prior to Sketch cloud's inspect feature). It was inefficient and error prone often resulting in poor execution. In my capacity as head of design I sought to improve this process by bringing in a new tool: Sympli.",
+        secondTitle: "A handoff tool with other benefits",
+        secondPara:
+          "While searching for a solution to the handoff problem both Zeplin and Sympli were being developed. Zeplin was leading the charge with a shiny UI and simple, easy to use featues, but Sympli was close behind in my mind. Sympli allowed for handoff directly in Android Studio and XCode with plugins, as well as a lot of the other features Zeplin provided. This made hand off much easier for our engineers, and reduced the overhead on designers.",
       },
       outro: {
-        outroTitle: "Learn",
-        outroPara: "",
+        outroTitle: "Learnings",
+        outroPara:
+          "LifeQuay was a fun, but often frustrating project. Our own internal processes and procedures (or lack of them) got in our own way. A great opportunity for improvement for us, but something that caused more friction with the client than they should have been exposed to. You have to learn somewhere though, and they were receptive to our ideas and patient with us while we tried out new things.",
         thankYou: "Thank you for reading!",
-        furtherInfo: "",
+        furtherInfo:
+          "For more information about my involvement on the LifeQuay project please get in touch.",
       },
       visuals: {
         discovery:
@@ -189,7 +201,11 @@ export const caseStudies = [
         projectName: "ACE360",
         projectColor: "#DC4404",
         website: "https://ace360.org/",
-        role: "Lead Designer & Phase 2 Product Owner",
+        role:
+          "Lead Product Designer & Phase 2 Product Owner and Project Manager",
+        tools: "Sketch, Sympli, InVision, Google Sheets, whiteboard and pens",
+        did:
+          "Planned, researched, and designed 18 months of product development work on AC360",
         client: "Federation of Industry Sector Skills & Standards (FISSS)",
         projectTLDR:
           "Cost effective apprenticeship management that connects all the right stakeholders at the right time",
@@ -199,46 +215,46 @@ export const caseStudies = [
       },
       intro: {
         what:
-          "A full service, bespoke, apprenticeship management system capable of connecting educators with assessment organisations, as well as giving apprentices a view of their apprenticeship’s progress.",
+          "A full service, centralised, apprenticeship management system capable of providing a single source of truth for apprenticeships for not only the apprentices themselves, but also for assessment organisations, and training providers.",
         why:
-          "FISSS had been the only provider in this space since their founding and as a result was able to operate with complete freedom under a government contract. That all came to an end in 2017 when the industry was deregulated and FISSS needed to quickly take advantage of the position, and relationships, they had established.",
+          "FISSS had been the sole provider, delivering apprenticeship framework certification in England and Wales for nearly 10 years in a regulated, government controlled space. That all came to an end in 2017 when the industry was deregulated. FISSS needed to quickly take advantage of the position, and relationships, they had established.",
       },
       define: {
-        firstTitle: "Define & Discover",
+        firstTitle: "Project outline",
         firstPara:
-          "ACE360 was a large project requiring a lot of investigation into specifics of: constraints, workflows, permissions, and much more. For example, there are at least 3 different organisation types needing access to the system, and between them 14 different user levels with different access permissions.",
-        secondTitle: "Extracting the detail through collaboration",
+          "FISSS came to xDesign needing an entire overhaul. Their existing system was not fit for purpose (due to the deregulation of the space), and had been the victim of feature creep over its many years of use. The government mandated privacy and security constraints, as well as the new GDPR legislation, also left FISSS in a position where their internal IT team was unable to make the required updates.",
+        secondTitle: "Workshops and research",
         secondPara:
-          "As a result of the complexities I worked with FISSS to run a number of workshops to get a better understanding of the information architecture, and workflows, within ACE360. The output of these sessions was a number of large scale journey maps and flow diagrams (something not previously done at xDesign prior to my working there) that helped me and the team understand this incredibly complex space, as well as breakdowns of epics and tickets for working with engineering (part of phase 2 product ownership).",
+          "Through the initial phases of the project I ran a number of workshops with the client, some of their prospective customers, and our product development team, to tease out the detail of what the system needed, first at a high level to get a general idea of scope, and in later sessions getting into the detail. Throughout these sessions we would collaboratively wireframe flows, journeys, screens and features and piece everything together at a high level.",
       },
       ideate: {
-        firstTitle: "Ideate & Prototype",
+        firstTitle: "Understanding the complexity",
         firstPara:
-          "In order to start getting deeper into the design of the system we ran further collaborative workshops with the client, and their customers, fleshing out wireframes for screens and journeys and validating those ideas conceptually. ",
-        secondTitle: "Adding the visual layers",
+          "With 4 different organisation types (including FISSS themselves) and roughly 20 different user types (all with varying degrees of permissions) the MVP scope of ACE360 was massive. We needed to be able to design and engineer a product that non-technical FISSS staff could administrate, as well as something their customers could easily use. With that in mind in phase 1 the product owner and I distilled the output from the workshops into initiatives and epics, and broke those down into sensible rough tickets. During phase 2 I was solely responsible for all of these steps.",
+        secondTitle: "Translation into a visual language",
         secondPara:
-          "ACE360 had, prior to working with us, been through a branding workshop with a third party that had created a visual styleguide for them. This included fonts and colours, but not their application to an interface. During the visual design stages I put together a component library and design system for the product, as well as designing all the screens and flows.",
+          "I worked with these epics and tickets to expand on the wireframes to create information architecture diagrams and user journeys, working with engineering to understand key points of data transmission. These formed the basis of what would eventually be the UI for the product. I then expanded the brand guidelines (provided by FISSS) and modified some aspects for UI use, including expanding the colour palette to help with states and hierarchy, and creating a component and symbol library in Sketch of basic elements.",
       },
       test: {
-        firstTitle: "Test & Refine",
+        firstTitle: "Putting it all together",
         firstPara:
-          "After working out the basic flows I created at least 5 prototypes for various journeys within the system for different organisations, and users with different levels of permissions within them. These prototypes were used to validate the journeys and help me gather feedback on where we could improve certain areas.",
-        secondTitle: "An eye opening waterfall",
+          "Over the course of 18 months working on ACE360 I designed screens, and put together prototypes (in InVision) for all aspects of the product. Including onboarding, account and user administration, payments and token purchasing, administration of standards and apprenticeship qualifications, management of apprentice records (including an appeals process) and much more. All the while expanding on the component library and design system to ensure features could be built at scale.",
+        secondTitle: "Not just a designer",
         secondPara:
-          "ACE360 was a big turning point for xDesign. The client was very much wanting a waterfall process in the beginning, leading to a huge amounts of work being done up front. After the initial phase (roughly 6 months), and after I took over as product owner we moved to a more agile process working in two weekly sprints and factoring in feedback over the course of the project.",
+          "As the lead on the project in phase 2 I was responsible for not just the visuals but the running of the project from the xDesign side, communicating with the client and often having difficult conversations. In addition to this I also used my own front-end engineering skills to build and develop some of the components in the system and worked very closely with engineers to fix styling and state issues that cropped up from time to time.",
       },
       deliver: {
-        firstTitle: "Deliver",
+        firstTitle: "Cross functional agility",
         firstPara:
-          "During the delivery phases of ACE360 I determined that the handoff process for the team was more difficult than it should have been. Inspecting layers in Sketch was poor at the time and packing up assets for export was time consuming for designers, and engineers. I updated our workflow to include a better handoff tool - Sympli, allowing engineers in all departments (web and native) to inspect designs directly and pull in assets in the format they needed without design involvement.",
-        secondTitle: "Working with engineers",
+          "ACE360 was a huge project which meant the team needed to find a rhythm to our work. We would plan blocks of four 2 week sprints with the client ensuring design work was done, reviewed with them and the engineers, with enough to plan our sprints. In my capacity as product owner on phase 2 I would also work with the engineers to write acceptance criteria, and get estimates on tickets for planning individual sprints, as well as measuring velocity, and adjusting story point allotments to sprints accordingly.",
+        secondTitle: "Product ownership",
         secondPara:
-          "In my capacity as product owner on phase 2 of ACE360 (lasting roughly 12 months) I was responsible for classifying and breaking down epics with the team and the client, working with engineering to define acceptance criteria and assign estimates, and ensuring we were delivering the client’s roadmap as closely as possible.",
+          "While not something I would usually do on a project, I volunteered to fill a gap when xDesign's head of product was needed to move onto another project, and while product ownership at an agency is not exactly the same as as in-house product manager role I do think working this way on ACE360 gave me valuable insight and skills that help me as a designer.",
       },
       outro: {
-        outroTitle: "Learn",
+        outroTitle: "Learnings",
         outroPara:
-          "ACE360 was one of those projects that was always going to be a challenge, and came with a lot of constraints from all sides. Would I have done things differently? Absolutely. Were the decisions to do things differently down to me to make? No. In hindsight the first six months of work (waterfall phase) likely resulted in decisions being made that the team, and I, needed to revert or adjust during the second phase.",
+          "ACE360 was a massive undertaking, not only from a design perspective but also came with constraints from all sides. There were a number of things that in hindsight could have been done differently, but it's impossible to tell whether different would have been better. I would be hesitant to wear so many full time hats again, as there can be direct conflict between the role of a product owner and designer, but all in all we produced a system that we, and the client, were happy with.",
         thankYou: "Thank you for reading!",
         furtherInfo:
           "For further information about my involvement in the design and development of ACE360 please don’t hesitate to ask.",
@@ -268,8 +284,10 @@ export const caseStudies = [
         projectColor: "#A88D6D",
         website:
           "https://www.standrews.com/play/before-your-round/st-andrews-links-app",
-        role: "Lead Designer",
-        client: "St Andrews Links Trust Registered Charity",
+        role: "Lead Product Designer, Product Owner (supporting)",
+        tools: "Sketch, Sympli, Framer, ScreenFlow, whiteboard and pens",
+        did: "Researched, designed, and prototyped a cross platform mobile app",
+        client: "St Andrews Links Trust",
         projectTLDR:
           "Giving visiting, and local golfers, a personalised companion app for the home of golf",
         splashImage: "./images/golf-ball.png",
@@ -283,34 +301,44 @@ export const caseStudies = [
           "With over 250,000 rounds of golf played each year across 7 courses, St Andrews is a busy place. The navigation of the courses and their key locations can be difficult for visitors as sometimes where you check in isn't close to where you tee off.",
       },
       define: {
-        firstTitle: "Define & Discover",
-        firstPara: "",
-        secondTitle: "",
-        secondPara: "",
+        firstTitle: "A bit of context",
+        firstPara:
+          "Not everyone knows that the golf courses in St Andrews are actually public property. All 7 courses are managed and maintained by the St Andrews Links Trust (xDesign's client), and the golf clubs (like the R&A) have rights to play on specific golf courses within the town. They are also responsible for all the bookings and tee times on the 7 courses, as well as running the ballot for tee times on the Old Course.",
+        secondTitle: "Project outline",
+        secondPara:
+          "The Links Trust had a mobile app already, but having just redesigned their website and updated their branding it was feeling a little tired and out of date. They also wanted to take the opportunity to enhance the experience that the mobile app provides, not only to visiting golfers, but locals, and students alike.",
       },
       ideate: {
-        firstTitle: "Ideate & Prototype",
-        firstPara: "",
-        secondTitle: "Adding the visual layers",
-        secondPara: "",
+        firstTitle: "Putting the golfer first",
+        firstPara:
+          "As a golfer, and a former student of St Andrews University this project was close to my heart, but I was keen to ensure my biases did not influence the overall outcome of the project. The client was keen to get our perspective, but I was also keen to dig into the feelings of their customers to better understand the challenges ahead. So the engineering team, a new product owner (to xDesign that I was mentoring), and I took a trip to St Andrews to see the complexities in navigating the town first hand, and also to use the opportunity to interview the customer services team working for the Links Trust directly.",
+        secondTitle: "Back to the old stomping grounds",
+        secondPara:
+          'While we were there we found out that the majority of customer services questions were purely navigational. "Where do we check in before out round?", and "Where do we go after we check in?" were common asks, but so was "Where can we eat, or drink, after?". We also found, from looking at analytics data, that the app had very few long term users, indicating that locals were not using it.',
       },
       test: {
-        firstTitle: "Test & Refine",
-        firstPara: "",
-        secondTitle: "",
-        secondPara: "",
+        firstTitle: "Ideate and plan",
+        firstPara:
+          "I took the information we gathered from our time in St Andrews and worked with the client to come up with some new features for their app in a handful of workshops. Some of those new features included an itinerary for the visiting golfers (tied in directly to their booking system which included tee times and hire club bookings), an interactive map for each course showing key points of interest, and an in-app course guide mirroring the printed versions.",
+        secondTitle: "Putting it together",
+        secondPara:
+          "After going through more workshops with the client, working on information architecture diagrams, and wireframes I started putting together the visual designs in Sketch. Collecting the content for the informational sections, and creating a small Framer prototype for the video homepage (which I edited together using some of their promotional video content) to show how it might work.",
       },
       deliver: {
-        firstTitle: "Deliver",
-        firstPara: "",
-        secondTitle: "Working with engineers",
-        secondPara: "",
+        firstTitle: "Constraints and complications",
+        firstPara:
+          "The timeline for this project was tight, we needed to launch the app for the beginning of the season (around April), and we started work the previous summer. Some of the interactions I had designed were more difficult on iOS than Android and some were the opposite. Working with the client and engineering teams we came to good compromises for what were small, but visually important features, and released an app that was night and day in comparison to the original.",
+        secondTitle: "A happy client is never a bad thing",
+        secondPara:
+          '"The team have been fantastic in helping us discover what we really needed from our mobile app; and even better in delivering it." - Lewis Willing, Marketing Manager, St Andrews Links Trust',
       },
       outro: {
-        outroTitle: "Learn",
-        outroPara: "",
+        outroTitle: "Learnings",
+        outroPara:
+          "Always start by asking the important questions, and not just of the client. The people actually using the app are always a great source of information for how to shape a product. The St Andrews Links Trust could have easily had a nice redesign of their original, purely informational app. Spending time digging into users' experiences of visiting the town, and the data on retention gave us a more informed picture of what true value the new app could provide. As a result we, and the client, learned a lot about what the app could truly be.",
         thankYou: "Thank you for reading!",
-        furtherInfo: "",
+        furtherInfo:
+          "For further information about my involvement in the design and development of the St Andrews Links app please don’t hesitate to ask.",
       },
       visuals: {
         discovery:
@@ -336,10 +364,12 @@ export const caseStudies = [
         projectName: "Cargo",
         projectColor: "#28498b",
         website: null,
-        role: "Lead Designer",
+        role: "Lead Product Designer",
+        tools: "Sketch, Google Sheets",
+        did: "Designed a web based platform for cargo management",
         client: "Menzies Aviation and John Menzies plc",
         projectTLDR:
-          "Tracking air freight into, and out of, some of the world's busiest airports. All without paper",
+          "Tracking air freight into and out of some of the world's busiest airports. All without paper",
         splashImage: "./images/plane.png",
         disclaimer:
           "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
@@ -351,54 +381,48 @@ export const caseStudies = [
           "Data reporting was slow and cumbersome with manual tracking and recording of air freight arrivals and departures. This often resulted in digital systems not being updated until much of the cargo had already been moved onto another flight making tracking complex and difficult.",
       },
       define: {
-        firstTitle: "",
+        firstTitle: "Paper based logistics?",
         firstPara:
-          "ACE360 was a large project requiring a lot of investigation into specifics of: constraints, workflows, permissions, and much more. For example, there are at least 3 different organisation types needing access to the system, and between them 14 different user levels with different access permissions.",
-        secondTitle: "Extracting the detail through collaboration",
+          "All air freight passing through Dallas Fort Worth airport needs to be documented and accounted for, not just in terms of its existence, point of origin, and destination, but also its condition. Prior to this system almost all of that inventory management was handled manually on paper. Menzies needed to upgrade to a system that tied into their air freight data provider allowing for near-real-time updates.",
+        secondTitle: "New job, new project, pre-determined solution",
         secondPara:
-          "As a result of the complexities I worked with FISSS to run a number of workshops to get a better understanding of the information architecture, and workflows, within ACE360. The output of these sessions was a number of large scale journey maps and flow diagrams (something not previously done at xDesign prior to my working there) that helped me and the team understand this incredibly complex space, as well as breakdowns of epics and tickets for working with engineering (part of phase 2 product ownership).",
+          "This project was the first thing I worked on at xDesign. As a result I joined part way through the process after the majority of the discovery and requirements gathering work had been completed. My job in this instance was to take a working (in terms of data handling) Excel prototype and turn it into a suitable desktop web application for the staff at Menzies. This product would be trialled in Dallas and eventually rolled out to more airports around the world.",
       },
       ideate: {
-        firstTitle: "Ideate & Prototype",
+        firstTitle: "Data entry with some special sauce",
         firstPara:
-          "In order to start getting deeper into the design of the system we ran further collaborative workshops with the client, and their customers, fleshing out wireframes for screens and journeys and validating those ideas conceptually. ",
-        secondTitle: "Adding the visual layers",
+          "For every container of goods on an aeroplane there are smaller packages/containers within. Both the larger and smaller containers need to be checked to ensure the right items are present, and to ensure they are not damaged in any way. Inspectors will do this at intermediary warehouses prior to the cargo being forwarded onto another flight or ground carrier. This information is then uploaded into the system alongside any supporting images and details that may be required.",
+        secondTitle: "Challenges and outcomes",
         secondPara:
-          "ACE360 had, prior to working with us, been through a branding workshop with a third party that had created a visual styleguide for them. This included fonts and colours, but not their application to an interface. During the visual design stages I put together a component library and design system for the product, as well as designing all the screens and flows.",
+          "Ultimately this project, from a design perspective, was about good data management. How can we ensure all the relevant information is available without overloading the UI? The resulting design ensured cargo containers, and their expected contents were contained within collapsible rows. Individual items could be edited while keeping some of table in view, for context, and search functionality was included to allow for finding individual items by ID.",
       },
       test: {
-        firstTitle: "Test & Refine",
-        firstPara:
-          "After working out the basic flows I created at least 5 prototypes for various journeys within the system for different organisations, and users with different levels of permissions within them. These prototypes were used to validate the journeys and help me gather feedback on where we could improve certain areas.",
-        secondTitle: "An eye opening waterfall",
-        secondPara:
-          "ACE360 was a big turning point for xDesign. The client was very much wanting a waterfall process in the beginning, leading to a huge amounts of work being done up front. After the initial phase (roughly 6 months), and after I took over as product owner we moved to a more agile process working in two weekly sprints and factoring in feedback over the course of the project.",
+        firstTitle: "",
+        firstPara: "",
+        secondTitle: "",
+        secondPara: "",
       },
       deliver: {
-        firstTitle: "Deliver",
-        firstPara:
-          "During the delivery phases of ACE360 I determined that the handoff process for the team was more difficult than it should have been. Inspecting layers in Sketch was poor at the time and packing up assets for export was time consuming for designers, and engineers. I updated our workflow to include a better handoff tool - Sympli, allowing engineers in all departments (web and native) to inspect designs directly and pull in assets in the format they needed without design involvement.",
-        secondTitle: "Working with engineers",
-        secondPara:
-          "In my capacity as product owner on phase 2 of ACE360 (lasting roughly 12 months) I was responsible for classifying and breaking down epics with the team and the client, working with engineering to define acceptance criteria and assign estimates, and ensuring we were delivering the client’s roadmap as closely as possible.",
+        firstTitle: "",
+        firstPara: "",
+        secondTitle: "",
+        secondPara: "",
       },
       outro: {
-        outroTitle: "Learn",
+        outroTitle: "Learnings",
         outroPara:
-          "ACE360 was one of those projects that was always going to be a challenge, and came with a lot of constraints from all sides. Would I have done things differently? Absolutely. Were the decisions to do things differently down to me to make? No. In hindsight the first six months of work (waterfall phase) likely resulted in decisions being made that the team, and I, needed to revert or adjust during the second phase.",
+          "While more, I think, could have been done in terms of solution for Menzies on this product the initial prototype developed off the back of my designs was well received, and is now used in multiple locations. xDesign later took on a similar project for magazine inventory management which included an app for an Android barcode scanner that could enable much faster data entry than sitting at a terminal, which would be a good improvement to a system that often deals with time sensitive information.",
         thankYou: "Thank you for reading!",
         furtherInfo:
-          "For further information about my involvement in the design and development of ACE360 please don’t hesitate to ask.",
+          "For further information about my involvement in the design on the Menzies Cargo project please don’t hesitate to ask.",
       },
       visuals: {
         discovery:
           "https://docs.google.com/spreadsheets/d/e/2PACX-1vSgSWneENPPD1enUlVCLum511zFGZi9YW75T6fMVmqFxSHaMwFWtkGCB7B8epheDZ1-Mhoo8MAjhMgC/pubhtml?widget=true&amp;headers=false",
         ideate:
-          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPVftPL6PiqZ0tGmTVWSjOA%2FMenzies-Web-Dashboard-Wireframes%3Fnode-id%3D0%253A5871",
-        test:
           "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPVftPL6PiqZ0tGmTVWSjOA%2FMenzies-Web-Dashboard-Wireframes%3Fnode-id%3D0%253A248",
-        deliver:
-          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPVftPL6PiqZ0tGmTVWSjOA%2FMenzies-Web-Dashboard-Wireframes%3Fnode-id%3D0%253A3060",
+        test: "",
+        deliver: "",
       },
       caption: {
         discovery: googleSheetsCaption,
@@ -415,6 +439,9 @@ export const caseStudies = [
         projectColor: "#1f1f1f",
         website: null,
         role: "Lead Designer (Phase 2)",
+        tools: "Sketch, Lucidchart, whiteboard and pens",
+        did:
+          "Designed a full application management process and UI for the Assessors Guild portal and admin system",
         client: "Federation of Industry Sector Skills & Standards (FISSS)",
         projectTLDR:
           "Ensuring those responsible for assessing apprenticeships are fully licensed to do so",
@@ -429,44 +456,44 @@ export const caseStudies = [
           "Prior to deregulation in 2017 FISSS were the only monitor of apprenticeships within England and Wales. After deregulation FISSS found themselves in a position to not only capitalise on their management of apprenticeships, but also the accreditation of assessors.",
       },
       define: {
-        firstTitle: "",
+        firstTitle: "Same client, different project",
         firstPara:
-          "ACE360 was a large project requiring a lot of investigation into specifics of: constraints, workflows, permissions, and much more. For example, there are at least 3 different organisation types needing access to the system, and between them 14 different user levels with different access permissions.",
-        secondTitle: "Extracting the detail through collaboration",
+          "After working with FISSS for 6 months on ACE360, and after they hired a new commercial director, they came back to us to seek our help again for a new venture. The deregulation of the space had made the market competitive and they needed to capitalise on their relationships with assessors in order to make money. ",
+        secondTitle: "Assessing the assessors",
         secondPara:
-          "As a result of the complexities I worked with FISSS to run a number of workshops to get a better understanding of the information architecture, and workflows, within ACE360. The output of these sessions was a number of large scale journey maps and flow diagrams (something not previously done at xDesign prior to my working there) that helped me and the team understand this incredibly complex space, as well as breakdowns of epics and tickets for working with engineering (part of phase 2 product ownership).",
+          "The Assessors Guild was a way for FISSS to set up a Professional Membership body, ensuring and enforcing professional standards and a code of conduct for its members. It also provides individual members a way to find work within their region and sign up for events in the industry.",
       },
       ideate: {
-        firstTitle: "Ideate & Prototype",
+        firstTitle: "Filling in the gaps",
         firstPara:
-          "In order to start getting deeper into the design of the system we ran further collaborative workshops with the client, and their customers, fleshing out wireframes for screens and journeys and validating those ideas conceptually. ",
-        secondTitle: "Adding the visual layers",
+          "When the project's designer decided to take an opportunity at another company, due to my already established relationship with the client, I was in the the best position to continue the work with the client and flesh out the missing pieces.",
+        secondTitle: "Application process",
         secondPara:
-          "ACE360 had, prior to working with us, been through a branding workshop with a third party that had created a visual styleguide for them. This included fonts and colours, but not their application to an interface. During the visual design stages I put together a component library and design system for the product, as well as designing all the screens and flows.",
+          "The member's profile (within the Assessors Guild product) had already been designed and was under development. My job was to ensure the application process was straightforward for assessors wanting to join the guild and to ensure that data could be reviewed and approved by the team at FISSS.",
       },
       test: {
-        firstTitle: "Test & Refine",
+        firstTitle: "Going through the process",
         firstPara:
-          "After working out the basic flows I created at least 5 prototypes for various journeys within the system for different organisations, and users with different levels of permissions within them. These prototypes were used to validate the journeys and help me gather feedback on where we could improve certain areas.",
-        secondTitle: "An eye opening waterfall",
+          "I produced a number of wireframed variants for how the application could be organised visually, based on the output of the workshops as well as constructing a detailed set of information architecture diagrams and user journeys.",
+        secondTitle: "Mapping it all out",
         secondPara:
           "ACE360 was a big turning point for xDesign. The client was very much wanting a waterfall process in the beginning, leading to a huge amounts of work being done up front. After the initial phase (roughly 6 months), and after I took over as product owner we moved to a more agile process working in two weekly sprints and factoring in feedback over the course of the project.",
       },
       deliver: {
-        firstTitle: "Deliver",
+        firstTitle: "Challenging workflow, simple solution?",
         firstPara:
-          "During the delivery phases of ACE360 I determined that the handoff process for the team was more difficult than it should have been. Inspecting layers in Sketch was poor at the time and packing up assets for export was time consuming for designers, and engineers. I updated our workflow to include a better handoff tool - Sympli, allowing engineers in all departments (web and native) to inspect designs directly and pull in assets in the format they needed without design involvement.",
-        secondTitle: "Working with engineers",
+          "The application for the Assessors Guild is complicated in parts: it forms a large part of the member's profile on the system, and various evidential documents need to be attached. Often this meant applications could take days, or weeks, to complete. I had to find a way to include progress trackers for individual sections, highlight required information, and allow for partial completion of the application so that a member could continue filling it out at any time. ",
+        secondTitle: "Adding the finishing touches",
         secondPara:
-          "In my capacity as product owner on phase 2 of ACE360 (lasting roughly 12 months) I was responsible for classifying and breaking down epics with the team and the client, working with engineering to define acceptance criteria and assign estimates, and ensuring we were delivering the client’s roadmap as closely as possible.",
+          "After confirming the direction for the application process, and some of the finer details, the client settled on their preferred solution and I worked on final visual designs. In order to maintain consistency with the existing admin system and Assessors Guild platforms, already under development, I ensured that these new features conformed to the visual style and reused as many of the existing components and patterns as possible.",
       },
       outro: {
-        outroTitle: "Learn",
+        outroTitle: "Learnings",
         outroPara:
-          "ACE360 was one of those projects that was always going to be a challenge, and came with a lot of constraints from all sides. Would I have done things differently? Absolutely. Were the decisions to do things differently down to me to make? No. In hindsight the first six months of work (waterfall phase) likely resulted in decisions being made that the team, and I, needed to revert or adjust during the second phase.",
+          "The application workflow for the Assessors Guild was a complex project. I was coming in from the outside to an established project with minimal context. I was able to roll with the punches, pick up the pieces, and produce an application process the client was happy with.",
         thankYou: "Thank you for reading!",
         furtherInfo:
-          "For further information about my involvement in the design and development of ACE360 please don’t hesitate to ask.",
+          "For further information about my involvement in the design and development of the Assessors Guild please don’t hesitate to ask.",
       },
       visuals: {
         discovery:

@@ -26,61 +26,68 @@
     min-width: 67%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 160px 16px 16px 40px;
+    justify-content: space-between;
+    padding: 160px 40px 16px 40px;
     .introContent {
       display: flex;
       flex-direction: column;
-      &:first-child {
-        margin-bottom: 160px;
-      }
-    }
-    .projectName {
-      font-weight: 600;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
-      text-decoration: none;
-      &[href^="http"] {
-        &::after {
-          content: "🔗";
-          margin-left: 8px;
-          font-size: 16px;
+      // &:first-child {
+      //   margin-bottom: 40px;
+      // }
+      .projectName {
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        text-decoration: none;
+        &[href^="http"] {
+          &::after {
+            content: "🔗";
+            margin-left: 8px;
+            font-size: 16px;
+          }
+        }
+        &:not([href]) {
+          cursor: default;
         }
       }
-      &:not([href]) {
-        cursor: default;
+      .projectTLDR {
+        font-size: 24px;
+        line-height: 125%;
+        max-width: 512px;
+        font-weight: 300;
+      }
+      strong {
+        font-weight: 700;
+        display: block;
+        margin-top: 16px;
       }
     }
-    .projectTLDR {
-      font-size: 24px;
-      line-height: 125%;
-      max-width: 512px;
-      font-weight: 300;
+    .introMeta {
+      .splashSubHead {
+        font-weight: bold;
+        line-height: 19px;
+        color: #748690;
+        margin-top: 24px;
+      }
     }
-    strong {
-      font-weight: 700;
-      display: block;
-      margin-bottom: 16px;
-    }
-    .role {
-      margin-right: 4px;
-    }
-    .role,
-    .projectRole {
-      display: inline-block;
-    }
-    .disclaimer {
-      font-size: 14px;
-      line-height: 150%;
-      color: $subText;
-      margin-top: 80px;
-      max-width: 400px;
-    }
+  }
+  .disclaimer {
+    font-size: 14px;
+    line-height: 150%;
+    color: $subText;
+    max-width: 400px;
   }
 }
 
+@media (max-width: 1125px) {
+  .splashContainer {
+    .splashContent {
+      padding-top: 80px;
+    }
+  }
+}
 @media (max-width: 1023px) {
   .splashContainer {
     .splashImage {
@@ -95,8 +102,7 @@
 @media (max-width: 774px) {
   .splashContainer {
     flex-direction: column;
-    max-height: 100%;
-    min-height: 600px;
+    min-height: fit-content;
     .splashImage {
       max-height: 120px;
       padding: 16px 0;

@@ -46,15 +46,17 @@ export default function Splash(props) {
             {props.projectName}
           </a>
           <p className={styles.projectTLDR}>{props.projectTLDR}</p>
-        </div>
-        <div>
           <strong>{props.client}</strong>
-          <div>
-            <p className={styles.role}>Role:</p>
-            <p className={styles.projectRole}>{props.role}</p>
-            <p className={styles.disclaimer}>{props.disclaimer}</p>
-          </div>
         </div>
+        <div className={styles.introMeta}>
+          <p className={styles.splashSubHead}>Role</p>
+          <p className={styles.splashMetaContent}>{props.role}</p>
+          <p className={styles.splashSubHead}>Tools</p>
+          <p className={styles.splashMetaContent}>{props.tools}</p>
+          <p className={styles.splashSubHead}>What did I do?</p>
+          <p className={styles.splashMetaContent}>{props.did}</p>
+        </div>
+        <p className={styles.disclaimer}>{props.disclaimer}</p>
       </div>
     </div>
   )
