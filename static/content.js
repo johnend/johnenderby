@@ -514,3 +514,321 @@ export const caseStudies = [
     },
   },
 ]
+
+export const fdWork = [
+  {
+    f2pAdmin: {
+      meta: {
+        projectName: "Free to play",
+        projectColor: "#1F375B",
+        website: "",
+        role: "Lead Product Designer",
+        tools: "Sketch, Figma, Framer, Confluence, Jira",
+        did:
+          "Planned, researched, and designed the self-service free to play game builder",
+        client: "",
+        projectTLDR: "",
+        splashImage: "",
+        disclaimer: "",
+      },
+      intro: {
+        what: "",
+        why: "",
+      },
+      define: {
+        firstTitle: "Project outline",
+        firstPara: "",
+        secondTitle: "Workshops and research",
+        secondPara: "",
+      },
+      ideate: {
+        firstTitle: "Understanding the complexity",
+        firstPara: "",
+        secondTitle: "Translation into a visual language",
+        secondPara: "",
+      },
+      test: {
+        firstTitle: "Putting it all together",
+        firstPara: "",
+        secondTitle: "Not just a designer",
+        secondPara: "",
+      },
+      deliver: {
+        firstTitle: "Cross functional agility",
+        firstPara: "",
+        secondTitle: "Product ownership",
+        secondPara: "",
+      },
+      outro: {
+        outroTitle: "Learnings",
+        outroPara: "",
+        thankYou: "Thank you for reading!",
+        furtherInfo: "",
+      },
+      visuals: {
+        discovery: "",
+        ideate: "",
+        test: "",
+        deliver: "",
+      },
+      caption: {
+        discovery: figmaCaption,
+        ideate: figmaCaption,
+        test: figmaCaption,
+        deliver: figmaCaption,
+      },
+    },
+  },
+  {
+    f2pGames: {
+      meta: {
+        projectName: "Free to play",
+        projectColor: "#1F375B",
+        website: "",
+        role: "Lead Product Designer",
+        tools: "Sketch, Figma, Framer, Confluence, Jira",
+        did:
+          "Planned, researched, and designed the self-service free to play game builder",
+        client: "",
+        projectTLDR: "",
+        splashImage: "",
+        disclaimer: "",
+      },
+      intro: {
+        what: "",
+        why: "",
+      },
+      define: {
+        firstTitle: "Project outline",
+        firstPara: "",
+        secondTitle: "Workshops and research",
+        secondPara: "",
+      },
+      ideate: {
+        firstTitle: "Understanding the complexity",
+        firstPara: "",
+        secondTitle: "Translation into a visual language",
+        secondPara: "",
+      },
+      test: {
+        firstTitle: "Putting it all together",
+        firstPara: "",
+        secondTitle: "Not just a designer",
+        secondPara: "",
+      },
+      deliver: {
+        firstTitle: "Cross functional agility",
+        firstPara: "",
+        secondTitle: "Product ownership",
+        secondPara: "",
+      },
+      outro: {
+        outroTitle: "Learnings",
+        outroPara: "",
+        thankYou: "Thank you for reading!",
+        furtherInfo: "",
+      },
+      visuals: {
+        discovery: "",
+        ideate: "",
+        test: "",
+        deliver: "",
+      },
+      caption: {
+        discovery: figmaCaption,
+        ideate: figmaCaption,
+        test: figmaCaption,
+        deliver: figmaCaption,
+      },
+    },
+  },
+  {
+    numberFire: {
+      meta: {
+        projectName: "Free to play",
+        projectColor: "#222",
+        website: "",
+        role: "Lead Product Designer",
+        tools: "Sketch, Figma, Framer, Confluence, Jira",
+        did:
+          "Planned, researched, and designed the self-service free to play game builder",
+        client: "",
+        projectTLDR: "",
+        splashImage: "",
+        disclaimer: "",
+      },
+      intro: {
+        what: "",
+        why: "",
+      },
+      define: {
+        firstTitle: "Project outline",
+        firstPara: "",
+        secondTitle: "Workshops and research",
+        secondPara: "",
+      },
+      ideate: {
+        firstTitle: "Understanding the complexity",
+        firstPara: "",
+        secondTitle: "Translation into a visual language",
+        secondPara: "",
+      },
+      test: {
+        firstTitle: "Putting it all together",
+        firstPara: "",
+        secondTitle: "Not just a designer",
+        secondPara: "",
+      },
+      deliver: {
+        firstTitle: "Cross functional agility",
+        firstPara: "",
+        secondTitle: "Product ownership",
+        secondPara: "",
+      },
+      outro: {
+        outroTitle: "Learnings",
+        outroPara: "",
+        thankYou: "Thank you for reading!",
+        furtherInfo: "",
+      },
+      visuals: {
+        discovery: "",
+        ideate: "",
+        test: "",
+        deliver: "",
+      },
+      caption: {
+        discovery: figmaCaption,
+        ideate: figmaCaption,
+        test: figmaCaption,
+        deliver: figmaCaption,
+      },
+    },
+  },
+  {
+    playerVideos: {
+      meta: {
+        projectName: "Free to play",
+        projectColor: "#1F375B",
+        website: "",
+        role: "Lead Product Designer",
+        tools: "Sketch, Figma, Framer, Confluence, Jira",
+        did:
+          "Planned, researched, and designed the self-service free to play game builder",
+        client: "",
+        projectTLDR: "",
+        splashImage: "",
+        disclaimer: "",
+      },
+      intro: {
+        what: "",
+        why: "",
+      },
+      define: {
+        firstTitle: "Project outline",
+        firstPara: "",
+        secondTitle: "Workshops and research",
+        secondPara: "",
+      },
+      ideate: {
+        firstTitle: "Understanding the complexity",
+        firstPara: "",
+        secondTitle: "Translation into a visual language",
+        secondPara: "",
+      },
+      test: {
+        firstTitle: "Putting it all together",
+        firstPara: "",
+        secondTitle: "Not just a designer",
+        secondPara: "",
+      },
+      deliver: {
+        firstTitle: "Cross functional agility",
+        firstPara: "",
+        secondTitle: "Product ownership",
+        secondPara: "",
+      },
+      outro: {
+        outroTitle: "Learnings",
+        outroPara: "",
+        thankYou: "Thank you for reading!",
+        furtherInfo: "",
+      },
+      visuals: {
+        discovery: "",
+        ideate: "",
+        test: "",
+        deliver: "",
+      },
+      caption: {
+        discovery: figmaCaption,
+        ideate: figmaCaption,
+        test: figmaCaption,
+        deliver: figmaCaption,
+      },
+    },
+  },
+  {
+    playAction: {
+      meta: {
+        projectName: "Free to play",
+        projectColor: "#1F375B",
+        website: "",
+        role: "Lead Product Designer",
+        tools: "Sketch, Figma, Framer, Confluence, Jira",
+        did:
+          "Planned, researched, and designed the self-service free to play game builder",
+        client: "",
+        projectTLDR: "",
+        splashImage: "",
+        disclaimer: "",
+      },
+      intro: {
+        what: "",
+        why: "",
+      },
+      define: {
+        firstTitle: "Project outline",
+        firstPara: "",
+        secondTitle: "Workshops and research",
+        secondPara: "",
+      },
+      ideate: {
+        firstTitle: "Understanding the complexity",
+        firstPara: "",
+        secondTitle: "Translation into a visual language",
+        secondPara: "",
+      },
+      test: {
+        firstTitle: "Putting it all together",
+        firstPara: "",
+        secondTitle: "Not just a designer",
+        secondPara: "",
+      },
+      deliver: {
+        firstTitle: "Cross functional agility",
+        firstPara: "",
+        secondTitle: "Product ownership",
+        secondPara: "",
+      },
+      outro: {
+        outroTitle: "Learnings",
+        outroPara: "",
+        thankYou: "Thank you for reading!",
+        furtherInfo: "",
+      },
+      visuals: {
+        discovery: "",
+        ideate: "",
+        test: "",
+        deliver: "",
+      },
+      caption: {
+        discovery: figmaCaption,
+        ideate: figmaCaption,
+        test: figmaCaption,
+        deliver: figmaCaption,
+      },
+    },
+  },
+]

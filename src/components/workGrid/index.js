@@ -23,7 +23,7 @@ export default function WorkGrid(props) {
           className={cx(styles.workExample, styles.narrow)}
           src={lifeQuay}
           alt="LifeQuay dashboard image on mobile"
-          id="LifeQuay"
+          id="nFHome"
         />
       </a>
       <a

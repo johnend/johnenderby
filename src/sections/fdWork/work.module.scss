@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.work {
+  padding: 80px 0 0 0;
+  position: relative;
+  width: 100%;
+  h2 {
+    color: $FanDuel;
+    margin-bottom: 16px;
+  }
+  h3 {
+    max-width: 496px;
+    margin-bottom: 24px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  p {
+    display: block;
+    max-width: 496px;
+    margin-bottom: 8px;
+  }
+  p.small {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .work {
+    padding: 80px 0;
+  }
+  .content {
+    margin-bottom: 24px;
+  }
+}
