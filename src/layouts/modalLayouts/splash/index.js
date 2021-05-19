@@ -6,6 +6,8 @@ import StAndrewsLinks from "../../../../static/images/svgComponents/stAndrews"
 import ACE360 from "../../../../static/images/svgComponents/ace360"
 import LifeQuay from "../../../../static/images/svgComponents/lifeQuay"
 import AG from "../../../../static/images/svgComponents/assessorsGuild"
+import NumberFire from "../../../../static/images/svgComponents/nfScout"
+import FanDuel from "../../../../static/images/svgComponents/fanduelHorizontal"
 
 function Icon(x) {
   switch (x) {
@@ -19,6 +21,10 @@ function Icon(x) {
       return <Menzies />
     case "The Assessors Guild":
       return <AG />
+    case "numberFire SCOUT":
+      return <NumberFire />
+    case "Free to play":
+      return <FanDuel />
     default:
       return null
   }

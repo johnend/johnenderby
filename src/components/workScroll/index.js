@@ -33,13 +33,13 @@ export default function WorkScroll(props) {
         title="LifeQuay: hassle free management of your important documents and processes"
         className={styles.lifeQuay}
         onClick={props.handleClick}
+        id="LifeQuay"
       >
         <h3>LifeQuay</h3>
         <img
           className={cx(styles.workExample, styles.narrow)}
           src={lifeQuay}
           alt="LifeQuay dashboard image on mobile"
-          id="LifeQuay"
         />
       </a>
       <a
@@ -47,13 +47,13 @@ export default function WorkScroll(props) {
         title="ACE360's features and benefits"
         className={styles.ace360}
         onClick={props.handleClick}
+        id="ACE360"
       >
         <h3>ACE360</h3>
         <img
           className={cx(styles.workExample, styles.wide)}
           src={ace360}
           alt="ACE360 apprentice record on desktop"
-          id="ACE360"
         />
       </a>
       <a
@@ -61,13 +61,13 @@ export default function WorkScroll(props) {
         title="The home of the app, on the home of golf's website"
         className={styles.stAndrews}
         onClick={props.handleClick}
+        id="StAndrews"
       >
         <h3>St Andrews Links</h3>
         <img
           className={cx(styles.workExample, styles.narrow)}
           src={stAndrews}
           alt="St Andrews links trust app homepage on mobile"
-          id="StAndrews"
         />
       </a>
       <a
@@ -75,6 +75,7 @@ export default function WorkScroll(props) {
         title="Professional memberships for apprenticeship assessments from the Assessors Guild"
         className={styles.menziesCargo}
         onClick={props.handleClick}
+        id="Menzies"
       >
         <h3>Menzies Cargo</h3>
         <img
@@ -82,7 +83,6 @@ export default function WorkScroll(props) {
           src={menziesCargo}
           alt="Menzies cargo dashboard on desktop"
           title="Ask me about this one, no public link available 😄"
-          id="Menzies"
         />
       </a>
       <a
@@ -90,13 +90,13 @@ export default function WorkScroll(props) {
         title="Professional memberships for apprenticeship assessments from the Assessors Guild"
         className={styles.aG}
         onClick={props.handleClick}
+        id="AG"
       >
         <h3>Assessor's Guild</h3>
         <img
           className={cx(styles.workExample, styles.narrow, styles.aG)}
           src={aG}
           alt="An example of an Assessors Guild membership level"
-          id="AG"
         />
       </a>
     </div>

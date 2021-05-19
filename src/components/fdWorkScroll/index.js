@@ -17,13 +17,13 @@ export default function WorkScroll(props) {
         title="numberFire SCOUT: a reimagining of an old product"
         className={styles.nFHome}
         onClick={props.handleClick}
+        id="numberFire"
       >
         <h3>SCOUT</h3>
         <img
           className={cx(styles.workExample, styles.narrow)}
           src={nFHome}
           alt="numberFire home screen concept"
-          id="numberFire"
         />
       </a>
       <a
@@ -31,13 +31,13 @@ export default function WorkScroll(props) {
         title="Free, interactive live betting"
         className={styles.playAction}
         onClick={props.handleClick}
+        id="playAction"
       >
         <h3>Play Action</h3>
         <img
           className={cx(styles.workExample, styles.narrow)}
           src={playAction}
           alt="Play Action how to play screen"
-          id="playAction"
         />
       </a>
       <a
@@ -45,13 +45,13 @@ export default function WorkScroll(props) {
         title="Player videos: video content to help with fantasy sports line-up research"
         className={styles.playerVideos}
         onClick={props.handleClick}
+        id="playerVideos"
       >
         <h3>Player Videos</h3>
         <img
           className={cx(styles.workExample, styles.wide)}
           src={playerVideos}
           alt="Player videos concept in a web view"
-          id="playerVideos"
         />
       </a>
       <a
@@ -59,13 +59,13 @@ export default function WorkScroll(props) {
         title="Free to play pick'em games"
         className={styles.wFH}
         onClick={props.handleClick}
+        id="f2pGame"
       >
         <h3>Free to Play Games</h3>
         <img
           className={cx(styles.workExample, styles.narrow, styles.wFH)}
           src={wFH}
           alt="Win from home pick'em game"
-          id="f2pGame"
         />
       </a>
       <a
@@ -73,13 +73,13 @@ export default function WorkScroll(props) {
         title="Free to play admin: internal SaaS for generating games on the fly"
         className={styles.f2pAdmin}
         onClick={props.handleClick}
+        id="f2pAdmin"
       >
         <h3>Free to Play Admin</h3>
         <img
           className={cx(styles.workExample, styles.wide)}
           src={f2pAdmin}
           alt="F2P admin games table"
-          id="f2pAdmin"
         />
       </a>
     </div>

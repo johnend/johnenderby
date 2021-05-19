@@ -645,7 +645,7 @@ export const fdWork = [
   {
     numberFire: {
       meta: {
-        projectName: "Free to play",
+        projectName: "numberFire SCOUT",
         projectColor: "#222",
         website: "",
         role: "Lead Product Designer",
@@ -653,8 +653,8 @@ export const fdWork = [
         did:
           "Planned, researched, and designed the self-service free to play game builder",
         client: "",
-        projectTLDR: "",
-        splashImage: "",
+        projectTLDR: "A hack week project that landed on a roadmap.",
+        splashImage: "./images/the-scout.png",
         disclaimer: "",
       },
       intro: {
@@ -692,10 +692,14 @@ export const fdWork = [
         furtherInfo: "",
       },
       visuals: {
-        discovery: "",
-        ideate: "",
-        test: "",
-        deliver: "",
+        discovery:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D0%253A1",
+        ideate:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D4%253A5257",
+        test:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D0%253A343",
+        deliver:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D0%253A1383",
       },
       caption: {
         discovery: figmaCaption,
