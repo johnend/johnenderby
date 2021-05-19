@@ -23,7 +23,13 @@ function Icon(x) {
       return <AG />
     case "numberFire SCOUT":
       return <NumberFire />
-    case "Free to play":
+    case "Free to play admin platform":
+      return <FanDuel />
+    case "Free to play games":
+      return <FanDuel />
+    case "PlayAction":
+      return <FanDuel />
+    case "Player videos":
       return <FanDuel />
     default:
       return null

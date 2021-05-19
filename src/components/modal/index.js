@@ -58,19 +58,21 @@ export default function Modal(props) {
           secondPara={props.defineSecondPara}
         />
         {/* Ideate section */}
-        <Process
-          projectColor={props.projectColor}
-          reverse="reverse"
-          processIcon={"Lightbulb"}
-          color="fuchsia"
-          embedLink={props.ideateVisuals}
-          embedCaption={props.ideateCaption}
-          //Data
-          firstTitle={props.ideateFirstTitle}
-          firstPara={props.ideateFirstPara}
-          secondTitle={props.ideateSecondTitle}
-          secondPara={props.ideateSecondPara}
-        />
+        {props.ideateVisuals ? (
+          <Process
+            projectColor={props.projectColor}
+            reverse="reverse"
+            processIcon={"Lightbulb"}
+            color="fuchsia"
+            embedLink={props.ideateVisuals}
+            embedCaption={props.ideateCaption}
+            //Data
+            firstTitle={props.ideateFirstTitle}
+            firstPara={props.ideateFirstPara}
+            secondTitle={props.ideateSecondTitle}
+            secondPara={props.ideateSecondPara}
+          />
+        ) : null}
         {/* Test section */}
         {props.testVisuals ? (
           <Process

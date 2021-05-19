@@ -519,39 +519,45 @@ export const fdWork = [
   {
     f2pAdmin: {
       meta: {
-        projectName: "Free to play",
+        projectName: "Free to play admin platform",
         projectColor: "#1F375B",
         website: "",
         role: "Lead Product Designer",
-        tools: "Sketch, Figma, Framer, Confluence, Jira",
+        tools: "Sketch, Figma, Framer, Abstract",
         did:
           "Planned, researched, and designed the self-service free to play game builder",
         client: "",
-        projectTLDR: "",
-        splashImage: "",
+        projectTLDR: "Admin tools deserve love too ❤️",
+        splashImage: "../images/F2PFDLogo.png",
         disclaimer: "",
       },
       intro: {
-        what: "",
-        why: "",
+        what:
+          "A self serve internal SaaS platform to allow FanDuel's product operations team to generate free to play games on the fly",
+        why:
+          "Previously engineered by third party providers FanDuel's Free to Play team wanted to bring the games in house to speed up development and reduce bugs",
       },
       define: {
-        firstTitle: "Project outline",
-        firstPara: "",
-        secondTitle: "Workshops and research",
-        secondPara: "",
+        firstTitle: "Reducing reliance",
+        firstPara:
+          "Historically all FanDuel's free to play pick'em games were engineered by a third party team from a contracted supplier. Although the engineering team were top notch FanDuel's, often extreme, short deadlines meant we would have to compromise heavily on feature sets for our planned games. There would also be complications with the software integrations between the two systems that could often result in delays and unhappy customers.",
+        secondTitle: "Pareto-ing our games",
+        secondPara:
+          "80% of the games produced with the supplier were often of the same few formats but always turned up recurring issues. Our plan was to take that 80% in-house and reduce the overhead as well as reducing the errors and the time to go live (from 2+ weeks to just a few hours).",
       },
       ideate: {
-        firstTitle: "Understanding the complexity",
-        firstPara: "",
-        secondTitle: "Translation into a visual language",
-        secondPara: "",
+        firstTitle: "Admin tools have users too",
+        firstPara:
+          "In order to understand the frustrations our product operations team had with our systems I spent some time with them understand how they work. A lot came to light. For example, they would often get so used to doing what they needed to do on a daily basis helper information often got in the way. I needed to try and make the process streamlined and easily repeatable. Allowing them to operate almost from memory.",
+        secondTitle: "Learned behaviour isn't good or bad",
+        secondPara: `...but design can be. Work arounds, and "that's how it's always been done" workflows hurt new employees and increase the time to learn a new system. I optimised the form and data entry to ensure the pros could rattle through what they needed, while maintaining key labels and information for new starts.`,
       },
       test: {
-        firstTitle: "Putting it all together",
-        firstPara: "",
-        secondTitle: "Not just a designer",
-        secondPara: "",
+        firstTitle: "Representing the outcome",
+        firstPara:
+          "In addition to organising the information for speed and efficiency I also wanted to give the product operations team a sense of how the content was laid out after the game was created. I organised fields and data points around the end result in order to reflect what would be shown to users. As the scope for our MVP was incredibly tight we didn't have time to develop a true preview of a game under construction so this was the next best thing.",
+        secondTitle: "Reducing design overhead to almost none",
+        secondPara: `A large amount of the time spend designing these games is spent theming them to fit with a partner's branding or working the supporting marketing creative into the visuals. In order to reduce this time I put together some documentation for the marketing design team, and worked with product and engineering to ensure a branding and theme section was added to the admin platform.`,
       },
       deliver: {
         firstTitle: "Cross functional agility",
@@ -561,14 +567,19 @@ export const fdWork = [
       },
       outro: {
         outroTitle: "Learnings",
-        outroPara: "",
+        outroPara:
+          "This project took well over 6 months of work to get to MVP. I played a hand in not only the design and conceptualisation of the features, but also helping shape and define the scope of the MVP itself. Without my input we would have been building much much more and wouldn't have hit key timeline milestones that enabled us to produce games for the NBA playoffs.",
         thankYou: "Thank you for reading!",
-        furtherInfo: "",
+        furtherInfo:
+          "There is a lot more to discuss on this project and this is only a snapshot. Feel free to ask me for more information!",
       },
       visuals: {
-        discovery: "",
-        ideate: "",
-        test: "",
+        discovery:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsZWTNwVyKwMApHyCBzV7wf%2F%25E2%259A%2599%25EF%25B8%258FF2P-Admin%3Fnode-id%3D301%253A10624",
+        ideate:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsZWTNwVyKwMApHyCBzV7wf%2F%25E2%259A%2599%25EF%25B8%258FF2P-Admin%3Fnode-id%3D301%253A7786",
+        test:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsZWTNwVyKwMApHyCBzV7wf%2F%25E2%259A%2599%25EF%25B8%258FF2P-Admin%3Fnode-id%3D1007%253A84",
         deliver: "",
       },
       caption: {
@@ -582,38 +593,46 @@ export const fdWork = [
   {
     f2pGames: {
       meta: {
-        projectName: "Free to play",
+        projectName: "Free to play games",
         projectColor: "#1F375B",
         website: "",
         role: "Lead Product Designer",
-        tools: "Sketch, Figma, Framer, Confluence, Jira",
+        tools: "Sketch, Figma, Abstract, Framer",
         did:
-          "Planned, researched, and designed the self-service free to play game builder",
+          "Planned, researched, and designed the game templates for all FanDuel's free to play games, as well as those generated by the admin system",
         client: "",
-        projectTLDR: "",
-        splashImage: "",
-        disclaimer: "",
+        projectTLDR: "Free to play pick'em games of all shapes and sizes",
+        splashImage: "../images/F2PFDLogo.png",
+        disclaimer:
+          "🚨 Some of the work shown was originally done in Sketch. Issues may be present in the Figma embeds.",
       },
       intro: {
-        what: "",
-        why: "",
+        what:
+          "Free to play games of all kinds have been designed by my at FanDuel covering multi-day games during the initial outbreak of COVID-19 as well as sidekick games to go alongside sporting events",
+        why:
+          "Free to play games form a key part of FanDuel's business. They keep users interested (especially when there aren't any sports to watch), and give FanDuel things to shout about on the TV and in the media to bring new customers to the apps.",
       },
       define: {
-        firstTitle: "Project outline",
-        firstPara: "",
-        secondTitle: "Workshops and research",
-        secondPara: "",
+        firstTitle: "Win from Home",
+        firstPara:
+          "Shown to the right in the Figma embed, Win from Home was a weekly recurring pick'em game FanDuel produced in order to retain user engagement with the platform during the sports hiatus. A popular game for FanDuel, users continued to play and answer questions right up until the return of sports later in 2020.",
+        secondTitle: "",
+        secondPara:
+          "At the time we had no idea how long the pandemic, and the sports hiatus, would last. I needed to come up with a game format and design that would allow us to scale as time went on. This meant adding new question packs, and being able to see past performances in older ones.",
       },
       ideate: {
-        firstTitle: "Understanding the complexity",
-        firstPara: "",
-        secondTitle: "Translation into a visual language",
-        secondPara: "",
+        firstTitle: "Super Bowl 2020",
+        firstPara:
+          "Every year during the Super Bowl FanDuel release a free to play game. Often this game will follow the same mechanic as other pick'em games but there may be a few other bells and whistles included to make it even more fun. 2020, with the game being held in Miami, was the year of neon and swipe interactions. We also added in a separate friends league to the game so you could compete with your friends for bragging rights.",
+        secondTitle: "Working with creative design",
+        secondPara:
+          "Super Bowl is a crazy time at FanDuel everything, and everyone is busier trying to prepare. Our internal marketing team have a lot to do during this time, but we wanted to make sure we could include them in the process for this game. We worked with them to tie in the marketing campaigns' style as well as helping us generate some awesome animated gifs.",
       },
       test: {
-        firstTitle: "Putting it all together",
-        firstPara: "",
-        secondTitle: "Not just a designer",
+        firstTitle: "An example of things to come",
+        firstPara:
+          "NBA eHoops was another example of a game we produced during the pandemic a pick'em game where players were asked to predict the winner of some NBA2K matchups between famous ballers. It also serves as a very good example of the sort of game that could be produced using the Free to Play admin system.",
+        secondTitle: "",
         secondPara: "",
       },
       deliver: {
@@ -623,15 +642,19 @@ export const fdWork = [
         secondPara: "",
       },
       outro: {
-        outroTitle: "Learnings",
-        outroPara: "",
+        outroTitle: "There are many, many more",
+        outroPara:
+          "The three presented games are good examples of the sorts of games I have designed on Free to Play. I learned something designing each and every one of them, though this is only a small snapshot of what I worked on. Please let me know if you would like to see more!",
         thankYou: "Thank you for reading!",
         furtherInfo: "",
       },
       visuals: {
-        discovery: "",
-        ideate: "",
-        test: "",
+        discovery:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fu2hnclK9b8nJKbO9Z2xrr2%2F%25F0%259F%258E%25B2-2020-Win-From-Home-Game%3Fnode-id%3D0%253A1",
+        ideate:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FiiqDxAerVw8Y9UdNhZO9ew%2F%25F0%259F%258E%25B2-2020-Super-Bowl-Pick-%25E2%2580%2598Em%3Fnode-id%3D0%253A1",
+        test:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FAEVfQcRtFc2qF23sdjhehz%2F%25F0%259F%258E%25B2-2020-NBA-eHoops-Player-Tournament-Game-Templates-97f39c1%3Fnode-id%3D0%253A1",
         deliver: "",
       },
       caption: {
@@ -649,45 +672,56 @@ export const fdWork = [
         projectColor: "#222",
         website: "",
         role: "Lead Product Designer",
-        tools: "Sketch, Figma, Framer, Confluence, Jira",
-        did:
-          "Planned, researched, and designed the self-service free to play game builder",
+        tools: "Sketch, Abstract, Google Slides",
+        did: "Reimagined and rebranded an old FanDuel app",
         client: "",
-        projectTLDR: "A hack week project that landed on a roadmap.",
-        splashImage: "./images/the-scout.png",
-        disclaimer: "",
+        projectTLDR: "A hack week project that landed on a roadmap",
+        splashImage: "../images/the-scout.png",
+        disclaimer:
+          "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
       },
       intro: {
-        what: "",
-        why: "",
+        what:
+          "Every year teams within product development engage in a week long hack week to generate new ideas and features, and to have a bit of fun. FanDuel SCOUT, an old research app within the company’s portfolio, had been forgotten and I wanted to see if there was anything we could do to bring it back to life.",
+        why:
+          "The majority of FanDuel’s users aren’t playing for the big bucks. They’re probably entering contests with friends for bragging rights, but that doesn’t mean they don’t want to win, and winning requires a lot of knowledge, a bit of research and a fair amount of luck. SCOUT was FanDuel’s research app, but it hadn’t been worked on for months. ",
       },
       define: {
-        firstTitle: "Project outline",
-        firstPara: "",
-        secondTitle: "Workshops and research",
-        secondPara: "",
+        firstTitle: "Why SCOUT?",
+        firstPara:
+          "Why not? But really what I wanted to do was take something we already had: a fully functioning, though not feature rich, app, and combine it with a brand that’s all about research.",
+        secondTitle: "Why numberFire?",
+        secondPara:
+          "numberFire is a sports research hub, serving millions of fantasy and daily fantasy sports customers every week. It was acquired by FanDuel early on and has since developed to become a respected authority in the world of fantasy sports. Unfortunately the native app leaves a lot to be desired and doesn’t live up to the reputation of the website.",
       },
       ideate: {
-        firstTitle: "Understanding the complexity",
-        firstPara: "",
-        secondTitle: "Translation into a visual language",
-        secondPara: "",
+        firstTitle: "A consolidation of ideas",
+        firstPara:
+          "My idea was to take some of the features and functionality of both products and smash them together into one. Take the best features of SCOUT (player info and stats) and numberFire (up to date articles and videos about players and fantasy sports) and combine them into a new research app under the numberFire brand.",
+        secondTitle: "Rebrand for the win",
+        secondPara:
+          "There is more opportunity to engage with researching players using the numberFire brand than with FanDuel and allows us to tap into our competitors user-base (as a good number of SCOUT users aren't active on FanDuel Fantasy - 15.34%). Additionally, as it was a hack week project, it allowed for some creative freedom in component design that spoke to some rebrand work being done on numberFire in the background.",
       },
       test: {
-        firstTitle: "Putting it all together",
-        firstPara: "",
-        secondTitle: "Not just a designer",
-        secondPara: "",
+        firstTitle: "Lobby and content",
+        firstPara:
+          'First we took some of the features from numberFire, and some of the content, and consolidated the homepage into something more visual. Using the principle of progressive disclosure to hide more of the "power user" features deeper within the navigation stack also allowed us to satisfy the conflicting use cases of casual vs experienced users.',
+        secondTitle: "Super powerful search",
+        secondPara:
+          "Conceptually this was an untested idea but the intention behind it was simple: show users what they might want in a simple way, and if we show them things that aren't quite right give them the tools to narrow down the results to their liking when they need them and not before.",
       },
       deliver: {
-        firstTitle: "Cross functional agility",
-        firstPara: "",
-        secondTitle: "Product ownership",
-        secondPara: "",
+        firstTitle: "Focus on points of recognition",
+        firstPara:
+          "FanDuel SCOUT focuses on presenting data and as much of it as possible which can be important when considering comparison. However, I felt that the visual recognition of players' faces, and their team colours, was an important aspect of speeding up navigation, while reducing the cognitive load. Presenting cards like this also allowed for modularisation of sub-components providing opportunities to introduce cross-sell items and data from other FanDuel properties such as Sportsbook odds.",
+        secondTitle: "Visual, personalised player comparison",
+        secondPara:
+          "In addition to the visual treatment on player cards I wanted to make the list view more visual, and allow the user to customise the data they wanted to compare. The intention here is that in the list view users would be able to select stats they felt were important, but could easily enter the card for a more comprehensive view.",
       },
       outro: {
         outroTitle: "Learnings",
-        outroPara: "",
+        outroPara:
+          "Working on project like this in incredibly rewarding. The creative freedom of working with minimal constraints allows for thoughts that might otherwise get held back by practicalities. The more you dig into the details of a project like this the ideas you have and when you're limited only by what could bring value you can come up with some really interesting solutions to problems. The cool things about this little experiment was that the idea resonated with others in the company and is now on the roadmap for the numberFire teams to work on!",
         thankYou: "Thank you for reading!",
         furtherInfo: "",
       },
@@ -697,9 +731,9 @@ export const fdWork = [
         ideate:
           "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D4%253A5257",
         test:
-          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D0%253A343",
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D170%253A3610",
         deliver:
-          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D0%253A1383",
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FM21h605wSrNFiDEyWeRrLU%2FnumberFire-SCOUT%3Fnode-id%3D170%253A3611",
       },
       caption: {
         discovery: figmaCaption,
@@ -712,27 +746,32 @@ export const fdWork = [
   {
     playerVideos: {
       meta: {
-        projectName: "Free to play",
+        projectName: "Player videos",
         projectColor: "#1F375B",
         website: "",
         role: "Lead Product Designer",
-        tools: "Sketch, Figma, Framer, Confluence, Jira",
-        did:
-          "Planned, researched, and designed the self-service free to play game builder",
+        tools: "Sketch, Abstract",
+        did: "Planned, researched, and designed a video player component",
         client: "",
-        projectTLDR: "",
+        projectTLDR:
+          "Player video content front and center while researching your lineup - my first FanDuel project",
         splashImage: "",
-        disclaimer: "",
+        disclaimer:
+          "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
       },
       intro: {
-        what: "",
-        why: "",
+        what:
+          "A player video component to be embedded into our web and native apps. Showcasing recent news about specific players.",
+        why:
+          "FanDuel is not just apps, we have a TV station, podcast, and social media channels on all the major apps. Our content team wanted to more deeply integrate some of the video content that is produced into the app. The intention was to provide alternative research content to users, but also to showcase FanDuel's network.",
       },
       define: {
-        firstTitle: "Project outline",
-        firstPara: "",
-        secondTitle: "Workshops and research",
-        secondPara: "",
+        firstTitle: "First things first",
+        firstPara:
+          "This project was as much about producing something new as it was getting me used to the ways of working at FanDuel. I had come from an agency background where designs were often done in single files by a single designer. At FanDuel I needed to work with other designers in Abstract, working on branches and within a large distributed team. This wasn't too much of a challenge for me and I took it all in stride. Abstract's workflow is similar to an engineers, and I'm reasonably happy working in the terminal and using git (I can't wait for branching to come to Figma!).",
+        secondTitle: "",
+        secondPara:
+          "There were constraints on this project in the form of a specific video player from a third party. This was used throughout our apps to showcase our content so I had to learn how flexible it was. This feature is now live, so if you're in the US and can access FanDuel you may have already seen my work!",
       },
       ideate: {
         firstTitle: "Understanding the complexity",
@@ -753,13 +792,15 @@ export const fdWork = [
         secondPara: "",
       },
       outro: {
-        outroTitle: "Learnings",
-        outroPara: "",
+        outroTitle: "It all started here",
+        outroPara:
+          "With this being my first project at FanDuel there isn't enough space in this section to explain how much I learned from this small project. Constraints and complications with getting data from various APIs meant working with engineers to find sensible design solutions, and understanding all the attributable content providers meant designing a solution that could accommodate a number of varieties of logos that could scale when more needed to be added. I haven't even talked about the video player yet and the iconography! Feel free to quiz me on it if you're interested 😁",
         thankYou: "Thank you for reading!",
         furtherInfo: "",
       },
       visuals: {
-        discovery: "",
+        discovery:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FUY6cVIAjfX09SC8R62E8vD%2Flineup-entry-management-VOD-Player-Video-32f6624%3Fnode-id%3D0%253A11692",
         ideate: "",
         test: "",
         deliver: "",
@@ -775,39 +816,48 @@ export const fdWork = [
   {
     playAction: {
       meta: {
-        projectName: "Free to play",
+        projectName: "PlayAction",
         projectColor: "#1F375B",
         website: "",
         role: "Lead Product Designer",
-        tools: "Sketch, Figma, Framer, Confluence, Jira",
+        tools: "Sketch, Figma, Abstract, Slack",
         did:
-          "Planned, researched, and designed the self-service free to play game builder",
+          "Redesigned and updated a third party product to fit within the FanDuel ecosystem",
         client: "",
-        projectTLDR: "",
-        splashImage: "",
-        disclaimer: "",
+        projectTLDR:
+          "A simulated live betting experience for casual users in the free to play space",
+        splashImage: "../images/play-action-logo.png",
+        disclaimer:
+          "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
       },
       intro: {
-        what: "",
-        why: "",
+        what:
+          "SimpleBet, a live betting startup based in NYC caught the eye of the commercial director on the Free to Play vertical and wanted to integrate it into our offering.",
+        why:
+          "They saw the technology providing a complimentary second screen experience to our users on game day.",
       },
       define: {
-        firstTitle: "Project outline",
-        firstPara: "",
-        secondTitle: "Workshops and research",
-        secondPara: "",
+        firstTitle: "The SimpleBet product",
+        firstPara:
+          "SimpleBet is a small startup based out of NYC. Their product is a live betting second screen experience allowing users to make bets through the course of live sports fixtures. The concept is simple, at the end of each play you'll be presented with markets to bet on the subsequent one. However, there was some tweaking that needed to be done before we could launch...",
+        secondTitle: "Some = a lot",
+        secondPara: `SimpleBet was originally designed to coexist alongside baseball games. One of the company's investors is part of the San Francisco Giants organisation and as such they started out covering their games. We had intended to use their technology to go alongside NFL games, giving fans a way to "interact" with the game.`,
       },
       ideate: {
-        firstTitle: "Understanding the complexity",
-        firstPara: "",
-        secondTitle: "Translation into a visual language",
-        secondPara: "",
+        firstTitle: "FanDuel-ifying SimpleBet",
+        firstPara:
+          "The first job was to take SimpleBet's product, and turn it into something that looked and felt like it belonged at FanDuel. This required a lot of work unpicking design decisions made on a different grid with different typefaces and colours. Using the design principles in Formation (FanDuel's design system) I got to work and updated the designs. Often creating new components that would be used in other products.",
+        secondTitle: "Turn baseball, into Football",
+        secondPara:
+          "Football and baseball are quire different which meant a number of baseball specific components needed to be updated. An example of this is the header component for specific matchups (also shown on the navigational card). For baseball SimpleBet showed a visual representation of the bases and whether which needed to be updated to show downs and possession indicators.",
       },
       test: {
-        firstTitle: "Putting it all together",
-        firstPara: "",
-        secondTitle: "Not just a designer",
-        secondPara: "",
+        firstTitle: "Making it commercial",
+        firstPara:
+          "Although PlayAction was a Free to Play game, it was earmarked to be a key driver in generating new users for Sportsbook (FanDuel's own sports betting platform). With the live betting experience educating our users in how to place bets for real money. We needed to ensure there was space, and an elegant approach to cross sell to not only ensure retention, but to provide the user with a fun, engaging experience.",
+        secondTitle: "Copy is king",
+        secondPara:
+          "Working collaboratively with our UX writer I brainstormed some ideas for copy that would excite winners (who would receive Sportsbook credit) and engage losers (each quarter of a matchup was another chance to win credit). In addition I also worked with our in house conversion engineering team to create a template for cross-sell space on the win/lose modals that show to users.",
       },
       deliver: {
         firstTitle: "Cross functional agility",
@@ -817,14 +867,18 @@ export const fdWork = [
       },
       outro: {
         outroTitle: "Learnings",
-        outroPara: "",
+        outroPara:
+          "The biggest takeaway for me on this project was working alongside a third party design and engineering team. I wanted to ensure we worked together, but that we stayed true to FanDuel's brand and weren't too infleunced by SimpleBet. We ended up working well together, and even helped solve some mutual problems that would affect both companies in the future.",
         thankYou: "Thank you for reading!",
         furtherInfo: "",
       },
       visuals: {
-        discovery: "",
-        ideate: "",
-        test: "",
+        discovery:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVL08pYlHTcQWmVMx7YHwU6%2FPlay-Action%3Fnode-id%3D0%253A507",
+        ideate:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVL08pYlHTcQWmVMx7YHwU6%2FPlay-Action%3Fnode-id%3D0%253A5945",
+        test:
+          "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVL08pYlHTcQWmVMx7YHwU6%2FPlay-Action%3Fnode-id%3D0%253A1288",
         deliver: "",
       },
       caption: {
