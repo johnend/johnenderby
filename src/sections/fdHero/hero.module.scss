@@ -10,12 +10,12 @@
     margin-bottom: 17px;
   }
   h3 {
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 23px;
   }
 }
 .contentWrapper {
-  padding-right: 8px;
+  padding: 0 8px 0 0;
   width: 512px;
 }
 
@@ -26,7 +26,7 @@
   margin-bottom: 40px;
   p {
     display: block;
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 8px;
   }
   p.small {
@@ -45,23 +45,16 @@
   }
 }
 
-// .fdSites {
-//   width: 504px;
-//   overflow: visible;
-//   position: absolute;
-//   top: calc(50vh - 300px);
-//   left: 520px;
-//   img {
-//     width: 776px;
-//   }
-//   .fdWeb,
-//   .spbkWeb {
-//     position: absolute;
-//     display: block;
-//   }
-//   .fdWeb {
-//     left: 180px;
-//     z-index: 10;
-//     top: 120px;
-//   }
-// }
+@media (max-width: 950px) {
+  .fdHero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 16px;
+    .contentWrapper {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
