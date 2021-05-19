@@ -754,7 +754,7 @@ export const fdWork = [
         did: "Planned, researched, and designed a video player component",
         client: "",
         projectTLDR:
-          "Player video content front and center while researching your lineup - my first FanDuel project",
+          "Player video content front and centre while researching your lineup - my first FanDuel project",
         splashImage: "",
         disclaimer:
           "🚨 Work shown was originally done in Sketch. Some conversion issues may be present in the Figma embeds.",
@@ -849,7 +849,7 @@ export const fdWork = [
           "The first job was to take SimpleBet's product, and turn it into something that looked and felt like it belonged at FanDuel. This required a lot of work unpicking design decisions made on a different grid with different typefaces and colours. Using the design principles in Formation (FanDuel's design system) I got to work and updated the designs. Often creating new components that would be used in other products.",
         secondTitle: "Turn baseball, into Football",
         secondPara:
-          "Football and baseball are quire different which meant a number of baseball specific components needed to be updated. An example of this is the header component for specific matchups (also shown on the navigational card). For baseball SimpleBet showed a visual representation of the bases and whether which needed to be updated to show downs and possession indicators.",
+          "Football and baseball are quite different which meant a number of baseball specific components needed to be updated. An example of this is the header component for specific matchups (also shown on the navigational card). For baseball SimpleBet showed a visual representation of the bases and whether which needed to be updated to show downs and possession indicators.",
       },
       test: {
         firstTitle: "Making it commercial",
@@ -868,7 +868,7 @@ export const fdWork = [
       outro: {
         outroTitle: "Learnings",
         outroPara:
-          "The biggest takeaway for me on this project was working alongside a third party design and engineering team. I wanted to ensure we worked together, but that we stayed true to FanDuel's brand and weren't too infleunced by SimpleBet. We ended up working well together, and even helped solve some mutual problems that would affect both companies in the future.",
+          "The biggest takeaway for me on this project was working alongside a third party design and engineering team. I wanted to ensure we worked together, but that we stayed true to FanDuel's brand and weren't too influenced by SimpleBet. We ended up working well together, and even helped solve some mutual problems that would affect both companies in the future.",
         thankYou: "Thank you for reading!",
         furtherInfo: "",
       },
