@@ -29,21 +29,24 @@ const PasswordProtect = () => {
 
   return (
     <form onSubmit={onSubmit} className={styles.form}>
-      <div className={styles.formContainer}>
-        <h3>Hold up ✋, this link is password protected</h3>
-        <p>Please enter the password to continue</p>
+      <div className={styles.wrapper}>
+        <Header navItems={navLinks} />
+        <div className={styles.formContainer}>
+          <h3>Hold up ✋, this link is password protected</h3>
+          <p>Please enter the password to continue</p>
 
-        <input
-          name="password"
-          type="password"
-          value={password}
-          onChange={event => setPassword(event.target.value)}
-          className={styles.input}
-        />
+          <input
+            name="password"
+            type="password"
+            value={password}
+            onChange={event => setPassword(event.target.value)}
+            className={styles.input}
+          />
 
-        <button type="submit" className={styles.button}>
-          Enter
-        </button>
+          <button type="submit" className={styles.button}>
+            Enter
+          </button>
+        </div>
       </div>
     </form>
   )
