@@ -540,7 +540,7 @@ export const fdWork = [
       define: {
         firstTitle: "Reducing reliance",
         firstPara:
-          "Historically all FanDuel's free to play pick'em games were engineered by a third party team from a contracted supplier. Although the engineering team were top notch FanDuel's, often extreme, short deadlines meant we would have to compromise heavily on feature sets for our planned games. There would also be complications with the software integrations between the two systems that could often result in delays and unhappy customers.",
+          "Historically all FanDuel's free to play pick'em games were engineered by a third party team from a contracted supplier. Although the engineering team was top notch FanDuel's, often extreme, short deadlines meant we would have to compromise heavily on feature sets for our planned games. There would also be complications with the software integrations between the two systems that could often result in delays and unhappy customers.",
         secondTitle: "Pareto-ing our games",
         secondPara:
           "80% of the games produced with the supplier were often of the same few formats but always turned up recurring issues. Our plan was to take that 80% in-house and reduce the overhead as well as reducing the errors and the time to go live (from 2+ weeks to just a few hours).",
@@ -557,7 +557,7 @@ export const fdWork = [
         firstPara:
           "In addition to organising the information for speed and efficiency I also wanted to give the product operations team a sense of how the content was laid out after the game was created. I organised fields and data points around the end result in order to reflect what would be shown to users. As the scope for our MVP was incredibly tight we didn't have time to develop a true preview of a game under construction so this was the next best thing.",
         secondTitle: "Reducing design overhead to almost none",
-        secondPara: `A large amount of the time spend designing these games is spent theming them to fit with a partner's branding or working the supporting marketing creative into the visuals. In order to reduce this time I put together some documentation for the marketing design team, and worked with product and engineering to ensure a branding and theme section was added to the admin platform.`,
+        secondPara: `A large amount of the time designing these games is spent theming them to fit with a partner's branding or working the supporting marketing creative into the visuals. In order to reduce this time I put together some documentation for the marketing design team, and worked with product and engineering to ensure a branding and theme section was added to the admin platform.`,
       },
       deliver: {
         firstTitle: "Cross functional agility",
@@ -608,7 +608,7 @@ export const fdWork = [
       },
       intro: {
         what:
-          "Free to play games of all kinds have been designed by my at FanDuel covering multi-day games during the initial outbreak of COVID-19 as well as sidekick games to go alongside sporting events",
+          "Free to play games of all kinds have been designed by me at FanDuel covering multi-day games during the initial outbreak of COVID-19 as well as sidekick games to go alongside sporting events",
         why:
           "Free to play games form a key part of FanDuel's business. They keep users interested (especially when there aren't any sports to watch), and give FanDuel things to shout about on the TV and in the media to bring new customers to the apps.",
       },
@@ -768,7 +768,7 @@ export const fdWork = [
       define: {
         firstTitle: "First things first",
         firstPara:
-          "This project was as much about producing something new as it was getting me used to the ways of working at FanDuel. I had come from an agency background where designs were often done in single files by a single designer. At FanDuel I needed to work with other designers in Abstract, working on branches and within a large distributed team. This wasn't too much of a challenge for me and I took it all in stride. Abstract's workflow is similar to an engineers, and I'm reasonably happy working in the terminal and using git (I can't wait for branching to come to Figma!).",
+          "This project was as much about producing something new as it was getting me used to the ways of working at FanDuel. I had come from an agency background where designs were often done in single files by a single designer. At FanDuel I needed to work with other designers in Abstract, working on branches and within a large distributed team. This wasn't too much of a challenge for me and I took it all in stride. Abstract's workflow is similar to an engineers, and I'm happy working in the terminal and using git (I can't wait for branching to come to Figma!).",
         secondTitle: "",
         secondPara:
           "There were constraints on this project in the form of a specific video player from a third party. This was used throughout our apps to showcase our content so I had to learn how flexible it was. This feature is now live, so if you're in the US and can access FanDuel you may have already seen my work!",
