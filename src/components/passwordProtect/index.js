@@ -2,11 +2,11 @@
  * Write-only the password as cookie
  */
 import React, { useState } from "react"
-import { setSessionPassword } from "@mkitio/gatsby-theme-password-protect/src/utils/utils"
+import { setSessionPassword } from "./utils"
 import styles from "./passwordProtect.module.scss"
 import { Link } from "gatsby"
-import { homeNavLink } from "../../../../static/content"
-import Header from "../../../components/header"
+import { homeNavLink } from "../../../static/content"
+import Header from "../header"
 
 let navLinks = homeNavLink.map(function (i, index) {
   return (

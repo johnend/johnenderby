@@ -1,5 +1,7 @@
-import "./src/styles/reset.css"
-import "./src/styles/globalStyles.scss"
+/* eslint-disable import/prefer-default-export, react/prop-types, consistent-return */
+/**
+ * Read-only the password from cookies
+ */
 import React from "react"
 import {
   getSessionPassword,
@@ -37,5 +39,3 @@ export const wrapPageElement = ({ props }) => {
   // check password
   return <PasswordProtect />
 }
-
-window.scrollTo(0, 0)
