@@ -30,11 +30,11 @@ const PasswordProtect = () => {
   return (
     <div className={styles.wrapper}>
       <Header navItems={navLinks} />
-      <div className={styles.formContainer}>
-        <h3>Hold up ✋, this link is password protected</h3>
-        <p>Please enter the password to continue</p>
+      <form onSubmit={onSubmit} className={styles.form}>
+        <div className={styles.formContainer}>
+          <h3>Hold up ✋, this link is password protected</h3>
+          <p>Please enter the password to continue</p>
 
-        <form onSubmit={onSubmit} className={styles.form}>
           <input
             name="password"
             type="password"
@@ -46,8 +46,8 @@ const PasswordProtect = () => {
           <button type="submit" className={styles.button}>
             Enter
           </button>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   )
 }
