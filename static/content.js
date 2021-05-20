@@ -608,7 +608,7 @@ export const fdWork = [
       },
       intro: {
         what:
-          "Free to play games of all kinds have been designed by me at FanDuel covering multi-day games during the initial outbreak of COVID-19 as well as sidekick games to go alongside sporting events",
+          "Free to play games of all kinds have been designed by me at FanDuel covering multi-day games during the initial outbreak of COVID-19 as well as sidekick games to go alongside sporting events.",
         why:
           "Free to play games form a key part of FanDuel's business. They keep users interested (especially when there aren't any sports to watch), and give FanDuel things to shout about on the TV and in the media to bring new customers to the apps.",
       },
