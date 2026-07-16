@@ -1,0 +1,41 @@
+@layer tokens {
+  :root {
+    /* Colour */
+    --neutral-0: #ffffff;
+    --neutral-50: #f8fafc;
+    --neutral-300: #cbd5e1;
+    --neutral-700: #334155;
+    --neutral-900: #0f172a;
+    --neutral-950: #020617;
+    --blue-400: #60a5fa;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+    --green-500: #22c55e;
+
+    /* Space */
+    --space-8: 0.5rem;
+    --space-16: 1rem;
+    --space-24: 1.5rem;
+    --space-48: 3rem;
+
+    /* Radius */
+    --radius-pill: 999rem;
+
+    /* Typography */
+    --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-heading: var(--font-body);
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-size-label: 0.875rem;
+    --font-size-body: 1rem;
+    --font-size-body-lg: 1.125rem;
+    --font-size-display-sm: 2.25rem;
+    --font-size-display-lg: clamp(2.75rem, 7vw, 5rem);
+    --line-height-label: 1.25rem;
+    --line-height-body: 1.6;
+    --line-height-body-lg: 1.6;
+    --line-height-display-sm: 1.1;
+    --line-height-display-lg: 1;
+  }
+}

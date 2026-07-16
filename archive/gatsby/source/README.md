@@ -1,0 +1,1 @@
+My personal portfolio, built using Gatsby. Feel free to take a look around and dig into the code. There's still a few things I need to update and improve, but like with all portfolios it is a work in progress.

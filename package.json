@@ -1,38 +1,43 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "name": "johnenderby",
   "version": "0.1.0",
-  "license": "0BSD",
+  "private": true,
+  "packageManager": "pnpm@11.10.0",
+  "engines": {
+    "node": "24.14.x",
+    "pnpm": "11.10.x"
+  },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "format:check": "prettier --check .",
+    "format:all": "prettier --write .",
+    "check": "pnpm lint && pnpm lint:css && pnpm typecheck && pnpm test && pnpm format:check"
   },
   "dependencies": {
-    "@mkitio/gatsby-theme-password-protect": "^2.1.2",
-    "acorn": "^6.4.2",
-    "classnames": "^2.2.6",
-    "gatsby": "^2.24.67",
-    "gatsby-plugin-sass": "^2.3.16",
-    "lodash": "^4.17.20",
-    "node-sass": "^4.14.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-rotating-text": "^1.4.1"
+    "next": "16.2.10",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.2.10",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.8.4",
+    "stylelint": "^17.13.0",
+    "stylelint-config-standard": "^40.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.9"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "arrowParens": "avoid",
+  "semi": false,
+  "overrides": [
+    {
+      "files": "*.scss",
+      "options": {
+        "semi": true
+      }
+    }
+  ]
+}

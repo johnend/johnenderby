@@ -1,0 +1,15 @@
+@layer tokens {
+  :root {
+    --text-label-size: var(--font-size-label);
+    --text-label-line-height: var(--line-height-label);
+    --text-body-size: var(--font-size-body);
+    --text-body-line-height: var(--line-height-body);
+    --text-body-lg-size: var(--font-size-body-lg);
+    --text-body-lg-line-height: var(--line-height-body-lg);
+    --text-display-sm-size: var(--font-size-display-sm);
+    --text-display-sm-line-height: var(--line-height-display-sm);
+    --text-display-lg-size: var(--font-size-display-lg);
+    --text-display-lg-line-height: var(--line-height-display-lg);
+    --text-display-lg-weight: var(--font-weight-semibold);
+  }
+}

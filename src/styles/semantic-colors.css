@@ -1,0 +1,16 @@
+@layer tokens {
+  :root {
+    color-scheme: light dark;
+    --color-bg: light-dark(var(--neutral-50), var(--neutral-950));
+    --color-surface: light-dark(var(--neutral-0), var(--neutral-900));
+    --color-text: light-dark(var(--neutral-950), var(--neutral-50));
+    --color-text-muted: light-dark(var(--neutral-700), var(--neutral-300));
+    --color-border: light-dark(var(--neutral-300), var(--neutral-700));
+    --color-link: light-dark(var(--blue-700), var(--blue-400));
+    --color-link-hover: light-dark(var(--blue-600), var(--neutral-0));
+    --color-focus: light-dark(var(--blue-600), var(--blue-400));
+    --color-status-ready: var(--green-500);
+    --color-selection-bg: light-dark(var(--blue-600), var(--blue-400));
+    --color-selection-text: light-dark(var(--neutral-0), var(--neutral-950));
+  }
+}

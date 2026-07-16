@@ -1,0 +1,52 @@
+@layer base {
+  body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--color-bg);
+    font-family: var(--font-body);
+    font-size: var(--text-body-size);
+    line-height: var(--text-body-line-height);
+    font-weight: var(--font-weight-regular);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-text);
+    font-family: var(--font-heading);
+  }
+
+  h1 {
+    font-size: var(--text-display-lg-size);
+    line-height: var(--text-display-lg-line-height);
+    font-weight: var(--text-display-lg-weight);
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    font-size: var(--text-body-size);
+    line-height: var(--text-body-line-height);
+  }
+
+  a {
+    color: var(--color-link);
+    text-underline-offset: 0.2em;
+  }
+
+  a:hover {
+    color: var(--color-link-hover);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    color: var(--color-selection-text);
+    background: var(--color-selection-bg);
+  }
+}
