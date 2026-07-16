@@ -1,0 +1,15 @@
+.headerContainer {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  height: var(--header-height);
+  padding-inline: var(--gutter);
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.initials {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+}

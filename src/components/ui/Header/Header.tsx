@@ -1,18 +1,28 @@
+import Link from 'next/link';
 import styles from './Header.module.css';
 type Props = {};
 
 const Header = (props: Props) => {
   return (
     <div className={styles.headerContainer}>
-      <span>JE</span>
+      <span className={styles.initials}>JE</span>
       <nav>
         <ul>
-          <li>Work</li>
-          <li>About</li>
-          <li>Notes</li>
-          <li>Writing</li>
-          <li>Notes</li>
-          <li>Contact</li>
+          <Link href='#'>
+            <li></li>
+          </Link>
+          <Link href='#'>
+            <li></li>
+          </Link>
+          <Link href='#'>
+            <li></li>
+          </Link>
+          <Link href='#'>
+            <li></li>
+          </Link>
+          <Link href='#'>
+            <li></li>
+          </Link>
         </ul>
       </nav>
     </div>

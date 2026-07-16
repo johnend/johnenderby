@@ -1,0 +1,20 @@
+.spread {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  padding: var(--spread-padding-block) var(--page-gutter);
+}
+
+.viewport {
+  min-height: 100svh;
+}
+
+.paper {
+  background: var(--color-paper-100);
+  color: var(--color-ink-900);
+}
+
+.ink {
+  background: var(--color-ink-900);
+  color: var(--color-paper-50);
+}
