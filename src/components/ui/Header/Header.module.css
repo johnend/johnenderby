@@ -2,14 +2,28 @@
   position: fixed;
   inset: 0 0 auto;
   z-index: 100;
-  height: var(--header-height);
-  padding-inline: var(--gutter);
+  height: var(--layout-header-height);
+  padding: var(--space-3) var(--gutter);
   pointer-events: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-ink-900);
 }
 
 .initials {
   font-family: var(--font-heading);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
+  font-stretch: var(--font-width-75);
+  color: var(--color-amethyst-400);
+  font-size: var(--font-size-section);
+}
+
+.navContainer {
+  pointer-events: auto;
+}
+
+.navList {
+  display: flex;
+  gap: var(--space-16);
 }
