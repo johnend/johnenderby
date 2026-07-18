@@ -48,16 +48,10 @@
      * ========== */
     /* Fonts */
     --font-body: var(--font-instrument-sans), system-ui, sans-serif;
-    --font-heading: var(--font-roboto-slab), system-ui, sans-serif;
-    --font-serif: var(--font-source-serif), Georgia, Cambria, 'Times New Roman', serif;
+    --font-heading: var(--font-special-gothic), system-ui, sans-serif;
+    --font-serif: var(--font-lora), Georgia, Cambria, 'Times New Roman', serif;
     --font-mono:
       var(--font-jet-brains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-
-    /* Font weights */
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
 
     /* Font sizes */
     --font-size-display-xl: clamp(5rem, 8vw, 9rem);
@@ -68,6 +62,15 @@
     --font-size-body: 1rem;
     --font-size-sm: 0.875rem;
     --font-size-caption: 0.75rem;
+
+    /* Font weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Font widths */
+    --font-width-75: 75%;
 
     /* Tracking */
     --tracking-display: -0.045em;

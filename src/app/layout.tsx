@@ -1,26 +1,30 @@
 import type { Metadata } from 'next';
 import '@/styles/index.css';
-import { Roboto_Slab, Source_Serif_4, Instrument_Sans, JetBrains_Mono } from 'next/font/google';
+import { Lora, Special_Gothic, Instrument_Sans, JetBrains_Mono } from 'next/font/google';
 import { Footer, Header } from '@/components/ui';
 
-const robotoSlab = Roboto_Slab({
-  variable: '--font-roboto-slab',
+const specialGothic = Special_Gothic({
+  variable: '--font-special-gothic',
   subsets: ['latin'],
+  axes: ['wdth'],
   fallback: ['system-ui', 'sans-serif'],
   adjustFontFallback: false,
 });
 
-const sourceSerif4 = Source_Serif_4({
-  variable: '--font-source-serif',
+const lora = Lora({
+  variable: '--font-lora',
+  weight: '500',
+  style: ['normal', 'italic'],
   subsets: ['latin'],
-  fallback: ['system-ui', 'sans-serif'],
+  fallback: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
   adjustFontFallback: false,
 });
 
 const instrumentSans = Instrument_Sans({
   variable: '--font-instrument-sans',
   subsets: ['latin'],
-  fallback: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+  axes: ['wdth'],
+  fallback: ['system-ui', 'sans-serif'],
   adjustFontFallback: false,
 });
 
@@ -45,7 +49,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html
       lang='en'
-      className={`${robotoSlab.variable} ${sourceSerif4.variable} ${instrumentSans.variable} ${jetBrainsMono.variable}`}
+      className={`${specialGothic.variable} ${lora.variable} ${instrumentSans.variable} ${jetBrainsMono.variable}`}
     >
       <body>
         <Header />

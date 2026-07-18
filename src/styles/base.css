@@ -33,7 +33,7 @@
 
   a {
     color: var(--color-link);
-    text-underline-offset: 0.2em;
+    text-decoration: none;
   }
 
   a:hover {
@@ -48,5 +48,15 @@
   ::selection {
     color: var(--color-selection-text);
     background: var(--color-selection-bg);
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  pre,
+  code {
+    font-family: var(--font-mono);
   }
 }
