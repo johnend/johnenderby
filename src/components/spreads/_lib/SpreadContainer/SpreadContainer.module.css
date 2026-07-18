@@ -1,12 +1,25 @@
 .spread {
   position: relative;
+  display: grid;
   isolation: isolate;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: var(--space-4);
   width: 100%;
-  padding: var(--spread-padding-block) var(--page-gutter);
+  height: 100svh;
+  padding: var(--layout-header-height) var(--gutter) 0;
 }
 
-.viewport {
-  min-height: 100svh;
+.spreadNumber {
+  align-self: baseline;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.spreadTitle {
+  align-self: baseline;
+  grid-column: 2 / span 3;
+  grid-row: 2;
 }
 
 .paper {

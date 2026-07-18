@@ -1,0 +1,8 @@
+.underline {
+  display: block;
+  width: 105%;
+  height: auto;
+  opacity: 0.85;
+  transform: translate(-2%, -0.1em) rotate(-0.5deg) scaleY(0.75);
+  transform-origin: center;
+}

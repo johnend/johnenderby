@@ -1,0 +1,12 @@
+.spreadTitle {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.paper {
+  color: var(--color-amethyst-500);
+}
+
+.ink {
+  color: var(--color-paper-50);
+}
