@@ -3,5 +3,5 @@ command = "pnpm build"
 publish = ".next"
 
 [build.environment]
-NODE_VERSION = "24.14.0"
+NODE_VERSION = "24.18.0"
 PNPM_FLAGS = "--frozen-lockfile"
