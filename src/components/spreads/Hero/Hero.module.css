@@ -80,8 +80,8 @@
   }
 
   .underline {
-    margin: var(--space-64) auto 0 auto;
-    max-width: 75%;
+    max-width: 58%;
+    margin-top: var(--space-8);
   }
 }
 
