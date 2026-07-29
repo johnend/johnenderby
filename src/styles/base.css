@@ -1,4 +1,8 @@
 @layer base {
+  html {
+    scrollbar-color: var(--color-scrollbar-thumb) transparent;
+  }
+
   body {
     min-height: 100vh;
     color: var(--color-text);

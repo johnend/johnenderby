@@ -10,7 +10,8 @@
     --color-link-hover: light-dark(var(--blue-600), var(--neutral-0));
     --color-focus: light-dark(var(--blue-600), var(--blue-400));
     --color-status-ready: var(--green-500);
-    --color-selection-bg: light-dark(var(--blue-600), var(--blue-400));
-    --color-selection-text: light-dark(var(--neutral-0), var(--neutral-950));
+    --color-scrollbar-thumb: var(--color-amethyst-400);
+    --color-selection-bg: var(--color-amethyst-400);
+    --color-selection-text: var(--color-ink-900);
   }
 }

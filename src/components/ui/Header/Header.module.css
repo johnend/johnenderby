@@ -3,7 +3,7 @@
   inset: 0 0 auto;
   z-index: 100;
   height: var(--layout-header-height);
-  padding: var(--space-3) var(--gutter);
+  padding: var(--space-12) var(--gutter);
   pointer-events: none;
   display: flex;
   justify-content: space-between;
@@ -25,5 +25,5 @@
 
 .navList {
   display: flex;
-  gap: var(--space-16);
+  gap: var(--space-64);
 }
