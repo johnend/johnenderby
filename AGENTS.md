@@ -76,3 +76,4 @@ Run the narrowest command covering the changed surface before the full check and
 Add concise repository-specific lessons here only after a repeated failure or platform constraint makes them useful.
 
 - Avoid `path` as a zsh loop variable; it overwrites `PATH`.
+- Prefer user screenshots over CDP debugging during visual iteration.
