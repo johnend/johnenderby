@@ -22,6 +22,22 @@ pnpm check
 pnpm build
 ```
 
+## Visual captures
+
+Install the Chromium browser used by Playwright once:
+
+```sh
+pnpm exec playwright install chromium
+```
+
+Capture the homepage at the configured mobile, tablet, laptop, desktop, and wide-screen viewports:
+
+```sh
+pnpm test:visual:capture
+```
+
+Generated screenshots are written beneath `test-results/playwright/` and are not committed.
+
 ## Deployment
 
 Netlify continues to deploy from Git. Pull requests use Deploy Previews; the production branch remains `main`. The Next.js build command and publish directory are defined in `netlify.toml`.

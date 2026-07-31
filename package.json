@@ -15,6 +15,7 @@
     "lint:css": "stylelint \"src/**/*.css\"",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
+    "test:visual:capture": "pnpm build && playwright test --config tests/playwright.config.ts",
     "format:check": "prettier --check .",
     "format:all": "prettier --write .",
     "check": "pnpm lint && pnpm lint:css && pnpm typecheck && pnpm test && pnpm format:check"
@@ -26,6 +27,7 @@
     "react-dom": "19.2.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
