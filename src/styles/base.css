@@ -1,5 +1,7 @@
 @layer base {
   html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--layout-header-height);
     scrollbar-color: var(--color-scrollbar-thumb) transparent;
   }
 
@@ -19,7 +21,7 @@
   h4,
   h5,
   h6 {
-    color: var(--color-text);
+    color: inherit;
     font-family: var(--font-heading);
   }
 
@@ -62,5 +64,11 @@
   pre,
   code {
     font-family: var(--font-mono);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 }

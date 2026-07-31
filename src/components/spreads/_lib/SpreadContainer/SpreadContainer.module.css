@@ -3,22 +3,25 @@
   display: grid;
   isolation: isolate;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(12, minmax(0, 1fr));
   gap: var(--space-16);
   width: 100%;
   height: 100svh;
-  padding: var(--layout-header-height) var(--gutter) 0;
+  min-height: 100svh;
+  padding: var(--layout-header-height) var(--gutter) var(--space-24);
+  overflow: clip;
 }
 
-.spreadNumber {
-  align-self: baseline;
-  grid-column: 1;
-  grid-row: 2;
+.contentComposition {
+  grid-template-rows: repeat(12, minmax(3rem, auto));
+  align-content: start;
+  height: auto;
+  min-height: max(100svh, 52rem);
 }
 
 .spreadTitle {
   align-self: baseline;
-  grid-column: 2 / span 3;
+  grid-column: 2 / span 4;
   grid-row: 2;
 }
 
@@ -30,4 +33,68 @@
 .ink {
   background: var(--color-ink-900);
   color: var(--color-paper-50);
+}
+
+.spread[data-reveal='pending'] > *:not(.spreadTitle) {
+  opacity: 0;
+  translate: 0 var(--space-24);
+}
+
+.spread[data-reveal='visible'] > * {
+  transition:
+    opacity var(--duration-spread) var(--ease-editorial),
+    translate var(--duration-spread) var(--ease-editorial);
+}
+
+.spread[data-reveal='visible'] > :nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.spread[data-reveal='visible'] > :nth-child(3) {
+  transition-delay: 150ms;
+}
+
+.spread[data-reveal='visible'] > :nth-child(n + 4) {
+  transition-delay: 220ms;
+}
+
+@media (max-width: 64rem) {
+  .spread {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-template-rows: repeat(12, minmax(3.5rem, auto));
+    height: auto;
+    min-height: 100svh;
+    padding-inline: var(--space-page-gutter);
+  }
+
+  .spreadTitle {
+    grid-column: 2 / 6;
+  }
+}
+
+@media (max-width: 42rem) {
+  .spread {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    height: auto;
+    gap: var(--space-24) var(--space-16);
+    min-height: auto;
+    padding-block: calc(var(--layout-header-height) + var(--space-48)) var(--space-64);
+    overflow: hidden;
+  }
+
+  .spreadTitle {
+    grid-column: 2 / -1;
+    grid-row: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spread[data-reveal] > * {
+    opacity: 1;
+    translate: none;
+    transition: none;
+  }
 }

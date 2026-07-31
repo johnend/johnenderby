@@ -1,16 +1,16 @@
 import type { ComponentPropsWithoutRef } from 'react';
 import clsx from 'clsx';
-import { SpreadNumber, SpreadTitle } from '@/components/editorial';
+import { SpreadTitle } from '@/components/editorial';
 import styles from './SpreadContainer.module.css';
 
 type SpreadContainerProps = ComponentPropsWithoutRef<'section'> & {
-  spreadNumber?: number;
+  composition?: 'viewport' | 'content';
   spreadTitle?: string;
   tone?: 'paper' | 'ink';
 };
 
 const SpreadContainer = ({
-  spreadNumber,
+  composition = 'viewport',
   spreadTitle,
   tone = 'paper',
   className,
@@ -18,8 +18,12 @@ const SpreadContainer = ({
   ...props
 }: SpreadContainerProps) => {
   return (
-    <section className={clsx(styles.spread, styles[tone], className)} {...props}>
-      {spreadNumber !== undefined && <SpreadNumber className={styles.spreadNumber} number={spreadNumber} tone={tone} />}
+    <section
+      className={clsx(styles.spread, styles[tone], composition === 'content' && styles.contentComposition, className)}
+      data-spread
+      data-tone={tone}
+      {...props}
+    >
       {spreadTitle !== undefined && <SpreadTitle className={styles.spreadTitle} title={spreadTitle} tone={tone} />}
       {children}
     </section>

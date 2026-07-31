@@ -2,28 +2,27 @@ import Link from 'next/link';
 import styles from './Header.module.css';
 const Header = () => {
   return (
-    <div className={styles.headerContainer}>
-      <span className={styles.initials}>JE</span>
+    <header className={styles.headerContainer}>
+      <Link className={styles.initials} href='/#home' aria-label='Home'>
+        JE
+      </Link>
       <nav className={styles.navContainer}>
         <ul className={styles.navList}>
           <li>
-            <Link href='#'>About</Link>
+            <Link href='/#work'>Work</Link>
           </li>
           <li>
-            <Link href='#'>Test</Link>
+            <Link href='/#about'>About</Link>
           </li>
           <li>
-            <Link href='#'>Test</Link>
+            <Link href='/#writing'>Writing</Link>
           </li>
           <li>
-            <Link href='#'>Test</Link>
-          </li>
-          <li>
-            <Link href='#'>Contact</Link>
+            <Link href='/#contact'>Contact</Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

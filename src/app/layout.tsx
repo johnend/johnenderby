@@ -37,7 +37,7 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'John Enderby — Portfolio',
-  description: 'Structure-only deployment preview for the John Enderby portfolio rebuild.',
+  description: 'The portfolio of Edinburgh-based product designer and frontend engineer John Enderby.',
   robots: {
     index: false,
     follow: false,

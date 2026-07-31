@@ -4,6 +4,11 @@
     --text-label-line-height: var(--line-height-label);
     --text-body-size: var(--font-size-body);
     --text-body-line-height: var(--line-height-body);
+    --text-body-sm-size: var(--font-size-body-sm);
+    --text-caption-size: var(--font-size-caption);
+    --text-folio-size: var(--font-size-folio);
+    --text-marginalia-size: var(--font-size-marginalia);
+    --text-pull-quote-size: var(--font-size-pull-quote);
     --text-body-lg-size: var(--font-size-body-lg);
     --text-body-lg-line-height: var(--line-height-body-lg);
     --text-display-sm-size: var(--font-size-display-sm);

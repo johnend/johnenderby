@@ -48,14 +48,31 @@
       var(--font-jet-brains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
 
     /* Font sizes */
-    --font-size-display-xl: clamp(5rem, 8vw, 9rem);
+    --font-size-display-xl: clamp(5.5rem, 8.8vw, 10rem);
     --font-size-display-l: clamp(4rem, 6vw, 7rem);
+    --font-size-display-lg: var(--font-size-display-xl);
+    --font-size-display-sm: clamp(2.75rem, 4.5vw, 5rem);
+    --font-size-hero: clamp(5.75rem, 9.2vw, 10.5rem);
+    --font-size-feature: clamp(6rem, 11vw, 12rem);
     --font-size-headline: clamp(2.8rem, 4vw, 4rem);
     --font-size-section: 2rem;
     --font-size-body-lg: 1.25rem;
     --font-size-body: 1rem;
-    --font-size-sm: 0.875rem;
-    --font-size-caption: 0.75rem;
+    --font-size-body-sm: 0.9375rem;
+    --font-size-sm: var(--font-size-body-sm);
+    --font-size-caption: 0.8125rem;
+    --font-size-label: 0.75rem;
+    --font-size-folio: 0.75rem;
+    --font-size-marginalia: 0.8125rem;
+    --font-size-navigation: 0.8125rem;
+    --font-size-pull-quote: clamp(1.25rem, 1.8vw, 1.875rem);
+
+    /* Line heights */
+    --line-height-display-lg: 0.9;
+    --line-height-display-sm: 0.96;
+    --line-height-body-lg: 1.65;
+    --line-height-body: 1.7;
+    --line-height-label: 1.35;
 
     /* Font weights */
     --font-weight-regular: 400;
@@ -67,10 +84,10 @@
     --font-width-75: 75%;
 
     /* Tracking */
-    --tracking-display: -0.045em;
+    --tracking-display: -0.0125em;
     --tracking-heading: -0.03em;
     --tracking-body: 0;
-    --tracking-label: 0.14em;
+    --tracking-label: 0.11em;
 
     /* ==========
      * Spacing
@@ -148,9 +165,11 @@
     --rule-color: var(--color-stone-200);
     --rule-thickness: 1px;
     --quote-accent: var(--color-amethyst-300);
-    --spread-number-size: 0.875rem;
-    --eyebrow-size: 0.75rem;
-    --caption-size: 0.75rem;
+    --spread-number-size: var(--font-size-folio);
+    --eyebrow-size: var(--font-size-label);
+    --caption-size: var(--font-size-caption);
+    --annotation-padding: var(--space-16);
+    --editorial-column-gap: clamp(var(--space-24), 3vw, var(--space-48));
 
     /* Rhythm */
     --spread-padding: clamp(4rem, 8vh, 8rem);

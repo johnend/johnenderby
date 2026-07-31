@@ -7,9 +7,9 @@ export default function NotFound() {
       <div className={styles.content}>
         <p className={styles.eyebrow}>404</p>
         <h1 className={styles.title}>Page not found</h1>
-        <p className={styles.description}>This route is not part of the structure-only portfolio preview.</p>
+        <p className={styles.description}>The page you were looking for is not part of this portfolio.</p>
         <Link className={styles.link} href='/'>
-          Return to the rebuild status
+          Return home
         </Link>
       </div>
     </main>

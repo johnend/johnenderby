@@ -1,0 +1,49 @@
+.page {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: calc(var(--layout-header-height) + var(--space-48)) var(--space-page-gutter) var(--space-48);
+  color: var(--color-paper-50);
+  background: var(--color-ink-900);
+}
+
+.content {
+  width: min(100%, 48rem);
+  border-block-start: var(--border-thin) solid var(--color-amethyst-400);
+  padding-block-start: var(--space-24);
+}
+
+.eyebrow {
+  color: var(--color-amethyst-400);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-label);
+}
+
+.title {
+  max-width: 8ch;
+  margin-block: var(--space-24);
+  font-size: var(--font-size-display-l);
+  font-stretch: var(--font-width-75);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-display);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.description {
+  max-width: 40ch;
+  color: var(--color-stone-100);
+}
+
+.link {
+  display: inline-block;
+  margin-block-start: var(--space-32);
+  color: var(--color-amethyst-300);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
