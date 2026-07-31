@@ -1,11 +1,8 @@
-.featuredSpread {
-  background: transparent;
-}
-
 .projectSummary {
-  z-index: 2;
-  grid-row: 3/9;
+  z-index: 4;
+  grid-row: 3/10;
   grid-column: 2/6;
+  pointer-events: none;
 }
 
 .projectLabel,
@@ -23,17 +20,19 @@
 }
 
 .projectName {
-  margin-block: var(--space-16);
+  width: max-content;
+  margin-block: var(--space-12) var(--space-16);
   color: var(--color-amethyst-400);
-  font-size: var(--font-size-display-l);
+  font-size: var(--font-size-feature);
   font-stretch: var(--font-width-75);
   font-weight: var(--font-weight-bold);
-  line-height: 0.9;
+  letter-spacing: var(--tracking-display);
+  line-height: 0.82;
   text-transform: uppercase;
 }
 
 .projectTagline {
-  max-width: 30ch;
+  max-width: 28ch;
   border-block: var(--border-thin) solid var(--color-ink-700);
   padding-block: var(--space-16);
   font-size: var(--font-size-sm);
@@ -45,6 +44,7 @@
   max-width: 42ch;
   margin-block-start: var(--space-24);
   color: var(--color-stone-100);
+  font-size: var(--font-size-body-sm);
   line-height: var(--text-body-line-height);
 }
 
@@ -71,8 +71,8 @@
 }
 
 .nebulaImage {
-  opacity: 0.94;
-  filter: saturate(0.9) brightness(0.9);
+  opacity: 0.84;
+  filter: saturate(0.82) brightness(0.82);
   object-fit: cover;
   object-position: center;
   transform: scale(1.2) translateX(-8%);
@@ -80,10 +80,10 @@
 
 .visualField {
   position: relative;
-  inset-block-start: calc(-1 * var(--space-48) - var(--space-12));
+  inset-block-start: var(--space-24);
   container-type: inline-size;
   grid-row: 3/10;
-  grid-column: 6/17;
+  grid-column: 7/16;
   min-width: 0;
   min-height: 0;
   filter: drop-shadow(0 var(--space-24) var(--space-48) rgb(0 0 0 / 18%));
@@ -110,14 +110,14 @@
 
 .gameListFrame {
   z-index: 1;
-  left: 4%;
-  width: 48.125%;
+  left: 0;
+  width: 52%;
 }
 
 .creationFrame {
   z-index: 2;
-  left: 23%;
-  width: 55%;
+  left: 18%;
+  width: 60%;
 }
 
 .productImage {
@@ -127,9 +127,9 @@
 .gameFrame {
   z-index: 3;
   top: 44%;
-  right: 6%;
-  width: 18.47%;
-  height: 36.919cqw;
+  right: 3%;
+  width: 20%;
+  height: 40cqw;
   filter: drop-shadow(0 24px 32px rgb(0 0 0 / 35%));
   transform: translateY(-50%);
 }
@@ -141,7 +141,7 @@
 .projectFacts {
   z-index: 2;
   display: grid;
-  grid-row: 10/12;
+  grid-row: 11/13;
   grid-column: 2/17;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -153,7 +153,7 @@
 
   dt {
     color: var(--color-stone-300);
-    font-size: var(--font-size-caption);
+    font-size: var(--font-size-label);
     letter-spacing: var(--tracking-label);
   }
 
@@ -161,9 +161,90 @@
     margin-block-start: var(--space-8);
     color: var(--color-amethyst-300);
     font-family: var(--font-heading);
-    font-size: var(--font-size-section);
+    font-size: clamp(1.65rem, 2.4vw, 2.5rem);
     font-weight: var(--font-weight-bold);
     line-height: 1;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 64rem) {
+  .projectSummary {
+    grid-column: 1/5;
+  }
+
+  .projectName {
+    font-size: clamp(5rem, 12vw, 8rem);
+  }
+
+  .visualField {
+    grid-column: 5/9;
+  }
+
+  .projectFacts {
+    grid-column: 1/9;
+  }
+}
+
+@media (max-width: 42rem) {
+  .featuredSpread {
+    min-height: auto;
+    padding-block-end: var(--space-80);
+  }
+
+  .nebulaField {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+  }
+
+  .projectSummary,
+  .visualField,
+  .projectFacts {
+    grid-row: auto;
+  }
+
+  .projectSummary {
+    grid-column: 1/-1;
+    margin-block-start: var(--space-32);
+    pointer-events: auto;
+  }
+
+  .projectName {
+    max-width: 100%;
+    font-size: clamp(5rem, 25vw, 8rem);
+  }
+
+  .projectDescription {
+    max-width: 48ch;
+  }
+
+  .visualField {
+    grid-column: 1/-1;
+    aspect-ratio: 1.08;
+    margin-block: var(--space-24);
+  }
+
+  .gameListFrame {
+    left: 0;
+    width: 58%;
+  }
+
+  .creationFrame {
+    left: 16%;
+    width: 66%;
+  }
+
+  .gameFrame {
+    right: 0;
+    width: 24%;
+    height: 48cqw;
+  }
+
+  .projectFacts {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr;
+    gap: var(--space-24);
+    margin-block-start: var(--space-24);
   }
 }

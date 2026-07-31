@@ -1,15 +1,27 @@
-import { About, Featured, Hero, Intro, Notes, Thinking } from '@components/spreads';
-import styles from './page.module.css';
+import {
+  About,
+  Breather,
+  Featured,
+  Hero,
+  Intro,
+  Notes,
+  // Thinking,
+} from '@components/spreads';
+import { SpreadIndex } from '@/components/ui';
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <Intro />
-      <Featured />
-      <Thinking />
-      <Notes />
-      <About />
-    </main>
+    <>
+      <SpreadIndex />
+      <main>
+        <Hero />
+        <Intro />
+        <Featured />
+        <Breather />
+        {/* <Thinking /> */}
+        <Notes />
+        <About />
+      </main>
+    </>
   );
 }

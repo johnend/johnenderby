@@ -4,7 +4,13 @@ import styles from './Featured.module.css';
 
 const Featured = () => {
   return (
-    <SpreadContainer className={styles.featuredSpread} spreadNumber={3} spreadTitle='Featured work' tone='ink'>
+    <SpreadContainer
+      id='work'
+      className={styles.featuredSpread}
+      composition='content'
+      spreadTitle='Featured work'
+      tone='ink'
+    >
       <div className={styles.nebulaField} aria-hidden='true'>
         <Image className={styles.nebulaImage} src='/assets/fanduel/nebula.png' fill sizes='100vw' alt='' />
       </div>
@@ -12,11 +18,10 @@ const Featured = () => {
       <div className={styles.projectSummary}>
         <p className={styles.projectLabel}>FanDuel / Free-to-play</p>
         <h3 className={styles.projectName}>FanDuel</h3>
-        <p className={styles.projectTagline}>Free-to-play, designed from the ground up.</p>
+        <p className={styles.projectTagline}>Rebuilding free-to-play from the ground up.</p>
         <p className={styles.projectDescription}>
-          Across seven years at FanDuel, my role has continued to evolve. Free-to-Play remains one of the clearest
-          examples of my end-to-end design ownership. I shaped both the game formats and internal tooling from first
-          principles, balancing the player experience with the operational detail required to launch games repeatedly.
+          Launching FanDuel’s free-to-play games was slow and fragmented. I designed a new platform end to end, cutting
+          setup from more than two weeks to a matter of hours.
         </p>
       </div>
 
@@ -56,11 +61,11 @@ const Featured = () => {
           <dd>7 years</dd>
         </div>
         <div>
-          <dt>Product design ownership</dt>
+          <dt>Design scope</dt>
           <dd>End to end</dd>
         </div>
         <div>
-          <dt>Launch workflow</dt>
+          <dt>Setup time</dt>
           <dd>2+ weeks → hours</dd>
         </div>
       </dl>

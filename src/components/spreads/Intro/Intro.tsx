@@ -1,55 +1,44 @@
+import Image from 'next/image';
 import Underline from '@/components/editorial/Underline/Underline';
 import SpreadContainer from '../_lib/SpreadContainer/SpreadContainer';
 import styles from './Intro.module.css';
 
 const Intro = () => {
   return (
-    <SpreadContainer spreadNumber={2} spreadTitle='An introduction'>
+    <SpreadContainer id='intro' className={styles.introSpread} composition='content' spreadTitle='The working model'>
       <div className={styles.headlineContainer}>
         <p className={styles.introHeadline}>
-          I turn complex product problems into <em>clear, useful</em> software.
-          <Underline className={styles.underline} fill='var(--color-amethyst-500)' />
+          The work
+          <br />
+          always starts
+          <br />
+          with <em>understanding.</em>
         </p>
-      </div>
+        <Underline className={styles.underline} fill='var(--color-amethyst-500)' />
 
-      <div className={styles.contentContainer}>
-        <p>
-          I work across product thinking, interaction design and frontend engineering. I start by understanding the
-          problem, make ideas tangible early, and stay close to the detail until the result is coherent, buildable and
-          ready to evolve.
-        </p>
-      </div>
-
-      <div className={styles.visualBackdrop} aria-hidden='true' />
-      <div className={styles.processStudy} aria-hidden='true'>
-        <div className={styles.processHeader}>
-          <span>Working model</span>
-          <span>01—06</span>
+        <div className={styles.introductionCopy}>
+          <p>
+            Before I reach for a solution, I want to know what the <em>problem actually is</em>, who it affects and what
+            is making it difficult.
+          </p>
+          <p>I’d rather spend longer framing the right problem than move quickly on the wrong one.</p>
         </div>
-        <ol className={styles.processSteps}>
-          <li>
-            <span>01</span> Ask
-          </li>
-          <li>
-            <span>02</span> Explore
-          </li>
-          <li>
-            <span>03</span> Test
-          </li>
-          <li>
-            <span>04</span> Build
-          </li>
-          <li>
-            <span>05</span> Learn
-          </li>
-          <li>
-            <span>06</span> Repeat
-          </li>
-        </ol>
-        <p className={styles.processNote}>Make the problem visible. Find the next useful step.</p>
       </div>
-      <div className={styles.accentSquare} aria-hidden='true' />
-      <p className={styles.visualCaption}>Small pieces, clear purpose, one coherent whole.</p>
+
+      <figure className={styles.notebookFigure}>
+        <Image
+          className={styles.notebookImage}
+          src='/assets/notebook-workflow.png'
+          width={1086}
+          height={1448}
+          sizes='(max-width: 42rem) 100vw, (max-width: 64rem) 75vw, 45vw'
+          alt='An open notebook showing a six-step working model: ask, explore, test, build, learn and repeat'
+        />
+        <figcaption className={styles.workingNote}>
+          <h3>Working note</h3>
+          <p>Most of the important decisions happen long before there’s anything to click.</p>
+        </figcaption>
+      </figure>
     </SpreadContainer>
   );
 };

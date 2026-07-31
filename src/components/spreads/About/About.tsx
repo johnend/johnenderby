@@ -5,18 +5,22 @@ import styles from './About.module.css';
 
 const About = () => {
   return (
-    <SpreadContainer spreadNumber={6} spreadTitle='About me'>
+    <SpreadContainer id='about' className={styles.aboutSpread} composition='content' spreadTitle='About me'>
       <div className={styles.headlineContainer}>
         <p className={styles.aboutHeadline}>
-          Designer. <br /> Engineer. <br /> Problem solver. <br />
-          <span>Always learning.</span>
+          I started in design. <br /> I learned to build <br /> so I could <br />
+          <span>see it through.</span>
           <Underline className={styles.underline} fill='var(--color-amethyst-500)' />
         </p>
       </div>
       <div className={styles.contentContainer}>
         <p>
-          I&apos;m based in Edinburgh, Scotland, with a background in product design and frontend engineering. I care
-          about clear thinking, useful systems and the craft of building things that last.
+          I spent the first decade of my career in product design. I learned to code because I wanted to understand what
+          happened after handoff: where the compromises landed and whether the work survived production.
+        </p>
+        <p>
+          Now I work across product design and front-end engineering, usually on products where the hard part is bigger
+          than the interface. I’m based in Edinburgh and work remotely.
         </p>
       </div>
       <div className={styles.mainTexture}>
@@ -25,15 +29,19 @@ const About = () => {
       <div className={styles.accentTexture}>
         <Image className={styles.accentTextureImage} src='/assets/about-texture-accent.png' fill sizes='7vw' alt='' />
       </div>
-      <div className={styles.beachImage}>
-        <Image className={styles.beach} src='/assets/beach.JPG' fill sizes='25vw' alt='Elie beach on a summer day' />
-      </div>
+      <figure className={styles.beachImage}>
+        <Image
+          className={styles.beach}
+          src='/assets/home.png'
+          fill
+          sizes='25vw'
+          alt='A rainbow over fields and autumn trees'
+        />
+        <figcaption>SCOTLAND. PLENTY OF ROOM TO GET AWAY FROM A SCREEN.</figcaption>
+      </figure>
       <aside className={styles.outside}>
         <h3>Outside of work</h3>
-        <p>
-          You&apos;ll usually find me lifting weights, playing golf, in the mountains, or cooking something slow over
-          fire.
-        </p>
+        <p>Outside work, I’m usually lifting, playing golf, or turning a quick job into a project.</p>
       </aside>
     </SpreadContainer>
   );

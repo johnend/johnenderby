@@ -1,0 +1,63 @@
+.breather {
+  background-color: var(--color-paper-100);
+}
+
+.statement {
+  grid-row: 2/12;
+  grid-column: 2/16;
+  align-self: center;
+  color: var(--color-ink-900);
+  font-family: var(--font-heading);
+  font-size: clamp(4.25rem, 7vw, 8.5rem);
+  font-stretch: var(--font-width-75);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-display);
+  line-height: 0.86;
+  text-transform: uppercase;
+}
+
+.statement > span {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.secondThought {
+  margin-block-start: 0.2em;
+}
+
+.statement .emphasis {
+  color: var(--color-amethyst-500);
+}
+
+@media (max-height: 50rem) and (min-width: 64.01rem) {
+  .statement {
+    font-size: clamp(3.8rem, 6.4vw, 6.8rem);
+  }
+}
+
+@media (max-width: 64rem) {
+  .statement {
+    grid-column: 1/9;
+    font-size: clamp(4rem, 9vw, 7rem);
+  }
+}
+
+@media (max-width: 42rem) {
+  .breather {
+    min-height: 90svh;
+    align-content: center;
+  }
+
+  .statement {
+    grid-row: auto;
+    grid-column: 1/-1;
+    font-size: clamp(3.5rem, 15vw, 6rem);
+  }
+
+  .statement > span {
+    width: auto;
+    white-space: normal;
+  }
+}

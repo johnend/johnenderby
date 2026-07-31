@@ -1,18 +1,27 @@
+.aboutSpread {
+  padding-block-end: 0;
+}
+
 .headlineContainer {
-  z-index: 2;
-  grid-row: 3/7;
+  z-index: 4;
+  grid-row: 3/8;
   grid-column: 2/7;
 }
 
 .aboutHeadline {
+  max-width: 14ch;
   font-family: var(--font-serif);
   font-size: var(--font-size-headline);
   font-weight: var(--font-weight-medium);
-  line-height: 1.25;
-  span {
-    color: var(--color-amethyst-500);
-    font-style: italic;
-  }
+  line-height: 1.18;
+}
+
+.aboutHeadline span {
+  display: inline-block;
+  white-space: nowrap;
+  color: var(--color-amethyst-500);
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 .underline {
@@ -21,10 +30,18 @@
 }
 
 .contentContainer {
-  z-index: 2;
-  grid-row: 4/7;
-  grid-column: 7/10;
-  line-height: var(--text-body-line-height);
+  z-index: 5;
+  grid-row: 4/9;
+  grid-column: 7/11;
+  align-self: center;
+  max-width: 46ch;
+  background: color-mix(in srgb, var(--color-paper-100) 92%, transparent);
+  padding: var(--space-24);
+  font-size: var(--font-size-body-sm);
+}
+
+.contentContainer p + p {
+  margin-block-start: var(--space-16);
 }
 
 .mainTexture,
@@ -37,8 +54,8 @@
 }
 
 .mainTexture {
-  grid-row: 1/13;
-  grid-column: 10/14;
+  grid-row: 2/13;
+  grid-column: 11/13;
 }
 
 .mainTextureImage {
@@ -47,9 +64,9 @@
 }
 
 .accentTexture {
-  z-index: 2;
-  grid-row: 8/12;
-  grid-column: 9/10;
+  z-index: 5;
+  grid-row: 9/13;
+  grid-column: 10/11;
 }
 
 .accentTextureImage {
@@ -58,10 +75,13 @@
 }
 
 .beachImage {
-  z-index: 1;
+  z-index: 2;
   grid-row: 3/11;
-  grid-column: 13/17;
+  grid-column: 12/17;
+  align-self: center;
+  aspect-ratio: 4/3;
   margin-inline-end: calc(-1 * var(--gutter));
+  overflow: visible;
 }
 
 .beachImage::after {
@@ -79,19 +99,135 @@
   object-position: 70% center;
 }
 
-.outside {
+.beachImage figcaption {
+  position: absolute;
   z-index: 3;
-  grid-row: 7/11;
+  top: 100%;
+  right: 0;
+  max-width: 24ch;
+  border-block-start: var(--border-thick) solid var(--color-amethyst-400);
+  background: var(--color-ink-900);
+  padding: var(--space-12) var(--space-16);
+  color: var(--color-paper-100);
+  box-shadow: 0 var(--space-8) var(--space-24) rgb(18 19 21 / 12%);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-caption);
+  line-height: 1.45;
+}
+
+.outside {
+  z-index: 6;
+  grid-row: 4/7;
   grid-column: 11/14;
   align-self: start;
   background-color: var(--color-paper-50);
   padding: var(--space-24);
   box-shadow: 0 12px 32px rgb(18 19 21 / 8%);
+  transform: translateX(var(--space-24));
+}
 
-  h3 {
-    color: var(--color-amethyst-500);
-    font-family: var(--font-mono);
-    font-size: var(--font-size-sm);
-    margin-bottom: var(--space-16);
+.outside h3 {
+  margin-bottom: var(--space-16);
+  color: var(--color-amethyst-500);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+@media (max-width: 64rem) {
+  .headlineContainer {
+    grid-row: 3/7;
+    grid-column: 1/5;
+  }
+
+  .contentContainer {
+    grid-row: 3/7;
+    grid-column: 5/9;
+  }
+
+  .mainTexture {
+    grid-row: 7/13;
+    grid-column: 4/7;
+  }
+
+  .accentTexture {
+    grid-row: 10/13;
+    grid-column: 3/4;
+  }
+
+  .beachImage {
+    grid-row: 8/13;
+    grid-column: 6/9;
+    margin-inline-end: calc(-1 * var(--space-page-gutter));
+  }
+
+  .outside {
+    grid-row: 7/10;
+    grid-column: 5/8;
+  }
+}
+
+@media (max-width: 42rem) {
+  .aboutSpread {
+    padding-block-end: var(--space-64);
+  }
+
+  .headlineContainer,
+  .contentContainer,
+  .mainTexture,
+  .accentTexture,
+  .beachImage,
+  .outside {
+    grid-row: auto;
+  }
+
+  .headlineContainer {
+    grid-column: 1/-1;
+    margin-block-start: var(--space-24);
+  }
+
+  .aboutHeadline {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+  }
+
+  .contentContainer {
+    grid-column: 2/-1;
+    max-width: 38rem;
+    background: transparent;
+    padding: 0;
+  }
+
+  .mainTexture {
+    grid-row: 5;
+    grid-column: 1/3;
+    min-height: 38rem;
+    margin-block-start: var(--space-24);
+  }
+
+  .beachImage {
+    grid-row: 5;
+    grid-column: 2/-1;
+    min-height: 0;
+    margin-block: var(--space-96) 0;
+    margin-inline-end: calc(-1 * var(--space-page-gutter));
+  }
+
+  .accentTexture {
+    z-index: 5;
+    grid-row: 5;
+    grid-column: 1/2;
+    align-self: end;
+    min-height: 10rem;
+    margin-block-end: var(--space-24);
+    transform: translateX(calc(-1 * var(--space-16)));
+  }
+
+  .outside {
+    grid-row: 5;
+    grid-column: 1/3;
+    align-self: end;
+    margin-block-end: var(--space-64);
+    transform: none;
   }
 }

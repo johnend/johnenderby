@@ -4,63 +4,37 @@ import SpreadContainer from '../_lib/SpreadContainer/SpreadContainer';
 import styles from './Hero.module.css';
 import Underline from '@/components/editorial/Underline/Underline';
 
-const spreads = [
-  { number: 1, title: 'Home' },
-  { number: 2, title: 'Intro' },
-  { number: 3, title: 'Work' },
-  { number: 4, title: 'Thinking' },
-  { number: 5, title: 'Writing' },
-  { number: 6, title: 'About' },
-];
-
 const Hero = () => {
   return (
-    <SpreadContainer tone='ink'>
-      <aside className={styles.sectionsSidebar}>
-        {/*
-        TODO: The items in this list should be anchors to their appropriate sections.
-              Need to figure out interactions first though
-        */}
-        <ul>
-          {spreads.map((spread) => {
-            return (
-              <li key={spread.number}>
-                <span>{spread.number.toString().padStart(2, '0')}</span>
-                <span>{spread.title}</span>
-              </li>
-            );
-          })}
-        </ul>
-        <div className={styles.scrollIndicator}>
-          <span>
-            Scroll
-            <br />
-            down
-          </span>
-          <span className={styles.scrollIndicatorTrack} aria-hidden='true' />
-        </div>
-      </aside>
+    <SpreadContainer id='home' tone='ink'>
+      <div className={styles.scrollIndicator}>
+        <span>Scroll</span>
+        <span className={styles.scrollIndicatorTrack} aria-hidden='true' />
+      </div>
       <div className={styles.heroHeadline}>
         <h1>
-          Design-Led. Engineering-minded.{' '}
-          <span>
-            Curious <br />
-            by nature
-          </span>
+          Design-led.
+          <br />
+          Engineering-minded.
+          <br />
+          <span>Curious by nature.</span>
         </h1>
         <Underline className={styles.underline} fill='var(--color-amethyst-400)' />
       </div>
 
       <div className={styles.heroContent}>
-        <pre>I design and build digital products that are thoughtful, usable, and built to last.</pre>
+        <p className={styles.captionLabel}>Desk notes / 01</p>
+        <p className={styles.heroIntroduction}>
+          I design products and build interfaces. The interesting work is everything in between.
+        </p>
         <hr />
-        <p className={styles.locationMeta}>Based in Edinburgh, UK</p>
+        <p className={styles.locationMeta}>Edinburgh, Scotland</p>
         <p>
           <LiveClock />
         </p>
       </div>
       <div className={styles.heroImage}>
-        <Image className={styles.image} src='/assets/desk.jpeg' fill sizes='50vw' alt='My desk setup' loading='eager' />
+        <Image className={styles.image} src='/assets/desk.jpeg' fill sizes='65vw' alt='My desk setup' priority />
       </div>
     </SpreadContainer>
   );
